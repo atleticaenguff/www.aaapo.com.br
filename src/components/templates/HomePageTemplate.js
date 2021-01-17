@@ -237,28 +237,28 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
               <a
                 class="button has-text-weight-semibold is-primary"
                 href="https://aaapo-teste.lojaintegrada.com.br">
-                {store.button2}
+                {store.button1}
               </a>
               <a
                 class="button has-text-weight-semibold is-dark is-outlined"
                 href="https://atleticaenguff.eventbrite.com"
                 rel="noreferrer"
                 target="_blank">
-                {store.button1}
+                {store.button2}
               </a>
             </div>
             <div class="buttons is-right is-hidden-mobile">
               <a
                 class="button has-text-weight-semibold is-primary"
                 href="https://aaapo-teste.lojaintegrada.com.br">
-                {store.button2}
+                {store.button1}
               </a>
               <a
                 class="button has-text-weight-semibold is-dark is-outlined"
                 href="https://atleticaenguff.eventbrite.com"
                 rel="noreferrer"
                 target="_blank">
-                {store.button1}
+                {store.button2}
               </a>
             </div>
           </div>
