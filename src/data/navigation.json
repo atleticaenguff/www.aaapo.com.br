@@ -1,0 +1,22 @@
+{
+  "item1": {
+    "title": "Sobre",
+    "url": "/about"
+  },
+  "item2": {
+    "title": "Modalidades",
+    "url": "/modalities"
+  },
+  "item3": {
+    "title": "Extras",
+    "url": "/extras"
+  },
+  "item4": {
+    "title": "Contato",
+    "url": "/contact"
+  },
+  "item5": {
+    "title": "Loja",
+    "url": "https://loja.aaapo.com.br"
+  }
+}

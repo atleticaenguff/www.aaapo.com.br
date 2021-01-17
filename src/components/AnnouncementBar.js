@@ -1,0 +1,80 @@
+import React, { Component } from "react"
+import googleSheetsAPI from "../data/google-sheets-api.json"
+
+class AnnouncementBar extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { loading: true }
+  }
+
+  componentDidMount() {
+    fetch(
+      "https://sheets.googleapis.com/v4/spreadsheets/" +
+        googleSheetsAPI.spreadsheetId +
+        "/values/Sheet1!A1:B5?key=" +
+        googleSheetsAPI.key
+    )
+      .then((response) => {
+        return response.json()
+      })
+      .then((json) => {
+        this.setState({
+          loading: false,
+          isHidden: json.values[0][1],
+          content: json.values[1][1],
+          isHiddenLink: json.values[2][1],
+          linkText: json.values[3][1],
+          linkURL: json.values[4][1],
+        })
+      })
+  }
+
+  render() {
+    const {
+      loading,
+      isHidden,
+      content,
+      isHiddenLink,
+      linkText,
+      linkURL,
+    } = this.state
+
+    return (
+      <div
+        className={
+          loading === true || isHidden === "TRUE" ? "is-hidden" : null
+        }>
+        <div
+          className={"has-text-white py-4 px-4"}
+          style={{
+            backgroundColor: "#262626",
+          }}>
+          <div className="container">
+            {loading ? (
+              <>&nbsp;</>
+            ) : (
+              <div
+                className="is-flex"
+                style={{ alignItems: "center", justifyContent: "center" }}>
+                <p className="has-text-weight-semibold">{content}</p>
+                <span
+                  className={isHiddenLink === "TRUE" ? "is-hidden" : "is-flex"}>
+                  &nbsp;
+                  <p className="has-text-weight-semibold">-</p>
+                  &nbsp;
+                  <p className="has-text-weight-bold">
+                    <a href={linkURL} rel="noreferrer" target="_blank">
+                      {linkText}
+                    </a>
+                  </p>
+                </span>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
+
+export default AnnouncementBar

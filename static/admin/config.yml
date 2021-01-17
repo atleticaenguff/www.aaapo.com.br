@@ -1,0 +1,952 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/images
+public_folder: /images
+
+site_url: https://aaapo-v2.netlify.app
+
+logo_url: https://aaapo-v2.netlify.app/images/logo.png
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/index.md"
+        label: "Home"
+        name: "home"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "home-page",
+            }
+          - {
+              label: SEO,
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Meta Title", name: "meta_title", widget: string },
+                  {
+                    label: "Meta Description",
+                    name: "meta_description",
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Hero,
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                  { label: "Button", name: "button", widget: string },
+                  { label: "Thumbnail", name: "thumbnail", widget: image },
+                  { label: "URL", name: "url", widget: string },
+                ],
+            }
+          - {
+              label: About,
+              name: about,
+              widget: object,
+              fields:
+                [
+                  { label: "Uppertitle", name: "uppertitle", widget: string },
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                  { label: "Button 1", name: "button1", widget: string },
+                  { label: "Button 2", name: "button2", widget: string },
+                  { label: "Image", name: "image", widget: image },
+                ],
+            }
+          - {
+              label: Modalities,
+              name: modalities,
+              widget: object,
+              fields:
+                [
+                  { label: "Image", name: "image", widget: image },
+                  { label: "Uppertitle", name: "uppertitle", widget: string },
+                  { label: "Title", name: "title", widget: string },
+                  {
+                    label: List,
+                    name: list,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "List 1", name: "list1", widget: string },
+                        { label: "List 2", name: "list2", widget: string },
+                        { label: "List 3", name: "list3", widget: string },
+                        { label: "List 4", name: "list4", widget: string },
+                      ],
+                  },
+                  { label: "Button", name: "button", widget: string },
+                ],
+            }
+          - {
+              label: Extras,
+              name: extras,
+              widget: object,
+              fields:
+                [
+                  { label: "Uppertitle", name: "uppertitle", widget: string },
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                  { label: "Button", name: "button", widget: string },
+                  {
+                    label: Block1,
+                    name: block1,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Undertitle",
+                          name: "undertitle",
+                          widget: string,
+                        },
+                        {
+                          label: "Undersubtitle",
+                          name: "undersubtitle",
+                          widget: string,
+                        },
+                      ],
+                  },
+                  {
+                    label: Block2,
+                    name: block2,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Undertitle",
+                          name: "undertitle",
+                          widget: string,
+                        },
+                        {
+                          label: "Undersubtitle",
+                          name: "undersubtitle",
+                          widget: string,
+                        },
+                      ],
+                  },
+                  {
+                    label: Block3,
+                    name: block3,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Undertitle",
+                          name: "undertitle",
+                          widget: string,
+                        },
+                        {
+                          label: "Undersubtitle",
+                          name: "undersubtitle",
+                          widget: string,
+                        },
+                      ],
+                  },
+                  {
+                    label: Block4,
+                    name: block4,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Undertitle",
+                          name: "undertitle",
+                          widget: string,
+                        },
+                        {
+                          label: "Undersubtitle",
+                          name: "undersubtitle",
+                          widget: string,
+                        },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Store,
+              name: store,
+              widget: object,
+              fields:
+                [
+                  { label: "Uppertitle", name: "uppertitle", widget: string },
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                  { label: "Button 1", name: "button1", widget: string },
+                  { label: "Button 2", name: "button2", widget: string },
+                ],
+            }
+      - file: "src/pages/about.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - {
+              label: SEO,
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Meta Title", name: "meta_title", widget: string },
+                  {
+                    label: "Meta Description",
+                    name: "meta_description",
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Hero,
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle 1", name: "subtitle1", widget: text },
+                  { label: "Subtitle 2", name: "subtitle2", widget: text },
+                  { label: "Subtitle 3", name: "subtitle3", widget: text },
+                ],
+            }
+          - {
+              label: History,
+              name: history,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Image", name: "image", widget: image },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                ],
+            }
+          - {
+              label: Achievement,
+              name: achievement,
+              widget: object,
+              fields: [{ label: "Title", name: "title", widget: string }],
+            }
+          - {
+              label: Years,
+              name: years,
+              widget: list,
+              fields:
+                [
+                  { label: Number, name: number, widget: string, default: "" },
+                  {
+                    label: Competitions,
+                    name: competitions,
+                    widget: list,
+                    default: [{ title: "" }],
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        {
+                          label: Awards,
+                          name: awards,
+                          widget: list,
+                          default: [{ title: "" }],
+                          fields:
+                            [{ label: Title, name: title, widget: string }],
+                        },
+                      ],
+                  },
+                ],
+            }
+      - file: "src/pages/modalities.md"
+        label: "Modalities"
+        name: "modalities"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "modalities-page",
+            }
+          - {
+              label: SEO,
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Meta Title", name: "meta_title", widget: string },
+                  {
+                    label: "Meta Description",
+                    name: "meta_description",
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Hero,
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                ],
+            }
+          - {
+              label: History,
+              name: history,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                ],
+            }
+          - {
+              label: Collapses,
+              name: collapses,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: Days,
+                    name: days,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "Days 1", name: days1, widget: string },
+                        {
+                          label: "Days 2",
+                          name: days2,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: "Days 3",
+                          name: days3,
+                          widget: string,
+                          required: false,
+                        },
+                      ],
+                  },
+                  {
+                    label: "Addresses",
+                    name: addresses,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Address 1",
+                          name: address1,
+                          widget: object,
+                          fields:
+                            [
+                              { label: "URL", name: url, widget: string },
+                              {
+                                label: "Address",
+                                name: address,
+                                widget: string,
+                              },
+                            ],
+                        },
+                        {
+                          label: "Address 2",
+                          name: address2,
+                          widget: object,
+                          fields:
+                            [
+                              {
+                                label: "URL",
+                                name: url,
+                                widget: string,
+                                required: false,
+                              },
+                              {
+                                label: "Address",
+                                name: address,
+                                widget: string,
+                                required: false,
+                              },
+                            ],
+                        },
+                        {
+                          label: "Address 3",
+                          name: address3,
+                          widget: object,
+                          fields:
+                            [
+                              {
+                                label: "URL",
+                                name: url,
+                                widget: string,
+                                required: false,
+                              },
+                              {
+                                label: "Address",
+                                name: address,
+                                widget: string,
+                                required: false,
+                              },
+                            ],
+                        },
+                      ],
+                  },
+                  {
+                    label: "People",
+                    name: people,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Person 1",
+                          name: person1,
+                          widget: object,
+                          fields:
+                            [
+                              { label: "Name", name: name, widget: string },
+                              { label: "Phone", name: phone, widget: string },
+                            ],
+                        },
+                        {
+                          label: "Person 2",
+                          name: person2,
+                          widget: object,
+                          fields:
+                            [
+                              {
+                                label: "Name",
+                                name: name,
+                                widget: string,
+                                required: false,
+                              },
+                              {
+                                label: "Phone",
+                                name: phone,
+                                widget: string,
+                                required: false,
+                              },
+                            ],
+                        },
+                        {
+                          label: "Person 3",
+                          name: person3,
+                          widget: object,
+                          fields:
+                            [
+                              {
+                                label: "Name",
+                                name: name,
+                                widget: string,
+                                required: false,
+                              },
+                              {
+                                label: "Phone",
+                                name: phone,
+                                widget: string,
+                                required: false,
+                              },
+                            ],
+                        },
+                      ],
+                  },
+                ],
+            }
+      - file: "src/pages/extras.md"
+        label: "Extras"
+        name: "extras"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "extras-page",
+            }
+          - {
+              label: SEO,
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Meta Title", name: "meta_title", widget: string },
+                  {
+                    label: "Meta Description",
+                    name: "meta_description",
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Hero,
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                ],
+            }
+          - {
+              label: "Features",
+              name: features,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                  {
+                    label: "Feature 1",
+                    name: feature1,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "Title", name: "title", widget: string },
+                        { label: "Subtitle", name: "subtitle", widget: text },
+                        {
+                          label: "Button",
+                          name: button,
+                          widget: object,
+                          fields:
+                            [
+                              { label: "URL", name: "url", widget: string },
+                              { label: "Title", name: "title", widget: string },
+                            ],
+                        },
+                      ],
+                  },
+                  {
+                    label: "Feature 2",
+                    name: feature2,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "Title", name: "title", widget: string },
+                        { label: "Subtitle", name: "subtitle", widget: text },
+                        {
+                          label: "Button",
+                          name: button,
+                          widget: object,
+                          fields:
+                            [
+                              { label: "URL", name: "url", widget: string },
+                              { label: "Title", name: "title", widget: string },
+                            ],
+                        },
+                      ],
+                  },
+                  {
+                    label: "Feature 3",
+                    name: feature3,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "Title", name: "title", widget: string },
+                        { label: "Subtitle", name: "subtitle", widget: text },
+                        {
+                          label: "Button",
+                          name: button,
+                          widget: object,
+                          fields:
+                            [
+                              { label: "URL", name: "url", widget: string },
+                              { label: "Title", name: "title", widget: string },
+                            ],
+                        },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: SoundCloud,
+              name: soundcloud,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subitle", name: "subtitle", widget: string },
+                ],
+            }
+      - file: "src/pages/contact.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "contact-page",
+            }
+          - {
+              label: SEO,
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Meta Title", name: "meta_title", widget: string },
+                  {
+                    label: "Meta Description",
+                    name: "meta_description",
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Hero,
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                ],
+            }
+          - {
+              label: "Contact 1",
+              name: contact1,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                  { label: "Email", name: "email", widget: string },
+                ],
+            }
+          - {
+              label: "Contact 2",
+              name: contact2,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                  { label: "Email", name: "email", widget: string },
+                ],
+            }
+          - {
+              label: "Local",
+              name: local,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                  { label: "URL", name: "url", widget: string },
+                  { label: "Address", name: "address", widget: string },
+                ],
+            }
+          - {
+              label: "Map",
+              name: map,
+              widget: object,
+              fields:
+                [
+                  { label: "Latitude", name: "latitude", widget: number },
+                  { label: "Longitude", name: "longitude", widget: number },
+                ],
+            }
+      - file: "src/pages/faq.md"
+        label: "FAQ"
+        name: "faq"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "faq-page",
+            }
+          - {
+              label: SEO,
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Meta Title", name: "meta_title", widget: string },
+                  {
+                    label: "Meta Description",
+                    name: "meta_description",
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Hero,
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                ],
+            }
+          - {
+              label: Faqs,
+              name: faqs,
+              widget: list,
+              fields:
+                [
+                  { label: Question, name: question, widget: string },
+                  { label: Answer, name: answer, widget: string },
+                ],
+            }
+      - file: "src/pages/404.md"
+        label: "Not found"
+        name: "notfound"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "not-found-page",
+            }
+          - {
+              label: SEO,
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Meta Title", name: "meta_title", widget: string },
+                  {
+                    label: "Meta Description",
+                    name: "meta_description",
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Hero,
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                  { label: "Button", name: "button", widget: string },
+                ],
+            }
+      - file: "src/pages/transparency.md"
+        label: "Transparency"
+        name: "transparency"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "transparency-page",
+            }
+          - {
+              label: SEO,
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Meta Title", name: "meta_title", widget: string },
+                  {
+                    label: "Meta Description",
+                    name: "meta_description",
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Hero,
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                ],
+            }
+          - {
+              label: "Report 1",
+              name: report1,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                  {
+                    label: "Button",
+                    name: button,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "URL", name: "url", widget: string },
+                        { label: "Title", name: "title", widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: "Report 2",
+              name: report2,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: text },
+                  {
+                    label: "Button",
+                    name: button,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "URL", name: "url", widget: string },
+                        { label: "Title", name: "title", widget: string },
+                      ],
+                  },
+                ],
+            }
+  - name: "settings"
+    editor:
+      preview: false
+    label: "Settings"
+    files:
+      - file: "src/data/copyright.json"
+        label: "Copyright"
+        name: "copyright"
+        fields:
+          [
+            { label: "Year", name: "year", widget: string },
+            { label: "Name", name: "name", widget: string },
+          ]
+      - file: "src/data/google-sheets-api.json"
+        label: "Google Sheets API"
+        name: "google-sheets-api"
+        fields:
+          [
+            { label: "Spreadsheet ID", name: "spreadsheetId", widget: string },
+            { label: "Key", name: "key", widget: string },
+          ]
+      - file: "src/data/google-tag-manager.json"
+        label: "Google Tag Manager"
+        name: "google-tag-manager"
+        fields: [{ label: "ID", name: "id", widget: string }]
+      - file: "src/data/manifest.json"
+        label: "Manifest"
+        name: "manifest"
+        fields:
+          [
+            { label: "Name", name: "name", widget: string },
+            { label: "Short name", name: "short_name", widget: string },
+            {
+              label: "Background color",
+              name: "background_color",
+              widget: string,
+            },
+            { label: "Theme color", name: "theme_color", widget: string },
+            { label: "Icon", name: "icon", widget: image },
+          ]
+      - file: "src/data/navigation.json"
+        label: "Navigation"
+        name: "navigation"
+        fields:
+          - {
+              label: "Item 1",
+              name: item1,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "URL", name: "url", widget: string },
+                ],
+            }
+          - {
+              label: "Item 2",
+              name: item2,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "URL", name: "url", widget: string },
+                ],
+            }
+          - {
+              label: "Item 3",
+              name: item3,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "URL", name: "url", widget: string },
+                ],
+            }
+          - {
+              label: "Item 4",
+              name: item4,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "URL", name: "url", widget: string },
+                ],
+            }
+          - {
+              label: "Item 5",
+              name: item5,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "URL", name: "url", widget: string },
+                ],
+            }
+      - file: "src/data/seo.json"
+        label: "SEO"
+        name: "seo"
+        fields:
+          [
+            { label: "Title", name: "title", widget: string },
+            { label: "Description", name: "description", widget: string },
+            { label: "Image", name: "image", widget: image },
+            { label: "URL", name: "url", widget: string },
+            { label: "Facebook App ID", name: "fb_app_id", widget: string },
+            { label: "Twitter user", name: "twitter_user", widget: string },
+          ]
+      - file: "src/data/social.json"
+        label: "Social"
+        name: "social"
+        fields:
+          - {
+              label: Facebook,
+              name: facebook,
+              widget: object,
+              fields: [{ label: "URL", name: "url", widget: string }],
+            }
+          - {
+              label: Instagram,
+              name: instagram,
+              widget: object,
+              fields: [{ label: "URL", name: "url", widget: string }],
+            }
+          - {
+              label: Twitter,
+              name: twitter,
+              widget: object,
+              fields: [{ label: "URL", name: "url", widget: string }],
+            }
+          - {
+              label: YouTube,
+              name: youtube,
+              widget: object,
+              fields: [{ label: "URL", name: "url", widget: string }],
+            }
+          - {
+              label: LinkedIn,
+              name: linkedin,
+              widget: object,
+              fields: [{ label: "URL", name: "url", widget: string }],
+            }
+          - {
+              label: More,
+              name: more,
+              widget: object,
+              fields: [{ label: "URL", name: "url", widget: string }],
+            }

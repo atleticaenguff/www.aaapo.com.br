@@ -1,0 +1,49 @@
+$primary: #cc212a;
+$light: #f8f8f8;
+$white: #ffffff;
+$white-ter: rgba($white, 0.2);
+$black: #222222;
+$dark: #262626;
+$link-hover: #3273dc;
+$family-sans-serif: "Poppins", sans-serif;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-img-max-height: 6rem;
+$navbar-burger-color: $white;
+$hero-body-padding: 1.5rem 1.5rem 3rem 1.5rem;
+$hero-body-padding-medium: 6.5rem 1.5rem;
+$subtitle-size: 1.1rem;
+$subtitle-line-height: 1.75;
+$button-padding-vertical: calc(1.5em - 1px);
+$button-padding-horizontal: 1.25em;
+$modal-content-margin-mobile: 0;
+$notification-radius: 6px;
+$card-background-color: $primary;
+$card-header-color: $white;
+$card-content-background-color: $light;
+$card-header-padding: 1.25rem 1rem;
+$card-footer-background-color: $light;
+$footer-background-color: $dark;
+$footer-color: $white;
+$footer-padding: 2rem 1.5rem 1.5rem;
+$hr-background-color: $white-ter;
+$hr-height: 1px;
+
+.navbar-burger span {
+  left: calc(50% - 12px) !important;
+  width: 20px !important;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar-menu {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    left: auto;
+    width: fit-content;
+    height: auto;
+    margin-right: 1.25rem !important;
+    border-radius: 6px;
+  }
+}
+
+@import "~bulma";
