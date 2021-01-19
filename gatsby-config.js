@@ -8,8 +8,6 @@ module.exports = {
   },
   flags: {
     FAST_DEV: true,
-    QUERY_ON_DEMAND: true,
-    LAZY_IMAGES: true,
     FAST_REFRESH: true,
   },
   plugins: [

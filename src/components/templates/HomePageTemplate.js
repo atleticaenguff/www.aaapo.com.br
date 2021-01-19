@@ -70,7 +70,7 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
               </p>
               <p className="control">
                 <Link
-                  className="button has-text-weight-semibold is-primary is-outlined"
+                  className="button has-text-weight-semibold is-dark is-outlined"
                   to="/about#awards">
                   {about.button2}
                 </Link>
@@ -217,44 +217,44 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
         </div>
       </div>
     </section>
-    <section class="section has-background-light">
-      <div class="container">
-        <div class="columns is-vcentered">
-          <div class="column is-7">
-            <p class="subtitle is-size-6-mobile has-text-weight-medium has-text-primary">
+    <section className="section has-background-light">
+      <div className="container">
+        <div className="columns is-vcentered">
+          <div className="column is-7">
+            <p className="subtitle is-size-6-mobile has-text-weight-medium has-text-primary">
               {store.uppertitle}
             </p>
-            <h2 class="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
+            <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
               {store.title}
             </h2>
-            <p class="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
+            <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
               {store.subtitle}
             </p>
           </div>
 
-          <div class="column is-5">
-            <div class="buttons is-hidden-tablet">
+          <div className="column is-5">
+            <div className="buttons is-hidden-tablet">
               <a
-                class="button has-text-weight-semibold is-primary"
+                className="button has-text-weight-semibold is-primary"
                 href="https://aaapo-teste.lojaintegrada.com.br">
                 {store.button1}
               </a>
               <a
-                class="button has-text-weight-semibold is-dark is-outlined"
+                className="button has-text-weight-semibold is-dark is-outlined"
                 href="https://atleticaenguff.eventbrite.com"
                 rel="noreferrer"
                 target="_blank">
                 {store.button2}
               </a>
             </div>
-            <div class="buttons is-right is-hidden-mobile">
+            <div className="buttons is-right is-hidden-mobile">
               <a
-                class="button has-text-weight-semibold is-primary"
+                className="button has-text-weight-semibold is-primary"
                 href="https://aaapo-teste.lojaintegrada.com.br">
                 {store.button1}
               </a>
               <a
-                class="button has-text-weight-semibold is-dark is-outlined"
+                className="button has-text-weight-semibold is-dark is-outlined"
                 href="https://atleticaenguff.eventbrite.com"
                 rel="noreferrer"
                 target="_blank">

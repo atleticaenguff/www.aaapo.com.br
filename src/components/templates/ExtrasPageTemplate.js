@@ -109,20 +109,33 @@ const ExtrasPageTemplate = ({ seo, hero, features, soundcloud }) => (
     </section>
     <section className="section has-background-light">
       <div className="container">
-        <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
-          {soundcloud.title}
-        </h2>
-        <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
-          {soundcloud.subtitle}
-        </p>
-        <iframe
-          title="SoundCloud"
-          width="100%"
-          height="300"
-          scrolling="no"
-          frameBorder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/838307240&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <div className="columns is-vcentered">
+          <div className="column is-5">
+            <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
+              {soundcloud.title}
+            </h2>
+            <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
+              {soundcloud.subtitle}
+            </p>
+            <a
+              className="button has-text-weight-semibold is-dark is-hidden-mobile"
+              href=""
+              rel="noreferrer"
+              target="_blank">
+              Ouvir no SoundCloud
+            </a>
+          </div>
+          <div className="column is-7">
+            <iframe
+              title="SoundCloud"
+              width="100%"
+              height="300"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/838307240&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          </div>
+        </div>
       </div>
     </section>
   </>

@@ -10,7 +10,6 @@ import {
   faYoutube,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
-import { faPlus } from "@fortawesome/free-solid-svg-icons"
 
 const Footer = () => {
   return (
@@ -24,7 +23,7 @@ const Footer = () => {
                   icon={faFacebook}
                   size="2x"
                   className="has-text-white"
-                  transform="shrink-1"
+                  transform="shrink-2"
                 />
               </a>
             </span>
@@ -34,7 +33,7 @@ const Footer = () => {
                   icon={faTwitter}
                   size="2x"
                   className="has-text-white"
-                  transform="shrink-1"
+                  transform="shrink-2"
                 />
               </a>
             </span>
@@ -44,7 +43,7 @@ const Footer = () => {
                   icon={faInstagram}
                   size="2x"
                   className="has-text-white"
-                  transform="shrink-1"
+                  transform="shrink-2"
                 />
               </a>
             </span>
@@ -54,7 +53,7 @@ const Footer = () => {
                   icon={faYoutube}
                   size="2x"
                   className="has-text-white"
-                  transform="shrink-1"
+                  transform="shrink-2"
                 />
               </a>
             </span>
@@ -64,18 +63,19 @@ const Footer = () => {
                   icon={faLinkedin}
                   size="2x"
                   className="has-text-white"
-                  transform="shrink-1"
+                  transform="shrink-2"
                 />
               </a>
             </span>
-            <span className="icon is-large" style={{ verticalAlign: "top" }}>
-              <a href={social.more.url} rel="noreferrer" target="_blank">
-                <FontAwesomeIcon
-                  icon={faPlus}
-                  size="1x"
-                  className="has-text-white"
-                  transform="shrink-1"
-                />
+            <span
+              className="icon is-large ml-2"
+              style={{ verticalAlign: "top" }}>
+              <a
+                className="has-text-weight-semibold has-text-white"
+                href={social.more.url}
+                rel="noreferrer"
+                target="_blank">
+                mais
               </a>
             </span>
           </div>

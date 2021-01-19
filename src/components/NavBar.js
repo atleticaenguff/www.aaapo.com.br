@@ -56,17 +56,25 @@ const NavBar = ({ toggleNavbar, isActive }) => {
               style={{ backgroundColor: "transparent" }}>
               {navigation.item3.title}
             </Link>
-            <Link
+            <a
               className="navbar-item has-text-weight-semibold"
-              to={navigation.item4.url}
+              href={navigation.item4.url}
+              rel="noreferrer"
+              target="_blank"
               style={{ backgroundColor: "transparent" }}>
               {navigation.item4.title}
+            </a>
+            <Link
+              className="navbar-item has-text-weight-semibold"
+              to={navigation.item5.url}
+              style={{ backgroundColor: "transparent" }}>
+              {navigation.item5.title}
             </Link>
             <div className="navbar-item">
               <a
                 className="button has-text-weight-semibold is-dark"
-                href={navigation.item5.url}>
-                {navigation.item5.title}
+                href={navigation.item6.url}>
+                {navigation.item6.title}
               </a>
             </div>
           </div>

@@ -28,6 +28,6 @@ features:
       url: /
       title: Ver mais
 soundcloud:
-  title: Entre no ritmo da Dragões com nossas músicas
+  title: Entre no ritmo da Dragões
   subtitle: Acompanhe os maiores sucessos da torcida Dragões da UFF e se prepare para dar um show na arquibancada.
 ---

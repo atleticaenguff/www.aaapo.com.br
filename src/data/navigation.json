@@ -12,10 +12,14 @@
     "url": "/extras"
   },
   "item4": {
+    "title": "Ingressos",
+    "url": "https://atleticaenguff.eventbrite.com"
+  },
+  "item5": {
     "title": "Contato",
     "url": "/contact"
   },
-  "item5": {
+  "item6": {
     "title": "Loja",
     "url": "https://loja.aaapo.com.br"
   }

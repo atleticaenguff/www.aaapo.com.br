@@ -38,8 +38,15 @@ const FaqPageTemplate = ({ seo, hero, faqs }) => (
       <div className="container">
         <div className="columns is-multiline">
           {faqs.map((faq, id) => (
-            <div className="column is-12 mb-4" key={id}>
+            <div className="column is-6 mb-4" key={id}>
               <h4 className="title is-4 is-size-5-mobile has-text-weight-bold is-spaced has-text-dark">
+                <span
+                  className="has-text-primary is-size-3 is-size-4-mobile mr-2"
+                  style={{
+                    verticalAlign: "text-bottom",
+                  }}>
+                  ■
+                </span>
                 {faq.question}
               </h4>
               <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
