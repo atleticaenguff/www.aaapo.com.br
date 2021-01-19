@@ -41,9 +41,9 @@ const FaqPageTemplate = ({ seo, hero, faqs }) => (
             <div className="column is-6 mb-4" key={id}>
               <h4 className="title is-4 is-size-5-mobile has-text-weight-bold is-spaced has-text-dark">
                 <span
-                  className="has-text-primary is-size-3 is-size-5-mobile mr-2"
+                  className="has-text-primary is-size-3 is-size-6-mobile mr-2"
                   style={{
-                    verticalAlign: "text-bottom",
+                    verticalAlign: "middle",
                   }}>
                   ■
                 </span>
