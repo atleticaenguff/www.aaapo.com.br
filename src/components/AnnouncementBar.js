@@ -53,9 +53,7 @@ class AnnouncementBar extends Component {
             {loading ? (
               <>&nbsp;</>
             ) : (
-              <div
-                className="is-flex"
-                style={{ alignItems: "center", justifyContent: "center" }}>
+              <div className="is-flex is-align-items-center is-justify-content-center">
                 <p className="has-text-weight-semibold">{content}</p>
                 <span
                   className={isHiddenLink === "TRUE" ? "is-hidden" : "is-flex"}>

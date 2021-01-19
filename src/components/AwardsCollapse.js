@@ -20,9 +20,7 @@ class Collapse extends Component {
 
     return (
       <div className={collapseState ? "mb-2" : "mb-0"}>
-        <header
-          className="collapse-header is-flex"
-          style={{ alignItems: "center" }}>
+        <header className="collapse-header is-flex is-align-items-center">
           <p
             className="subtitle has-text-weight-bold has-text-dark is-marginless"
             aria-disabled="false"
@@ -44,10 +42,9 @@ class Collapse extends Component {
           </span>
         </header>
         <div
-          className="collapse-body"
+          className="collapse-body is-clipped"
           style={{
             maxHeight: collapseState ? "100em" : "0em",
-            overflow: "hidden",
           }}>
           {children}
         </div>

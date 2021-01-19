@@ -101,7 +101,7 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
               {modalities.title}
             </h2>
             <ul className="margin">
-              <li className="is-flex mb-2" style={{ alignItems: "center" }}>
+              <li className="is-flex is-align-items-center mb-2">
                 <span className="icon mr-2">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
@@ -113,7 +113,7 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
                   {modalities.list.list1}
                 </p>
               </li>
-              <li className="is-flex mb-2" style={{ alignItems: "center" }}>
+              <li className="is-flex is-align-items-center mb-2">
                 <span className="icon mr-2">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
@@ -125,7 +125,7 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
                   {modalities.list.list2}
                 </p>
               </li>
-              <li className="is-flex mb-2" style={{ alignItems: "center" }}>
+              <li className="is-flex is-align-items-center mb-2">
                 <span className="icon mr-2">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
@@ -137,7 +137,7 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
                   {modalities.list.list3}
                 </p>
               </li>
-              <li className="is-flex mb-2" style={{ alignItems: "center" }}>
+              <li className="is-flex is-align-items-center mb-2">
                 <span className="icon mr-2">
                   <FontAwesomeIcon
                     icon={faCheckCircle}

@@ -71,9 +71,7 @@ const AboutPageTemplate = ({ seo, hero, history, achievement, years }) => (
             <div
               className="column is-3-desktop is-6-tablet is-12-mobile"
               key={id}>
-              <div
-                className="notification is-primary has-text-centered"
-                style={{ padding: "0.75rem" }}>
+              <div className="notification is-primary has-text-centered p-3">
                 <h3 className="title is-3 is-size-4-mobile has-text-weight-bold has-text-white">
                   {year.number}
                 </h3>

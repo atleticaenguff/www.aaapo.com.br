@@ -44,7 +44,7 @@ class ModalitiesCollapse extends Component {
                 className="icon"
                 style={{
                   transform: collapseState ? "rotate(0deg)" : "rotate(180deg)",
-                  transition: "transform 300ms ease-out",
+                  transition: "transform 200ms ease-out",
                 }}>
                 <FontAwesomeIcon
                   icon={faAngleUp}
@@ -55,13 +55,12 @@ class ModalitiesCollapse extends Component {
             </a>
           </header>
           <div
-            className="card-body"
+            className="card-body is-clipped"
             style={{
               borderBottomLeftRadius: "6px",
               borderBottomRightRadius: "6px",
               maxHeight: collapseState ? "100em" : "0em",
-              overflow: "hidden",
-              transition: "all 300ms ease-in-out",
+              transition: "all 200ms ease-in-out",
             }}>
             <div className="card-content">{children}</div>
           </div>

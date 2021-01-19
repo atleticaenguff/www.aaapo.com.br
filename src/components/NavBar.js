@@ -9,7 +9,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
       className="navbar is-primary is-spaced pt-2 pb-0"
       aria-label="main navigation">
       <div className="container">
-        <div className="navbar-brand" style={{ alignItems: "center" }}>
+        <div className="navbar-brand is-align-items-center">
           <Link
             to="/"
             className="navbar-item"

@@ -13,19 +13,19 @@ features:
     title: Fotos
     subtitle: Foi para algum evento e quer suas fotos em alta definição? Fica tranquilo, aqui é tudo liberado.
     button:
-      url: /
+      url: https://drive.google.com/drive/folders/1wO7nWyT8D5Ju1ZPBhJXmMmKU85pvAjb-?usp=sharing
       title: Ver mais
   feature2:
     title: Vídeos
     subtitle: Prepare a pipoca e venha assistir aos melhores momentos da Atlética dentro e fora de quadra.
     button:
-      url: /
+      url: https://www.youtube.com/playlist?list=PLRirtOay0-2p5-u4fcQmsLCrkopVOln0E
       title: Ver mais
   feature3:
     title: Podcast
     subtitle: We build what you need, but you still need to manage your data.
     button:
-      url: /
+      url: https://anchor.fm/atleticaenguff
       title: Ver mais
 soundcloud:
   title: Entre no ritmo da Dragões

@@ -17,7 +17,7 @@ contact2:
 local:
   title: Onde estamos?
   subtitle: Saiba onde nos encontrar e mais informações de contato.
-  url: https://g.page/atleticaenguff
+  url: https://g.page/atleticaenguff?share
   address: R. Passo da Pátria, 156 São Domingos, Niterói - RJ, 24210-240
 map:
   latitude: -22.9055517
