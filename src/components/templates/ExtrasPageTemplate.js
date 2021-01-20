@@ -120,10 +120,10 @@ const ExtrasPageTemplate = ({ seo, hero, features, soundcloud }) => (
             </p>
             <a
               className="button has-text-weight-semibold is-dark is-hidden-mobile"
-              href=""
+              href={soundcloud.button.url}
               rel="noreferrer"
               target="_blank">
-              Ouvir no SoundCloud
+              {soundcloud.button.title}
             </a>
           </div>
           <div className="column is-7">
@@ -179,9 +179,13 @@ ExtrasPageTemplate.propTypes = {
       }),
     }),
   }),
-  music: PropTypes.shape({
+  soundcloud: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
+    button: PropTypes.shape({
+      url: PropTypes.string,
+      title: PropTypes.string,
+    }),
   }),
 }
 

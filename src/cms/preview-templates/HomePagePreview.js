@@ -14,7 +14,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
         subtitle: entry.getIn(["data", "hero", "subtitle"]),
         button: entry.getIn(["data", "hero", "button"]),
         thumbnail: getAsset(entry.getIn(["data", "hero", "thumbnail"])),
-        url: entry.getIn(["data", "hero", "url"]),
+        id: entry.getIn(["data", "hero", "id"]),
       }}
       about={{
         uppertitle: entry.getIn(["data", "about", "uppertitle"]),

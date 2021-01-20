@@ -50,7 +50,7 @@ export const HomePageQuery = graphql`
               }
             }
           }
-          url
+          id
         }
         about {
           uppertitle

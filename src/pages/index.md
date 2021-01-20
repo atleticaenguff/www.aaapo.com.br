@@ -8,7 +8,7 @@ hero:
   subtitle: Somos a AAAPO - Atlética Engenharia UFF. Investindo no esporte universitário desde 2011.
   button: Conheça mais
   thumbnail: /images/photo1.png
-  url: https://www.youtube.com/embed/hifz53MW_gE?autoplay=1
+  id: hifz53MW_gE
 about:
   uppertitle: Sobre
   title: Quem somos?

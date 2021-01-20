@@ -26,7 +26,7 @@ class VideoModal extends Component {
 
   render() {
     const thumbnail = this.props.thumbnail
-    const url = this.props.url
+    const id = this.props.id
 
     return (
       <>
@@ -77,7 +77,7 @@ class VideoModal extends Component {
                   <iframe
                     title="YouTube"
                     allowFullScreen
-                    src={url}
+                    src={"https://www.youtube.com/embed/" + id + "?autoplay=1"}
                     style={{
                       position: "absolute",
                       top: "0",

@@ -45,7 +45,7 @@ const FaqPageTemplate = ({ seo, hero, faqs }) => (
                   style={{
                     verticalAlign: "middle",
                   }}>
-                  ■
+                  &#9632;
                 </span>
                 {faq.question}
               </h4>

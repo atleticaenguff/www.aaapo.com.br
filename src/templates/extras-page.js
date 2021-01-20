@@ -72,6 +72,10 @@ export const ExtrasPageQuery = graphql`
         soundcloud {
           title
           subtitle
+          button {
+            url
+            title
+          }
         }
       }
     }

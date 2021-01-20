@@ -30,4 +30,7 @@ features:
 soundcloud:
   title: Entre no ritmo da Dragões
   subtitle: Acompanhe os maiores sucessos da torcida Dragões da UFF e se prepare para dar um show na arquibancada.
+  button:
+    url: https://soundcloud.com/atleticaenguff/sets/dragoes-da-uff-medleys
+    title: Ouvir no SoundCloud
 ---

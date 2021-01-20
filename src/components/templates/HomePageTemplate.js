@@ -41,7 +41,7 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
               </Link>
             </div>
             <div className="column" style={{ textAlign: "-webkit-center" }}>
-              <VideoModal thumbnail={hero.thumbnail} url={hero.url} />
+              <VideoModal thumbnail={hero.thumbnail} id={hero.id} />
             </div>
           </div>
         </div>
@@ -278,7 +278,7 @@ HomePageTemplate.propTypes = {
     subtitle: PropTypes.string,
     button: PropTypes.string,
     thumbnail: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    url: PropTypes.string,
+    id: PropTypes.string,
   }),
   about: PropTypes.shape({
     uppertitle: PropTypes.string,
