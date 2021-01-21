@@ -11,7 +11,7 @@ class AnnouncementBar extends Component {
     fetch(
       "https://sheets.googleapis.com/v4/spreadsheets/" +
         googleSheetsAPI.spreadsheetId +
-        "/values/Sheet1!A1:B5?key=" +
+        "/values/Página1!A1:B5?key=" +
         googleSheetsAPI.key
     )
       .then((response) => {
@@ -45,7 +45,7 @@ class AnnouncementBar extends Component {
           loading === true || isHidden === "TRUE" ? "is-hidden" : null
         }>
         <div
-          className={"has-text-white py-4 px-4"}
+          className={"has-text-white p-4"}
           style={{
             backgroundColor: "#262626",
           }}>
@@ -53,7 +53,7 @@ class AnnouncementBar extends Component {
             {loading ? (
               <>&nbsp;</>
             ) : (
-              <div className="is-flex is-align-items-center is-justify-content-center">
+              <div className="has-text-centered is-flex is-align-items-center is-justify-content-center">
                 <p className="has-text-weight-semibold">{content}</p>
                 <span
                   className={isHiddenLink === "TRUE" ? "is-hidden" : "is-flex"}>
