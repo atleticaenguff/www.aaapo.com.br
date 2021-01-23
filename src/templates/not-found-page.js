@@ -35,7 +35,10 @@ export const NotFoundPageQuery = graphql`
         hero {
           title
           subtitle
-          button
+          button {
+            url
+            title
+          }
         }
       }
     }

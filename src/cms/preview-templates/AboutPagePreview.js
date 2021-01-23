@@ -25,8 +25,8 @@ const AboutPagePreview = ({ entry, getAsset }) => {
       }}
       achievement={{
         title: entry.getIn(["data", "achievement", "title"]),
+        years: [years],
       }}
-      years={years}
     />
   )
 }

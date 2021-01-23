@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import PreviewCompatibleImage from "../../components/PreviewCompatibleImage"
 import AwardsCollapse from "../AwardsCollapse"
 
-const AboutPageTemplate = ({ seo, hero, history, achievement, years }) => (
+const AboutPageTemplate = ({ seo, hero, history, achievement }) => (
   <>
     <Helmet>
       <title>{seo.meta_title}</title>
@@ -67,7 +67,7 @@ const AboutPageTemplate = ({ seo, hero, history, achievement, years }) => (
           {achievement.title}
         </h2>
         <div className="columns is-multiline is-mobile">
-          {years.map((year, id) => (
+          {achievement.years.map((year, id) => (
             <div
               className="column is-3-desktop is-6-tablet is-12-mobile"
               key={id}>
@@ -113,22 +113,22 @@ AboutPageTemplate.propTypes = {
   }),
   achievement: PropTypes.shape({
     title: PropTypes.string,
+    years: PropTypes.arrayOf(
+      PropTypes.shape({
+        number: PropTypes.string,
+        competitions: PropTypes.arrayOf(
+          PropTypes.shape({
+            title: PropTypes.string,
+            awards: PropTypes.arrayOf(
+              PropTypes.shape({
+                title: PropTypes.string,
+              })
+            ),
+          })
+        ),
+      })
+    ),
   }),
-  years: PropTypes.arrayOf(
-    PropTypes.shape({
-      number: PropTypes.string,
-      competitions: PropTypes.arrayOf(
-        PropTypes.shape({
-          title: PropTypes.string,
-          awards: PropTypes.arrayOf(
-            PropTypes.shape({
-              title: PropTypes.string,
-            })
-          ),
-        })
-      ),
-    })
-  ),
 }
 
 export default AboutPageTemplate

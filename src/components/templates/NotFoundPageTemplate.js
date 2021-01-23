@@ -23,8 +23,10 @@ const NotFoundPageTemplate = ({ seo, hero }) => (
           <p className="subtitle is-size-6-mobile has-text-weight-medium">
             {hero.subtitle}
           </p>
-          <Link className="button has-text-weight-semibold is-dark" to="/">
-            {hero.button}
+          <Link
+            className="button has-text-weight-semibold is-dark"
+            to={hero.button.url}>
+            {hero.button.title}
           </Link>
         </div>
       </div>
@@ -40,7 +42,10 @@ NotFoundPageTemplate.propTypes = {
   hero: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
-    button: PropTypes.string,
+    button: PropTypes.shape({
+      url: PropTypes.string,
+      title: PropTypes.string,
+    }),
   }),
 }
 

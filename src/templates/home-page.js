@@ -42,22 +42,33 @@ export const HomePageQuery = graphql`
         hero {
           title
           subtitle
-          button
-          thumbnail {
-            childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid
+          button {
+            url
+            title
+          }
+          video {
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
+            id
           }
-          id
         }
         about {
           uppertitle
           title
           subtitle
-          button1
-          button2
+          button1 {
+            url
+            title
+          }
+          button2 {
+            url
+            title
+          }
           image {
             childImageSharp {
               fluid(maxWidth: 800) {
@@ -82,13 +93,19 @@ export const HomePageQuery = graphql`
             list3
             list4
           }
-          button
+          button {
+            url
+            title
+          }
         }
         extras {
           uppertitle
           title
           subtitle
-          button
+          button {
+            url
+            title
+          }
           block1 {
             undertitle
             undersubtitle
@@ -110,8 +127,14 @@ export const HomePageQuery = graphql`
           uppertitle
           title
           subtitle
-          button1
-          button2
+          button1 {
+            url
+            title
+          }
+          button2 {
+            url
+            title
+          }
         }
       }
     }

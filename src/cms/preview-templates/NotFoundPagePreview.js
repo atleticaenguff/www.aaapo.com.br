@@ -12,7 +12,10 @@ const NotFoundPagePreview = ({ entry }) => {
       hero={{
         title: entry.getIn(["data", "hero", "title"]),
         subtitle: entry.getIn(["data", "hero", "subtitle"]),
-        button: entry.getIn(["data", "hero", "button"]),
+        button: {
+          url: entry.getIn(["data", "hero", "button", "url"]),
+          title: entry.getIn(["data", "hero", "button", "title"]),
+        },
       }}
     />
   )

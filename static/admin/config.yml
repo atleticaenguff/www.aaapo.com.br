@@ -45,9 +45,30 @@ collections:
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Subtitle", name: "subtitle", widget: text },
-                  { label: "Button", name: "button", widget: string },
-                  { label: "Thumbnail", name: "thumbnail", widget: image },
-                  { label: "ID", name: "id", widget: string },
+                  {
+                    label: "Button",
+                    name: button,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "URL", name: "url", widget: string },
+                        { label: "Title", name: "title", widget: string },
+                      ],
+                  },
+                  {
+                    label: "Video",
+                    name: video,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Thumbnail",
+                          name: "thumbnail",
+                          widget: image,
+                        },
+                        { label: "ID", name: "id", widget: string },
+                      ],
+                  },
                 ],
             }
           - {
@@ -59,8 +80,26 @@ collections:
                   { label: "Uppertitle", name: "uppertitle", widget: string },
                   { label: "Title", name: "title", widget: string },
                   { label: "Subtitle", name: "subtitle", widget: text },
-                  { label: "Button 1", name: "button1", widget: string },
-                  { label: "Button 2", name: "button2", widget: string },
+                  {
+                    label: "Button 1",
+                    name: button1,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "URL", name: "url", widget: string },
+                        { label: "Title", name: "title", widget: string },
+                      ],
+                  },
+                  {
+                    label: "Button 2",
+                    name: button2,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "URL", name: "url", widget: string },
+                        { label: "Title", name: "title", widget: string },
+                      ],
+                  },
                   { label: "Image", name: "image", widget: image },
                 ],
             }
@@ -85,7 +124,16 @@ collections:
                         { label: "List 4", name: "list4", widget: string },
                       ],
                   },
-                  { label: "Button", name: "button", widget: string },
+                  {
+                    label: "Button",
+                    name: button,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "URL", name: "url", widget: string },
+                        { label: "Title", name: "title", widget: string },
+                      ],
+                  },
                 ],
             }
           - {
@@ -97,7 +145,16 @@ collections:
                   { label: "Uppertitle", name: "uppertitle", widget: string },
                   { label: "Title", name: "title", widget: string },
                   { label: "Subtitle", name: "subtitle", widget: text },
-                  { label: "Button", name: "button", widget: string },
+                  {
+                    label: "Button",
+                    name: button,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "URL", name: "url", widget: string },
+                        { label: "Title", name: "title", widget: string },
+                      ],
+                  },
                   {
                     label: Block1,
                     name: block1,
@@ -181,8 +238,26 @@ collections:
                   { label: "Uppertitle", name: "uppertitle", widget: string },
                   { label: "Title", name: "title", widget: string },
                   { label: "Subtitle", name: "subtitle", widget: text },
-                  { label: "Button 1", name: "button1", widget: string },
-                  { label: "Button 2", name: "button2", widget: string },
+                  {
+                    label: "Button 1",
+                    name: button1,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "URL", name: "url", widget: string },
+                        { label: "Title", name: "title", widget: string },
+                      ],
+                  },
+                  {
+                    label: "Button 2",
+                    name: button2,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "URL", name: "url", widget: string },
+                        { label: "Title", name: "title", widget: string },
+                      ],
+                  },
                 ],
             }
       - file: "src/pages/about.md"
@@ -216,9 +291,7 @@ collections:
               fields:
                 [
                   { label: "Title", name: "title", widget: string },
-                  { label: "Subtitle 1", name: "subtitle1", widget: text },
-                  { label: "Subtitle 2", name: "subtitle2", widget: text },
-                  { label: "Subtitle 3", name: "subtitle3", widget: text },
+                  { label: "Subtitle", name: "subtitle", widget: text },
                 ],
             }
           - {
@@ -229,37 +302,53 @@ collections:
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Image", name: "image", widget: image },
-                  { label: "Subtitle", name: "subtitle", widget: text },
+                  { label: "Subtitle 1", name: "subtitle1", widget: text },
+                  { label: "Subtitle 2", name: "subtitle2", widget: text },
+                  { label: "Subtitle 3", name: "subtitle3", widget: text },
                 ],
             }
           - {
               label: Achievement,
               name: achievement,
               widget: object,
-              fields: [{ label: "Title", name: "title", widget: string }],
-            }
-          - {
-              label: Years,
-              name: years,
-              widget: list,
               fields:
                 [
-                  { label: Number, name: number, widget: string, default: "" },
+                  { label: "Title", name: "title", widget: string },
                   {
-                    label: Competitions,
-                    name: competitions,
+                    label: Years,
+                    name: years,
                     widget: list,
-                    default: [{ title: "" }],
                     fields:
                       [
-                        { label: Title, name: title, widget: string },
                         {
-                          label: Awards,
-                          name: awards,
+                          label: Number,
+                          name: number,
+                          widget: string,
+                          default: "",
+                        },
+                        {
+                          label: Competitions,
+                          name: competitions,
                           widget: list,
                           default: [{ title: "" }],
                           fields:
-                            [{ label: Title, name: title, widget: string }],
+                            [
+                              { label: Title, name: title, widget: string },
+                              {
+                                label: Awards,
+                                name: awards,
+                                widget: list,
+                                default: [{ title: "" }],
+                                fields:
+                                  [
+                                    {
+                                      label: Title,
+                                      name: title,
+                                      widget: string,
+                                    },
+                                  ],
+                              },
+                            ],
                         },
                       ],
                   },
@@ -727,7 +816,16 @@ collections:
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Subtitle", name: "subtitle", widget: text },
-                  { label: "Button", name: "button", widget: string },
+                  {
+                    label: "Button",
+                    name: button,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "URL", name: "url", widget: string },
+                        { label: "Title", name: "title", widget: string },
+                      ],
+                  },
                 ],
             }
       - file: "src/pages/transparency.md"

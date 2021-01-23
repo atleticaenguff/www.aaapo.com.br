@@ -14,7 +14,6 @@ const AboutPage = ({ data }) => {
         hero={frontmatter.hero}
         history={frontmatter.history}
         achievement={frontmatter.achievement}
-        years={frontmatter.years}
       />
     </Layout>
   )
@@ -57,13 +56,13 @@ export const AboutPageQuery = graphql`
         }
         achievement {
           title
-        }
-        years {
-          number
-          competitions {
-            title
-            awards {
+          years {
+            number
+            competitions {
               title
+              awards {
+                title
+              }
             }
           }
         }

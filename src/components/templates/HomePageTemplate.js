@@ -36,12 +36,12 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
               </p>
               <Link
                 className="button has-text-weight-semibold is-dark"
-                to="/about">
-                {hero.button}
+                to={hero.button.url}>
+                {hero.button.title}
               </Link>
             </div>
             <div className="column" style={{ textAlign: "-webkit-center" }}>
-              <VideoModal thumbnail={hero.thumbnail} id={hero.id} />
+              <VideoModal thumbnail={hero.video.thumbnail} id={hero.video.id} />
             </div>
           </div>
         </div>
@@ -64,15 +64,15 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
               <p className="control">
                 <Link
                   className="button has-text-weight-semibold is-primary"
-                  to="/about">
-                  {about.button1}
+                  to={about.button1.url}>
+                  {about.button1.title}
                 </Link>
               </p>
               <p className="control">
                 <Link
                   className="button has-text-weight-semibold is-dark is-outlined"
-                  to="/about#awards">
-                  {about.button2}
+                  to={about.button2.url}>
+                  {about.button2.title}
                 </Link>
               </p>
             </div>
@@ -152,8 +152,8 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
             </ul>
             <Link
               className="button has-text-weight-semibold is-primary mt-4"
-              to="/modalities">
-              {modalities.button}
+              to={modalities.button.url}>
+              {modalities.button.title}
             </Link>
           </div>
         </div>
@@ -174,8 +174,8 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
             </p>
             <Link
               className="button has-text-weight-semibold is-primary"
-              to="/extras">
-              {extras.button}
+              to={extras.button.url}>
+              {extras.button.title}
             </Link>
           </div>
           <div className="column is-5 is-offset-2">
@@ -236,29 +236,29 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
             <div className="buttons is-hidden-tablet">
               <a
                 className="button has-text-weight-semibold is-primary"
-                href="https://aaapo-teste.lojaintegrada.com.br">
-                {store.button1}
+                href={store.button1.url}>
+                {store.button1.title}
               </a>
               <a
                 className="button has-text-weight-semibold is-dark is-outlined"
-                href="https://atleticaenguff.eventbrite.com"
+                href={store.button2.url}
                 rel="noreferrer"
                 target="_blank">
-                {store.button2}
+                {store.button2.title}
               </a>
             </div>
             <div className="buttons is-right is-hidden-mobile">
               <a
                 className="button has-text-weight-semibold is-primary"
-                href="https://aaapo-teste.lojaintegrada.com.br">
-                {store.button1}
+                href={store.button1.url}>
+                {store.button1.title}
               </a>
               <a
                 className="button has-text-weight-semibold is-dark is-outlined"
-                href="https://atleticaenguff.eventbrite.com"
+                href={store.button2.url}
                 rel="noreferrer"
                 target="_blank">
-                {store.button2}
+                {store.button2.title}
               </a>
             </div>
           </div>
@@ -276,16 +276,27 @@ HomePageTemplate.propTypes = {
   hero: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
-    button: PropTypes.string,
-    thumbnail: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    id: PropTypes.string,
+    button: PropTypes.shape({
+      url: PropTypes.string,
+      title: PropTypes.string,
+    }),
+    video: PropTypes.shape({
+      thumbnail: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      id: PropTypes.string,
+    }),
   }),
   about: PropTypes.shape({
     uppertitle: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,
-    button1: PropTypes.string,
-    button2: PropTypes.string,
+    button1: PropTypes.shape({
+      url: PropTypes.string,
+      title: PropTypes.string,
+    }),
+    button2: PropTypes.shape({
+      url: PropTypes.string,
+      title: PropTypes.string,
+    }),
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
   modalities: PropTypes.shape({
@@ -298,13 +309,19 @@ HomePageTemplate.propTypes = {
       list3: PropTypes.string,
       list4: PropTypes.string,
     }),
-    button: PropTypes.string,
+    button: PropTypes.shape({
+      url: PropTypes.string,
+      title: PropTypes.string,
+    }),
   }),
   extras: PropTypes.shape({
     uppertitle: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,
-    button: PropTypes.string,
+    button: PropTypes.shape({
+      url: PropTypes.string,
+      title: PropTypes.string,
+    }),
     block1: PropTypes.shape({
       undertitle: PropTypes.string,
       undersubtitle: PropTypes.string,
@@ -326,8 +343,14 @@ HomePageTemplate.propTypes = {
     uppertitle: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,
-    button1: PropTypes.string,
-    button2: PropTypes.string,
+    button1: PropTypes.shape({
+      url: PropTypes.string,
+      title: PropTypes.string,
+    }),
+    button2: PropTypes.shape({
+      url: PropTypes.string,
+      title: PropTypes.string,
+    }),
   }),
 }
 
