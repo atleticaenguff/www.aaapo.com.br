@@ -42,10 +42,10 @@ const HomePagePreview = ({ entry, getAsset }) => {
         uppertitle: entry.getIn(["data", "modalities", "uppertitle"]),
         title: entry.getIn(["data", "modalities", "title"]),
         list: {
-          list1: entry.getIn(["data", "modalities", "list", "list1"]),
-          list2: entry.getIn(["data", "modalities", "list", "list2"]),
-          list3: entry.getIn(["data", "modalities", "list", "list3"]),
-          list4: entry.getIn(["data", "modalities", "list", "list4"]),
+          list1: entry.getIn(["data", "modalities", "list", "item1"]),
+          list2: entry.getIn(["data", "modalities", "list", "item2"]),
+          list3: entry.getIn(["data", "modalities", "list", "item3"]),
+          list4: entry.getIn(["data", "modalities", "list", "item4"]),
         },
         button: {
           url: entry.getIn(["data", "modalities", "button", "url"]),

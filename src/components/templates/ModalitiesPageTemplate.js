@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import PropTypes from "prop-types"
 import ModalitiesCollapse from "../ModalitiesCollapse"
 
-const ModalitiesPageTemplate = ({ seo, hero, history, collapses }) => (
+const ModalitiesPageTemplate = ({ seo, hero, modalities }) => (
   <>
     <Helmet>
       <title>{seo.meta_title}</title>
@@ -40,15 +40,15 @@ const ModalitiesPageTemplate = ({ seo, hero, history, collapses }) => (
         <div className="columns">
           <div className="column is-8">
             <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
-              {history.title}
+              {modalities.title}
             </h2>
             <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
-              {history.subtitle}
+              {modalities.subtitle}
             </p>
           </div>
         </div>
         <div className="columns is-multiline">
-          {collapses.map((collapse, id) => (
+          {modalities.collapses.map((collapse, id) => (
             <ModalitiesCollapse title={collapse.title} key={id}>
               <div className="block mb-4">
                 <h6 className="title is-6 has-text-weight-bold is-spaced has-text-black mb-2">
@@ -178,48 +178,48 @@ ModalitiesPageTemplate.propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
   }),
-  history: PropTypes.shape({
+  modalities: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
+    collapses: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string,
+        days: PropTypes.shape({
+          days1: PropTypes.string,
+          days2: PropTypes.string,
+          days3: PropTypes.string,
+        }),
+        addresses: PropTypes.shape({
+          address1: PropTypes.shape({
+            url: PropTypes.string,
+            address: PropTypes.string,
+          }),
+          address2: PropTypes.shape({
+            url: PropTypes.string,
+            address: PropTypes.string,
+          }),
+          address3: PropTypes.shape({
+            url: PropTypes.string,
+            address: PropTypes.string,
+          }),
+        }),
+        people: PropTypes.shape({
+          person1: PropTypes.shape({
+            name: PropTypes.string,
+            phone: PropTypes.string,
+          }),
+          person2: PropTypes.shape({
+            name: PropTypes.string,
+            phone: PropTypes.string,
+          }),
+          person3: PropTypes.shape({
+            name: PropTypes.string,
+            phone: PropTypes.string,
+          }),
+        }),
+      })
+    ),
   }),
-  collapses: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string,
-      days: PropTypes.shape({
-        days1: PropTypes.string,
-        days2: PropTypes.string,
-        days3: PropTypes.string,
-      }),
-      addresses: PropTypes.shape({
-        address1: PropTypes.shape({
-          url: PropTypes.string,
-          address: PropTypes.string,
-        }),
-        address2: PropTypes.shape({
-          url: PropTypes.string,
-          address: PropTypes.string,
-        }),
-        address3: PropTypes.shape({
-          url: PropTypes.string,
-          address: PropTypes.string,
-        }),
-      }),
-      people: PropTypes.shape({
-        person1: PropTypes.shape({
-          name: PropTypes.string,
-          phone: PropTypes.string,
-        }),
-        person2: PropTypes.shape({
-          name: PropTypes.string,
-          phone: PropTypes.string,
-        }),
-        person3: PropTypes.shape({
-          name: PropTypes.string,
-          phone: PropTypes.string,
-        }),
-      }),
-    })
-  ),
 }
 
 export default ModalitiesPageTemplate

@@ -110,7 +110,7 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
                   />
                 </span>
                 <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
-                  {modalities.list.list1}
+                  {modalities.list.item1}
                 </p>
               </li>
               <li className="is-flex is-align-items-center mb-2">
@@ -122,7 +122,7 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
                   />
                 </span>
                 <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
-                  {modalities.list.list2}
+                  {modalities.list.item2}
                 </p>
               </li>
               <li className="is-flex is-align-items-center mb-2">
@@ -134,7 +134,7 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
                   />
                 </span>
                 <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
-                  {modalities.list.list3}
+                  {modalities.list.item3}
                 </p>
               </li>
               <li className="is-flex is-align-items-center mb-2">
@@ -146,7 +146,7 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
                   />
                 </span>
                 <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
-                  {modalities.list.list4}
+                  {modalities.list.item4}
                 </p>
               </li>
             </ul>
@@ -304,10 +304,10 @@ HomePageTemplate.propTypes = {
     uppertitle: PropTypes.string,
     title: PropTypes.string,
     list: PropTypes.shape({
-      list1: PropTypes.string,
-      list2: PropTypes.string,
-      list3: PropTypes.string,
-      list4: PropTypes.string,
+      item1: PropTypes.string,
+      item2: PropTypes.string,
+      item3: PropTypes.string,
+      item4: PropTypes.string,
     }),
     button: PropTypes.shape({
       url: PropTypes.string,

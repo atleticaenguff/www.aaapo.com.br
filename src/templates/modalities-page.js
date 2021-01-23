@@ -12,8 +12,7 @@ const ModalitiesPage = ({ data }) => {
       <ModalitiesPageTemplate
         seo={frontmatter.seo}
         hero={frontmatter.hero}
-        history={frontmatter.history}
-        collapses={frontmatter.collapses}
+        modalities={frontmatter.modalities}
       />
     </Layout>
   )
@@ -41,43 +40,43 @@ export const ModalitiesPageQuery = graphql`
           title
           subtitle
         }
-        history {
+        modalities {
           title
           subtitle
-        }
-        collapses {
-          title
-          days {
-            days1
-            days2
-            days3
-          }
-          addresses {
-            address1 {
-              url
-              address
+          collapses {
+            title
+            days {
+              days1
+              days2
+              days3
             }
-            address2 {
-              url
-              address
+            addresses {
+              address1 {
+                url
+                address
+              }
+              address2 {
+                url
+                address
+              }
+              address3 {
+                url
+                address
+              }
             }
-            address3 {
-              url
-              address
-            }
-          }
-          people {
-            person1 {
-              name
-              phone
-            }
-            person2 {
-              name
-              phone
-            }
-            person3 {
-              name
-              phone
+            people {
+              person1 {
+                name
+                phone
+              }
+              person2 {
+                name
+                phone
+              }
+              person3 {
+                name
+                phone
+              }
             }
           }
         }

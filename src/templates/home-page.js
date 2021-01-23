@@ -88,10 +88,10 @@ export const HomePageQuery = graphql`
           uppertitle
           title
           list {
-            list1
-            list2
-            list3
-            list4
+            item1
+            item2
+            item3
+            item4
           }
           button {
             url

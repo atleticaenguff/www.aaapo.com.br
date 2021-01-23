@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from "react"
-import navigation from "../data/navigation.json"
+import navbar from "../data/navbar.json"
 import { Link } from "gatsby"
 
 const NavBar = ({ toggleNavbar, isActive }) => {
@@ -40,41 +40,41 @@ const NavBar = ({ toggleNavbar, isActive }) => {
           <div className="navbar-end">
             <Link
               className="navbar-item has-text-weight-semibold"
-              to={navigation.item1.url}
+              to={navbar.item1.url}
               style={{ backgroundColor: "transparent" }}>
-              {navigation.item1.title}
+              {navbar.item1.title}
             </Link>
             <Link
               className="navbar-item has-text-weight-semibold"
-              to={navigation.item2.url}
+              to={navbar.item2.url}
               style={{ backgroundColor: "transparent" }}>
-              {navigation.item2.title}
+              {navbar.item2.title}
             </Link>
             <Link
               className="navbar-item has-text-weight-semibold"
-              to={navigation.item3.url}
+              to={navbar.item3.url}
               style={{ backgroundColor: "transparent" }}>
-              {navigation.item3.title}
+              {navbar.item3.title}
             </Link>
             <a
               className="navbar-item has-text-weight-semibold"
-              href={navigation.item4.url}
+              href={navbar.item4.url}
               rel="noreferrer"
               target="_blank"
               style={{ backgroundColor: "transparent" }}>
-              {navigation.item4.title}
+              {navbar.item4.title}
             </a>
             <Link
               className="navbar-item has-text-weight-semibold"
-              to={navigation.item5.url}
+              to={navbar.item5.url}
               style={{ backgroundColor: "transparent" }}>
-              {navigation.item5.title}
+              {navbar.item5.title}
             </Link>
             <div className="navbar-item">
               <a
                 className="button has-text-weight-semibold is-dark"
-                href={navigation.item6.url}>
-                {navigation.item6.title}
+                href={navbar.item6.url}>
+                {navbar.item6.title}
               </a>
             </div>
           </div>

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import ModalitiesPageTemplate from "../../components/templates/ModalitiesPageTemplate"
 
 const ModalitiesPagePreview = ({ entry }) => {
-  const entryCollapses = entry.getIn(["data", "collapses"])
+  const entryCollapses = entry.getIn(["data", "modalities", "collapses"])
   const collapses = entryCollapses ? entryCollapses.toJS() : []
 
   return (
@@ -16,11 +16,11 @@ const ModalitiesPagePreview = ({ entry }) => {
         title: entry.getIn(["data", "hero", "title"]),
         subtitle: entry.getIn(["data", "hero", "subtitle"]),
       }}
-      history={{
-        title: entry.getIn(["data", "history", "title"]),
-        subtitle: entry.getIn(["data", "history", "subtitle"]),
+      modalities={{
+        title: entry.getIn(["data", "modalities", "title"]),
+        subtitle: entry.getIn(["data", "modalities", "subtitle"]),
+        collapses: [collapses],
       }}
-      collapses={collapses}
     />
   )
 }

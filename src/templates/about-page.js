@@ -13,7 +13,7 @@ const AboutPage = ({ data }) => {
         seo={frontmatter.seo}
         hero={frontmatter.hero}
         history={frontmatter.history}
-        achievement={frontmatter.achievement}
+        achievements={frontmatter.achievements}
       />
     </Layout>
   )
@@ -50,11 +50,13 @@ export const AboutPageQuery = graphql`
               }
             }
           }
-          subtitle1
-          subtitle2
-          subtitle3
+          subtitle {
+            paragraph1
+            paragraph2
+            paragraph3
+          }
         }
-        achievement {
+        achievements {
           title
           years {
             number

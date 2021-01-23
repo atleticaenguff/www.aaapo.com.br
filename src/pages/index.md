@@ -28,10 +28,10 @@ modalities:
   uppertitle: Modalidades
   title: Vivemos o esporte
   list:
-    list1: Treinos gratuitos
-    list2: Infraestrutura de excelência
-    list3: Ajuda no estresse da faculdade
-    list4: E muito mais...
+    item1: Treinos gratuitos
+    item2: Infraestrutura de excelência
+    item3: Ajuda no estresse da faculdade
+    item4: E muito mais...
   button:
     url: /modalities
     title: Saiba mais

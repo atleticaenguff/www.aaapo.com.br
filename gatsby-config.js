@@ -1,5 +1,6 @@
 const seo = require("./src/data/seo.json")
-const googleTagManager = require("./src/data/google-tag-manager.json")
+const analytics = require("./src/data/analytics.json")
+const tagManagers = require("./src/data/tag-managers.json")
 const manifest = require("./src/data/manifest.json")
 
 module.exports = {
@@ -64,15 +65,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-hotjar`,
       options: {
-        includeInDevelopment: false, // optional parameter to include script in development
-        id: 2187747,
-        sv: 6,
+        includeInDevelopment: false,
+        id: analytics.hotjar.id,
+        sv: analytics.hotjar.sv,
       },
     },
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        id: googleTagManager.id,
+        id: tagManagers.googleTagManager.id,
         includeInDevelopment: false,
         defaultDataLayer: { platform: "gatsby" },
       },
@@ -95,7 +96,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-react-leaflet",
       options: {
-        linkStyles: true, // (default: true) Enable/disable loading stylesheets via CDN
+        linkStyles: true, // enable/disable loading stylesheets via CDN
       },
     },
     {

@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import PreviewCompatibleImage from "../../components/PreviewCompatibleImage"
 import AwardsCollapse from "../AwardsCollapse"
 
-const AboutPageTemplate = ({ seo, hero, history, achievement }) => (
+const AboutPageTemplate = ({ seo, hero, history, achievements }) => (
   <>
     <Helmet>
       <title>{seo.meta_title}</title>
@@ -49,13 +49,13 @@ const AboutPageTemplate = ({ seo, hero, history, achievement }) => (
           </div>
           <div className="column is-8">
             <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
-              {history.subtitle1}
+              {history.subtitle.paragraph1}
             </p>
             <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
-              {history.subtitle2}
+              {history.subtitle.paragraph2}
             </p>
             <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
-              {history.subtitle3}
+              {history.subtitle.paragraph3}
             </p>
           </div>
         </div>
@@ -64,10 +64,10 @@ const AboutPageTemplate = ({ seo, hero, history, achievement }) => (
     <section id="awards" className="section has-background-light">
       <div className="container">
         <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
-          {achievement.title}
+          {achievements.title}
         </h2>
         <div className="columns is-multiline is-mobile">
-          {achievement.years.map((year, id) => (
+          {achievements.years.map((year, id) => (
             <div
               className="column is-3-desktop is-6-tablet is-12-mobile"
               key={id}>
@@ -107,11 +107,13 @@ AboutPageTemplate.propTypes = {
   history: PropTypes.shape({
     title: PropTypes.string,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    subtitle1: PropTypes.string,
-    subtitle2: PropTypes.string,
-    subtitle3: PropTypes.string,
+    subtitle: PropTypes.shape({
+      paragraph1: PropTypes.string,
+      paragraph2: PropTypes.string,
+      paragraph3: PropTypes.string,
+    }),
   }),
-  achievement: PropTypes.shape({
+  achievements: PropTypes.shape({
     title: PropTypes.string,
     years: PropTypes.arrayOf(
       PropTypes.shape({

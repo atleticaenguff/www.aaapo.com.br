@@ -1,6 +1,5 @@
 import React from "react"
-import social from "../data/social.json"
-import copyright from "../data/copyright.json"
+import footer from "../data/footer.json"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -11,6 +10,8 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
 
+const localTimeYear = new Date().getFullYear()
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -18,7 +19,10 @@ const Footer = () => {
         <div className="content">
           <div className="has-text-centered">
             <span className="icon is-large mr-2">
-              <a href={social.facebook.url} rel="noreferrer" target="_blank">
+              <a
+                href={footer.social.facebook.url}
+                rel="noreferrer"
+                target="_blank">
                 <FontAwesomeIcon
                   icon={faFacebook}
                   size="2x"
@@ -28,7 +32,10 @@ const Footer = () => {
               </a>
             </span>
             <span className="icon is-large mx-2">
-              <a href={social.twitter.url} rel="noreferrer" target="_blank">
+              <a
+                href={footer.social.twitter.url}
+                rel="noreferrer"
+                target="_blank">
                 <FontAwesomeIcon
                   icon={faTwitter}
                   size="2x"
@@ -38,7 +45,10 @@ const Footer = () => {
               </a>
             </span>
             <span className="icon is-large mx-2">
-              <a href={social.instagram.url} rel="noreferrer" target="_blank">
+              <a
+                href={footer.social.instagram.url}
+                rel="noreferrer"
+                target="_blank">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   size="2x"
@@ -48,7 +58,10 @@ const Footer = () => {
               </a>
             </span>
             <span className="icon is-large mx-2">
-              <a href={social.youtube.url} rel="noreferrer" target="_blank">
+              <a
+                href={footer.social.youtube.url}
+                rel="noreferrer"
+                target="_blank">
                 <FontAwesomeIcon
                   icon={faYoutube}
                   size="2x"
@@ -58,7 +71,10 @@ const Footer = () => {
               </a>
             </span>
             <span className="icon is-large mx-2">
-              <a href={social.linkedin.url} rel="noreferrer" target="_blank">
+              <a
+                href={footer.social.linkedin.url}
+                rel="noreferrer"
+                target="_blank">
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   size="2x"
@@ -72,7 +88,7 @@ const Footer = () => {
               style={{ verticalAlign: "top" }}>
               <a
                 className="has-text-weight-semibold has-text-white"
-                href={social.more.url}
+                href={footer.social.more.url}
                 rel="noreferrer"
                 target="_blank">
                 mais
@@ -83,9 +99,9 @@ const Footer = () => {
           <div className="columns is-vcentered">
             <div className="column has-text-centered-mobile">
               <p className="has-text-weight-regular is-marginless">
-                © {copyright.year}{" "}
+                © {localTimeYear + " "}
                 <span className="has-text-weight-semibold">
-                  {copyright.name}
+                  {footer.copyright.name}
                 </span>
               </p>
               <p className="has-text-regular">Todos direitos reservados</p>
