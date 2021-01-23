@@ -134,7 +134,7 @@ const ExtrasPageTemplate = ({ seo, hero, features, soundcloud }) => (
               scrolling="no"
               frameBorder="no"
               allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/838307240&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              src={soundcloud.src}></iframe>
           </div>
         </div>
       </div>
@@ -186,6 +186,7 @@ ExtrasPageTemplate.propTypes = {
       url: PropTypes.string,
       title: PropTypes.string,
     }),
+    src: PropTypes.string,
   }),
 }
 

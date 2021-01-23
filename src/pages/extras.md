@@ -33,4 +33,5 @@ soundcloud:
   button:
     url: https://soundcloud.com/atleticaenguff/sets/dragoes-da-uff-medleys
     title: Ouvir no SoundCloud
+  src: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/838307240&color=%23262626&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
 ---

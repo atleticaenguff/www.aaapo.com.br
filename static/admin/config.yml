@@ -659,7 +659,18 @@ collections:
               fields:
                 [
                   { label: "Title", name: "title", widget: string },
-                  { label: "Subitle", name: "subtitle", widget: string },
+                  { label: "Subtitle", name: "subtitle", widget: string },
+                  {
+                    label: "Button",
+                    name: button,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "URL", name: "url", widget: string },
+                        { label: "Title", name: "title", widget: string },
+                      ],
+                  },
+                  { label: "SRC", name: "src", widget: string },
                 ],
             }
       - file: "src/pages/contact.md"

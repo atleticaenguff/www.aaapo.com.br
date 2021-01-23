@@ -76,6 +76,7 @@ export const ExtrasPageQuery = graphql`
             url
             title
           }
+          src
         }
       }
     }

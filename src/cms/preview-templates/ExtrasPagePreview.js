@@ -66,6 +66,7 @@ const ExtrasPagePreview = ({ entry }) => {
           url: entry.getIn(["data", "soundcloud", "button", "url"]),
           title: entry.getIn(["data", "soundcloud", "button", "title"]),
         },
+        src: entry.getIn(["data", "soundcloud", "src"]),
       }}
     />
   )
