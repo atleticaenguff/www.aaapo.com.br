@@ -61,7 +61,7 @@ const AboutPageTemplate = ({ seo, hero, history, achievements }) => (
         </div>
       </div>
     </section>
-    <section id="awards" className="section has-background-light">
+    <section id="conquistas" className="section has-background-light">
       <div className="container">
         <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
           {achievements.title}

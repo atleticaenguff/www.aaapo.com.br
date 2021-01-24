@@ -7,7 +7,7 @@ hero:
   title: A Guide to Rocky Mountain Vacations
   subtitle: Somos a AAAPO - Atlética Engenharia UFF. Investindo no esporte universitário desde 2011.
   button:
-    url: /about
+    url: /sobre
     title: Conheça mais
   video:
     thumbnail: /images/photo1.png
@@ -17,10 +17,10 @@ about:
   title: Quem somos?
   subtitle: Acreditamos no poder de transformação do esporte e na sua importância para uma vida saudável. Aqui, todos são bem-vindos!
   button1:
-    url: /about
+    url: /sobre
     title: Saiba mais
   button2:
-    url: /about#awards
+    url: /sobre#conquistas
     title: Ver conquistas
   image: /images/photo2.png
 modalities:
@@ -33,7 +33,7 @@ modalities:
     item3: Ajuda no estresse da faculdade
     item4: E muito mais...
   button:
-    url: /modalities
+    url: /modalidades
     title: Saiba mais
 extras:
   uppertitle: Extras

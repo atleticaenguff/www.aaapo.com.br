@@ -1,11 +1,11 @@
 {
   "item1": {
     "title": "Sobre",
-    "url": "/about"
+    "url": "/sobre"
   },
   "item2": {
     "title": "Modalidades",
-    "url": "/modalities"
+    "url": "/modalidades"
   },
   "item3": {
     "title": "Extras",
@@ -17,7 +17,7 @@
   },
   "item5": {
     "title": "Contato",
-    "url": "/contact"
+    "url": "/contato"
   },
   "item6": {
     "title": "Loja",

@@ -111,7 +111,7 @@ const Footer = () => {
                 FAQ
               </Link>
               <span>&#8231;</span>
-              <Link className="has-text-white ml-1" to="/transparency">
+              <Link className="has-text-white ml-1" to="/transparencia">
                 Transparência
               </Link>
             </div>
