@@ -261,8 +261,8 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/about.md"
-        label: "About"
+      - file: "src/pages/sobre.md"
+        label: "Sobre"
         name: "about"
         fields:
           - {
@@ -375,8 +375,8 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/modalities.md"
-        label: "Modalities"
+      - file: "src/pages/modalidades.md"
+        label: "Modalidades"
         name: "modalities"
         fields:
           - {
@@ -702,8 +702,8 @@ collections:
                   { label: "SRC", name: "src", widget: string },
                 ],
             }
-      - file: "src/pages/contact.md"
-        label: "Contact"
+      - file: "src/pages/contato.md"
+        label: "Contato"
         name: "contact"
         fields:
           - {
@@ -824,8 +824,8 @@ collections:
                   { label: Answer, name: answer, widget: string },
                 ],
             }
-      - file: "src/pages/transparency.md"
-        label: "Transparency"
+      - file: "src/pages/transparencia.md"
+        label: "Transparência"
         name: "transparency"
         fields:
           - {
