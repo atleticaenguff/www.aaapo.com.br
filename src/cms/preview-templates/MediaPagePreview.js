@@ -1,10 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
-import ExtrasPageTemplate from "../../components/templates/ExtrasPageTemplate"
+import MediaPageTemplate from "../../components/templates/MediaPageTemplate"
 
-const ExtrasPagePreview = ({ entry }) => {
+const MediaPagePreview = ({ entry }) => {
   return (
-    <ExtrasPageTemplate
+    <MediaPageTemplate
       seo={{
         meta_title: entry.getIn(["data", "seo", "meta_title"]),
         meta_description: entry.getIn(["data", "seo", "meta_description"]),
@@ -72,10 +72,10 @@ const ExtrasPagePreview = ({ entry }) => {
   )
 }
 
-ExtrasPagePreview.propTypes = {
+MediaPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
 }
 
-export default ExtrasPagePreview
+export default MediaPagePreview

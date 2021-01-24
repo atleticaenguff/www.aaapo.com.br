@@ -1,10 +1,10 @@
 ---
-templateKey: extras-page
+templateKey: media-page
 seo:
-  meta_title: Extras | Atlética Engenharia UFF
+  meta_title: Mídia | Atlética Engenharia UFF
   meta_description: Site oficial da Associação Atlética Acadêmica Pio Orlando - Atlética Engenharia UFF.
 hero:
-  title: Extras
+  title: Mídia
   subtitle: Explore alguns dos pequenos mimos que preparamos pra vocês.
 features:
   title: Vista as nossas cores

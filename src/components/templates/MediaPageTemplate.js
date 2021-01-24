@@ -3,7 +3,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import PropTypes from "prop-types"
 
-const ExtrasPageTemplate = ({ seo, hero, features, soundcloud }) => (
+const MediaPageTemplate = ({ seo, hero, features, soundcloud }) => (
   <>
     <Helmet>
       <title>{seo.meta_title}</title>
@@ -142,7 +142,7 @@ const ExtrasPageTemplate = ({ seo, hero, features, soundcloud }) => (
   </>
 )
 
-ExtrasPageTemplate.propTypes = {
+MediaPageTemplate.propTypes = {
   seo: PropTypes.shape({
     meta_title: PropTypes.string,
     meta_description: PropTypes.string,
@@ -190,4 +190,4 @@ ExtrasPageTemplate.propTypes = {
   }),
 }
 
-export default ExtrasPageTemplate
+export default MediaPageTemplate

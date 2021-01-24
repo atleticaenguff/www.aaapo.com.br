@@ -52,46 +52,46 @@ const HomePagePreview = ({ entry, getAsset }) => {
           title: entry.getIn(["data", "modalities", "button", "title"]),
         },
       }}
-      extras={{
-        uppertitle: entry.getIn(["data", "extras", "uppertitle"]),
-        title: entry.getIn(["data", "extras", "title"]),
-        subtitle: entry.getIn(["data", "extras", "subtitle"]),
+      media={{
+        uppertitle: entry.getIn(["data", "media", "uppertitle"]),
+        title: entry.getIn(["data", "media", "title"]),
+        subtitle: entry.getIn(["data", "media", "subtitle"]),
         button: {
-          url: entry.getIn(["data", "extras", "button", "url"]),
-          title: entry.getIn(["data", "extras", "button", "title"]),
+          url: entry.getIn(["data", "media", "button", "url"]),
+          title: entry.getIn(["data", "media", "button", "title"]),
         },
         block1: {
-          undertitle: entry.getIn(["data", "extras", "block1", "undertitle"]),
+          undertitle: entry.getIn(["data", "media", "block1", "undertitle"]),
           undersubtitle: entry.getIn([
             "data",
-            "extras",
+            "media",
             "block1",
             "undersubtitle",
           ]),
         },
         block2: {
-          undertitle: entry.getIn(["data", "extras", "block2", "undertitle"]),
+          undertitle: entry.getIn(["data", "media", "block2", "undertitle"]),
           undersubtitle: entry.getIn([
             "data",
-            "extras",
+            "media",
             "block2",
             "undersubtitle",
           ]),
         },
         block3: {
-          undertitle: entry.getIn(["data", "extras", "block3", "undertitle"]),
+          undertitle: entry.getIn(["data", "media", "block3", "undertitle"]),
           undersubtitle: entry.getIn([
             "data",
-            "extras",
+            "media",
             "block3",
             "undersubtitle",
           ]),
         },
         block4: {
-          undertitle: entry.getIn(["data", "extras", "block4", "undertitle"]),
+          undertitle: entry.getIn(["data", "media", "block4", "undertitle"]),
           undersubtitle: entry.getIn([
             "data",
-            "extras",
+            "media",
             "block4",
             "undersubtitle",
           ]),

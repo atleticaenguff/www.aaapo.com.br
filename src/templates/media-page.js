@@ -2,14 +2,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import ExtrasPageTemplate from "../components/templates/ExtrasPageTemplate"
+import MediaPageTemplate from "../components/templates/MediaPageTemplate"
 
-const ExtrasPage = ({ data }) => {
+const MediaPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
-      <ExtrasPageTemplate
+      <MediaPageTemplate
         seo={frontmatter.seo}
         hero={frontmatter.hero}
         features={frontmatter.features}
@@ -19,7 +19,7 @@ const ExtrasPage = ({ data }) => {
   )
 }
 
-ExtrasPage.propTypes = {
+MediaPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -27,10 +27,10 @@ ExtrasPage.propTypes = {
   }),
 }
 
-export default ExtrasPage
+export default MediaPage
 
-export const ExtrasPageQuery = graphql`
-  query ExtrasPage($id: String!) {
+export const MediaPageQuery = graphql`
+  query MediaPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         seo {

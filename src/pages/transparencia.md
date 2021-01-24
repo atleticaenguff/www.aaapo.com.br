@@ -21,4 +21,32 @@ report2:
   button:
     url: /
     title: Report
+report3:
+  title: Report 3
+  subtitle: Maui helicopter tours are a great way to see the island from a
+    different perspective and have a fun adventure.
+  button:
+    url: /
+    title: Report
+report4:
+  title: Report 4
+  subtitle: Maui helicopter tours are a great way to see the island from a
+    different perspective and have a fun adventure.
+  button:
+    url: /
+    title: Report
+report5:
+  title: Report 5
+  subtitle: Maui helicopter tours are a great way to see the island from a
+    different perspective and have a fun adventure.
+  button:
+    url: /
+    title: Report
+report6:
+  title: Report 6
+  subtitle: Maui helicopter tours are a great way to see the island from a
+    different perspective and have a fun adventure.
+  button:
+    url: /
+    title: Report
 ---

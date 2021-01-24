@@ -14,6 +14,10 @@ const TransparencyPage = ({ data }) => {
         hero={frontmatter.hero}
         report1={frontmatter.report1}
         report2={frontmatter.report2}
+        report3={frontmatter.report2}
+        report4={frontmatter.report2}
+        report5={frontmatter.report2}
+        report6={frontmatter.report2}
       />
     </Layout>
   )
@@ -50,6 +54,38 @@ export const TransparencyPageQuery = graphql`
           }
         }
         report2 {
+          title
+          subtitle
+          button {
+            url
+            title
+          }
+        }
+        report3 {
+          title
+          subtitle
+          button {
+            url
+            title
+          }
+        }
+        report4 {
+          title
+          subtitle
+          button {
+            url
+            title
+          }
+        }
+        report5 {
+          title
+          subtitle
+          button {
+            url
+            title
+          }
+        }
+        report6 {
           title
           subtitle
           button {

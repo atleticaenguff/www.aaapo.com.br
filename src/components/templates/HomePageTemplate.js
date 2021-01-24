@@ -7,7 +7,7 @@ import PreviewCompatibleImage from "../../components/PreviewCompatibleImage"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons"
 
-const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
+const HomePageTemplate = ({ seo, hero, about, modalities, media, store }) => (
   <>
     <Helmet>
       <title>{seo.meta_title}</title>
@@ -164,52 +164,52 @@ const HomePageTemplate = ({ seo, hero, about, modalities, extras, store }) => (
         <div className="columns is-vcentered">
           <div className="column is-5">
             <p className="subtitle is-size-6-mobile has-text-weight-medium has-text-primary">
-              {extras.uppertitle}
+              {media.uppertitle}
             </p>
             <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
-              {extras.title}
+              {media.title}
             </h2>
             <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
-              {extras.subtitle}
+              {media.subtitle}
             </p>
             <Link
               className="button has-text-weight-semibold is-primary"
-              to={extras.button.url}>
-              {extras.button.title}
+              to={media.button.url}>
+              {media.button.title}
             </Link>
           </div>
           <div className="column is-5 is-offset-2">
             <div className="columns is-multiline is-mobile">
               <div className="column is-6">
                 <h4 className="title is-4 is-size-5-mobile has-text-weight-bold is-spaced has-text-dark">
-                  {extras.block1.undertitle}
+                  {media.block1.undertitle}
                 </h4>
                 <p className="subtitle is-6 has-text-weight-normal has-text-black">
-                  {extras.block1.undersubtitle}
+                  {media.block1.undersubtitle}
                 </p>
               </div>
               <div className="column is-6">
                 <h4 className="title is-4 is-size-5-mobile has-text-weight-bold is-spaced has-text-dark">
-                  {extras.block2.undertitle}
+                  {media.block2.undertitle}
                 </h4>
                 <p className="subtitle is-6 has-text-weight-normal has-text-black">
-                  {extras.block2.undersubtitle}
+                  {media.block2.undersubtitle}
                 </p>
               </div>
               <div className="column is-6">
                 <h4 className="title is-4 is-size-5-mobile has-text-weight-bold is-spaced has-text-dark">
-                  {extras.block3.undertitle}
+                  {media.block3.undertitle}
                 </h4>
                 <p className="subtitle is-6 has-text-weight-normal has-text-black">
-                  {extras.block3.undersubtitle}
+                  {media.block3.undersubtitle}
                 </p>
               </div>
               <div className="column is-6">
                 <h4 className="title is-4 is-size-5-mobile has-text-weight-bold is-spaced has-text-dark">
-                  {extras.block4.undertitle}
+                  {media.block4.undertitle}
                 </h4>
                 <p className="subtitle is-6 has-text-weight-normal has-text-black">
-                  {extras.block4.undersubtitle}
+                  {media.block4.undersubtitle}
                 </p>
               </div>
             </div>
@@ -314,7 +314,7 @@ HomePageTemplate.propTypes = {
       title: PropTypes.string,
     }),
   }),
-  extras: PropTypes.shape({
+  media: PropTypes.shape({
     uppertitle: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,

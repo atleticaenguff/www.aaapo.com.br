@@ -14,7 +14,7 @@ const HomePage = ({ data }) => {
         hero={frontmatter.hero}
         about={frontmatter.about}
         modalities={frontmatter.modalities}
-        extras={frontmatter.extras}
+        media={frontmatter.media}
         store={frontmatter.store}
       />
     </Layout>
@@ -98,7 +98,7 @@ export const HomePageQuery = graphql`
             title
           }
         }
-        extras {
+        media {
           uppertitle
           title
           subtitle
