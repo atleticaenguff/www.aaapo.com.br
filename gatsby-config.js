@@ -1,15 +1,13 @@
 const seo = require("./src/data/seo.json")
-const analytics = require("./src/data/analytics.json")
-const tagManagers = require("./src/data/tag-managers.json")
 const manifest = require("./src/data/manifest.json")
+const tagManagers = require("./src/data/tag-managers.json")
+const analytics = require("./src/data/analytics.json")
 
 module.exports = {
   siteMetadata: {
+    title: seo.title,
     siteUrl: seo.url,
-  },
-  flags: {
-    FAST_DEV: true,
-    FAST_REFRESH: true,
+    description: seo.description,
   },
   plugins: [
     {
@@ -63,22 +61,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-hotjar`,
-      options: {
-        includeInDevelopment: false,
-        id: analytics.hotjar.id,
-        sv: analytics.hotjar.sv,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-tagmanager`,
-      options: {
-        id: tagManagers.googleTagManager.id,
-        includeInDevelopment: false,
-        defaultDataLayer: { platform: "gatsby" },
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: manifest.name,
@@ -91,6 +73,22 @@ module.exports = {
         icon_options: {
           purpose: `any maskable`,
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: tagManagers.googleTagManager.id,
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: "gatsby" },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        includeInDevelopment: false,
+        id: analytics.hotjar.id,
+        sv: analytics.hotjar.sv,
       },
     },
     {
@@ -115,4 +113,8 @@ module.exports = {
       },
     },
   ],
+  flags: {
+    FAST_DEV: true,
+    FAST_REFRESH: true,
+  },
 }
