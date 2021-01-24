@@ -45,8 +45,8 @@ const TransparencyPageTemplate = ({
     </section>
     <section className="section">
       <div className="container">
-        <div className="columns">
-          <div className="column is-6">
+        <div className="columns is-multiline">
+          <div className="column is-6 mb-4">
             <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
               {report1.title}
             </h2>
@@ -61,7 +61,7 @@ const TransparencyPageTemplate = ({
               {report1.button.title}
             </a>
           </div>
-          <div className="column is-6">
+          <div className="column is-6 mb-4">
             <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
               {report2.title}
             </h2>
@@ -76,7 +76,7 @@ const TransparencyPageTemplate = ({
               {report2.button.title}
             </a>
           </div>
-          <div className="column is-6">
+          <div className="column is-6 mb-4">
             <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
               {report3.title}
             </h2>
@@ -91,7 +91,7 @@ const TransparencyPageTemplate = ({
               {report3.button.title}
             </a>
           </div>
-          <div className="column is-6">
+          <div className="column is-6 mb-4">
             <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
               {report4.title}
             </h2>
@@ -106,7 +106,7 @@ const TransparencyPageTemplate = ({
               {report4.button.title}
             </a>
           </div>
-          <div className="column is-6">
+          <div className="column is-6 mb-4">
             <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
               {report5.title}
             </h2>
@@ -121,7 +121,7 @@ const TransparencyPageTemplate = ({
               {report5.button.title}
             </a>
           </div>
-          <div className="column is-6">
+          <div className="column is-6 mb-4">
             <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
               {report6.title}
             </h2>
