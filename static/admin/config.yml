@@ -756,6 +756,16 @@ collections:
                   { label: "Title", name: "title", widget: string },
                   { label: "Subtitle", name: "subtitle", widget: text },
                   { label: "Email", name: "email", widget: string },
+                  {
+                    label: "Button",
+                    name: button,
+                    widget: object,
+                    fields:
+                      [
+                        { label: "URL", name: "url", widget: string },
+                        { label: "Title", name: "title", widget: string },
+                      ],
+                  },
                 ],
             }
           - {
@@ -859,113 +869,12 @@ collections:
                 ],
             }
           - {
-              label: "Report 1",
-              name: report1,
-              widget: object,
+              label: Reports,
+              name: reports,
+              widget: list,
               fields:
                 [
                   { label: "Title", name: "title", widget: string },
-                  { label: "Subtitle", name: "subtitle", widget: text },
-                  {
-                    label: "Button",
-                    name: button,
-                    widget: object,
-                    fields:
-                      [
-                        { label: "URL", name: "url", widget: string },
-                        { label: "Title", name: "title", widget: string },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: "Report 2",
-              name: report2,
-              widget: object,
-              fields:
-                [
-                  { label: "Title", name: "title", widget: string },
-                  { label: "Subtitle", name: "subtitle", widget: text },
-                  {
-                    label: "Button",
-                    name: button,
-                    widget: object,
-                    fields:
-                      [
-                        { label: "URL", name: "url", widget: string },
-                        { label: "Title", name: "title", widget: string },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: "Report 3",
-              name: report3,
-              widget: object,
-              fields:
-                [
-                  { label: "Title", name: "title", widget: string },
-                  { label: "Subtitle", name: "subtitle", widget: text },
-                  {
-                    label: "Button",
-                    name: button,
-                    widget: object,
-                    fields:
-                      [
-                        { label: "URL", name: "url", widget: string },
-                        { label: "Title", name: "title", widget: string },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: "Report 4",
-              name: report4,
-              widget: object,
-              fields:
-                [
-                  { label: "Title", name: "title", widget: string },
-                  { label: "Subtitle", name: "subtitle", widget: text },
-                  {
-                    label: "Button",
-                    name: button,
-                    widget: object,
-                    fields:
-                      [
-                        { label: "URL", name: "url", widget: string },
-                        { label: "Title", name: "title", widget: string },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: "Report 5",
-              name: report5,
-              widget: object,
-              fields:
-                [
-                  { label: "Title", name: "title", widget: string },
-                  { label: "Subtitle", name: "subtitle", widget: text },
-                  {
-                    label: "Button",
-                    name: button,
-                    widget: object,
-                    fields:
-                      [
-                        { label: "URL", name: "url", widget: string },
-                        { label: "Title", name: "title", widget: string },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: "Report 6",
-              name: report6,
-              widget: object,
-              fields:
-                [
-                  { label: "Title", name: "title", widget: string },
-                  { label: "Subtitle", name: "subtitle", widget: text },
                   {
                     label: "Button",
                     name: button,

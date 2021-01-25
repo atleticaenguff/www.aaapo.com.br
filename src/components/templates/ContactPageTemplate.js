@@ -64,6 +64,15 @@ const ContactPageTemplate = ({ seo, hero, contact1, contact2, local, map }) => (
                 href={"mailto:" + contact2.email}>
                 {contact2.email}
               </a>
+              <p className="buttons mt-4">
+                <a
+                  class="button is-small has-text-weight-semibold is-outlined is-dark"
+                  href={contact2.button.title}
+                  rel="noreferrer"
+                  target="_blank">
+                  {contact2.button.title}
+                </a>
+              </p>
             </div>
             <div className="block">
               <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
@@ -123,6 +132,10 @@ ContactPageTemplate.propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     email: PropTypes.string,
+    button: PropTypes.shape({
+      url: PropTypes.string,
+      title: PropTypes.string,
+    }),
   }),
   local: PropTypes.shape({
     title: PropTypes.string,

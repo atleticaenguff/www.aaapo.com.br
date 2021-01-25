@@ -52,6 +52,10 @@ export const ContactPageQuery = graphql`
           title
           subtitle
           email
+          button {
+            url
+            title
+          }
         }
         local {
           title

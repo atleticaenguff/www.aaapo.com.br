@@ -12,11 +12,14 @@ contact1:
   email: contato@aaapo.com.br
 contact2:
   title: Comercial
-  subtitle: Se interessou em nossa proposta e gostaria de nos ajudar? Mande-nos uma mensagem para conversarmos melhor.
+  subtitle: Se interessou em nosso projeto e gostaria de incentivar o esporte universitário? Mande-nos uma mensagem.
   email: comercial@aaapo.com.br
+  button:
+    url: /
+    title: Mídia Kit
 local:
   title: Onde estamos?
-  subtitle: Saiba onde nos encontrar e mais informações de contato.
+  subtitle: Nossa sala fica localizada abaixo do prédio dos diretórios, entre o bandejão e a biblioteca de engenharia, no campus da Praia Vermelha da UFF.
   url: https://g.page/atleticaenguff?share
   address: R. Passo da Pátria, 156 São Domingos, Niterói - RJ, 24210-240
 map:

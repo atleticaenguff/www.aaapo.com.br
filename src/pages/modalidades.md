@@ -9,8 +9,8 @@ hero:
   subtitle: Conheça todas as áreas de atuação que você, aluno ou formado, pode
     participar.
 modalities:
-  title: Dê o seu primeiro passo aqui!
-  subtitle: Escolha sua modalidade e, se necessário, entre em contato o
+  title: Treine de graça com a gente!
+  subtitle: Escolha sua modalidade e, se necessário, entre em contato com o
     responsável. Você será informado de todos detalhes que precisar.
   collapses:
     - title: Atletismo

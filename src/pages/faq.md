@@ -5,11 +5,10 @@ seo:
   meta_description: Site oficial da Associação Atlética Acadêmica Pio Orlando - Atlética Engenharia UFF.
 hero:
   title: FAQ
-  subtitle: Maui helicopter tours are a great way to see the island from a
-    different perspective and have a fun adventure.
+  subtitle: Veja se sua dúvida está entre as perguntas mais frequentes abaixo.
 faqs:
   - question: Onde fica a sala da Atlética?
-    answer: Nossa sala fica localizada abaixo do prédio dos diretórios, entre o bandejão e a biblioteca de Engenharia, no campus da Praia Vermelha da Universidade Federal Fluminense.
+    answer: Nossa sala fica localizada abaixo do prédio dos diretórios, entre o bandejão e a biblioteca de engenharia, no campus da Praia Vermelha da Universidade Federal Fluminense.
   - question: Tenho que pagar para treinar?
     answer: Não! Todos treinos são inteiramente gratuitos.
   - question: Quando os treinos são realizados?

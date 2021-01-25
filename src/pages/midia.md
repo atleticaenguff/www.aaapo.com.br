@@ -5,28 +5,28 @@ seo:
   meta_description: Site oficial da Associação Atlética Acadêmica Pio Orlando - Atlética Engenharia UFF.
 hero:
   title: Mídia
-  subtitle: Explore alguns dos pequenos mimos que preparamos pra vocês.
+  subtitle: Explore todo conteúdo preparado para você e fique embrasado com a Dragões.
 features:
-  title: Vista as nossas cores
-  subtitle: Desde fotos até podcast. Venha estampar o vermelho e branco na sua rotina.
+  title: Sinta essa experiência
+  subtitle: Se prepare para o vermelho e branco dominar a sua tela.
   feature1:
     title: Fotos
     subtitle: Foi para algum evento e quer suas fotos em alta definição? Fica tranquilo, aqui é tudo liberado.
     button:
       url: https://drive.google.com/drive/folders/1wO7nWyT8D5Ju1ZPBhJXmMmKU85pvAjb-?usp=sharing
-      title: Ver mais
+      title: Confira agora
   feature2:
     title: Vídeos
     subtitle: Prepare a pipoca e venha assistir aos melhores momentos da Atlética dentro e fora de quadra.
     button:
       url: https://www.youtube.com/playlist?list=PLRirtOay0-2p5-u4fcQmsLCrkopVOln0E
-      title: Ver mais
+      title: Confira agora
   feature3:
     title: Podcast
-    subtitle: We build what you need, but you still need to manage your data.
+    subtitle: Conheça o DragãoCast! Nossa resenha descontraída com as maiores estrelas da Dragões.
     button:
       url: https://anchor.fm/atleticaenguff
-      title: Ver mais
+      title: Confira agora
 soundcloud:
   title: Entre no ritmo da Dragões
   subtitle: Acompanhe os maiores sucessos da torcida Dragões da UFF e se prepare para dar um show na arquibancada.

@@ -22,6 +22,10 @@ const ContactPagePreview = ({ entry }) => {
         title: entry.getIn(["data", "contact2", "title"]),
         subtitle: entry.getIn(["data", "contact2", "subtitle"]),
         email: entry.getIn(["data", "contact2", "email"]),
+        button: {
+          url: entry.getIn(["data", "contact2", "button", "url"]),
+          title: entry.getIn(["data", "contact2", "button", "title"]),
+        },
       }}
       local={{
         title: entry.getIn(["data", "local", "title"]),
