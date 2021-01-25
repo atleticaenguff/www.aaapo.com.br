@@ -2,7 +2,7 @@
 templateKey: faq-page
 seo:
   meta_title: FAQ | Atlética Engenharia UFF
-  meta_description: Site oficial da Associação Atlética Acadêmica Pio Orlando - Atlética Engenharia UFF.
+  meta_description: Veja se sua dúvida está entre as perguntas mais frequentes abaixo - Atlética Engenharia UFF.
 hero:
   title: FAQ
   subtitle: Veja se sua dúvida está entre as perguntas mais frequentes abaixo.

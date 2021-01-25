@@ -2,7 +2,7 @@
 templateKey: transparency-page
 seo:
   meta_title: Transparência | Atlética Engenharia UFF
-  meta_description: Site oficial da Associação Atlética Acadêmica Pio Orlando - Atlética Engenharia UFF.
+  meta_description: Acompanhe e entenda como funcionam os nossos processos internos - Atlética Engenharia UFF.
 hero:
   title: Transparência
   subtitle: Acompanhe e entenda como funcionam os nossos processos internos.

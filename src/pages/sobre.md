@@ -2,7 +2,7 @@
 templateKey: about-page
 seo:
   meta_title: Sobre | Atlética Engenharia UFF
-  meta_description: Site oficial da Associação Atlética Acadêmica Pio Orlando - Atlética Engenharia UFF.
+  meta_description: Conheça um pouco mais sobre a atlética de engenharia da Universidade Federal Fluminense - Atlética Engenharia UFF.
 hero:
   title: Sobre
   subtitle: Conheça um pouco mais sobre a atlética de engenharia da Universidade Federal Fluminense.

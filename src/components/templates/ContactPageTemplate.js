@@ -67,7 +67,7 @@ const ContactPageTemplate = ({ seo, hero, contact1, contact2, local, map }) => (
               <p className="buttons mt-4">
                 <a
                   class="button is-small has-text-weight-semibold is-outlined is-dark"
-                  href={contact2.button.title}
+                  href={contact2.button.url}
                   rel="noreferrer"
                   target="_blank">
                   {contact2.button.title}

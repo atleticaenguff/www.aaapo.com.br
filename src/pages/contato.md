@@ -2,7 +2,7 @@
 templateKey: contact-page
 seo:
   meta_title: Contato | Atlética Engenharia UFF
-  meta_description: Site oficial da Associação Atlética Acadêmica Pio Orlando - Atlética Engenharia UFF.
+  meta_description: Ficou com alguma dúvida? Tem alguma sugestão? Quer apoiar a Atlética? Fale com a gente - Atlética Engenharia UFF.
 hero:
   title: Contato
   subtitle: Ficou com alguma dúvida? Tem alguma sugestão? Quer apoiar a Atlética? Fale com a gente!

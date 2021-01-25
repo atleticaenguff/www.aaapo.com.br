@@ -2,8 +2,7 @@
 templateKey: modalities-page
 seo:
   meta_title: Modalidades | Atlética Engenharia UFF
-  meta_description: Site oficial da Associação Atlética Acadêmica Pio Orlando -
-    Atlética Engenharia UFF.
+  meta_description: Conheça todas as áreas de atuação que você, aluno ou formado, pode participar - Atlética Engenharia UFF.
 hero:
   title: Modalidades
   subtitle: Conheça todas as áreas de atuação que você, aluno ou formado, pode

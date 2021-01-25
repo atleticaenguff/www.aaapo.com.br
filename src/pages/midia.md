@@ -2,7 +2,7 @@
 templateKey: media-page
 seo:
   meta_title: Mídia | Atlética Engenharia UFF
-  meta_description: Site oficial da Associação Atlética Acadêmica Pio Orlando - Atlética Engenharia UFF.
+  meta_description: Explore todo conteúdo preparado para você e fique embrasado com a Dragões - Atlética Engenharia UFF.
 hero:
   title: Mídia
   subtitle: Explore todo conteúdo preparado para você e fique embrasado com a Dragões.

@@ -888,7 +888,7 @@ collections:
                 ],
             }
       - file: "src/pages/404.md"
-        label: "Not found"
+        label: "404"
         name: "notfound"
         fields:
           - {
