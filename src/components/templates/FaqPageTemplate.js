@@ -42,7 +42,7 @@ const FaqPageTemplate = ({ seo, hero, faqs }) => (
               <h4 className="title is-4 is-size-5-mobile has-text-weight-bold is-spaced has-text-dark is-flex is-align-items-center">
                 {faq.question}
                 <span
-                  className="has-text-primary is-size-3 is-size-6-mobile mr-2 mb-1"
+                  className="has-text-primary is-size-3 is-size-6-mobile mr-1 mb-1"
                   style={{
                     position: "absolute",
                     right: "100%",

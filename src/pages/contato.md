@@ -15,7 +15,7 @@ contact2:
   subtitle: Se interessou em nosso projeto e gostaria de incentivar o esporte universitário? Mande-nos uma mensagem.
   email: comercial@aaapo.com.br
   button:
-    url: /
+    url: https://drive.google.com/drive/folders/1-Sa9k4wh5xyor-Ji7raIavt-y4HFXtjM?usp=sharing
     title: Mídia Kit
 local:
   title: Onde estamos?

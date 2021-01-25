@@ -9,18 +9,18 @@ hero:
 reports:
   - title: Relatórios do Conselho Fiscal
     button:
-      url: /
+      url: https://drive.google.com/drive/folders/1-oC9ThyxznVSsy5THJ40LnW6ic9FEsxp?usp=sharing
       title: Acessar
-  - title: Estatuto, Reformas e Atas
+  - title: Estatuto Social e Reformas
     button:
-      url: /
+      url: https://drive.google.com/drive/folders/1wxjTH6BB4sJ0Wj0kNvveXI6-ANoVeamn?usp=sharing
       title: Acessar
   - title: Organograma
     button:
-      url: /
+      url: https://drive.google.com/drive/folders/1RN8g7ZPA_m1x4XfwRYSlPSL36fteq9VU?usp=sharing
       title: Acessar
   - title: Classificações detalhadas
     button:
-      url: /
+      url: https://drive.google.com/drive/folders/1Nowc36utz3606Y0WXc9-4W0weWjZVOpG?usp=sharing
       title: Acessar
 ---
