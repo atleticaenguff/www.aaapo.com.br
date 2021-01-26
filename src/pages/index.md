@@ -10,7 +10,7 @@ hero:
     url: /sobre
     title: Conheça mais
   video:
-    thumbnail: /imagens/foto1.png
+    thumbnail: /imagens/foto1.jpg
     id: hifz53MW_gE
 about:
   uppertitle: Sobre
@@ -22,9 +22,9 @@ about:
   button2:
     url: /sobre#conquistas
     title: Ver conquistas
-  image: /imagens/foto2.png
+  image: /imagens/foto2.jpg
 modalities:
-  image: /imagens/foto3.png
+  image: /imagens/foto3.jpg
   uppertitle: Modalidades
   title: Fomentando o esporte
   list:

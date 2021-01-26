@@ -8,7 +8,7 @@ hero:
   subtitle: Conheça um pouco mais sobre a atlética de engenharia da Universidade Federal Fluminense.
 history:
   title: História
-  image: /imagens/foto4.png
+  image: /imagens/foto4.jpg
   subtitle:
     paragraph1: Fundada em 21 de junho de 2011, a Associação Atlética Acadêmica Pio Orlando – AAAPO, homenageia em seu nome um dos funcionários mais antigos e presentes na vida dos estudantes da Escola de Engenharia da UFF.
     paragraph2: Acreditamos no poder de transformação do esporte e na sua importância para uma vida saudável, tanto para o corpo quanto para a mente. Assim, sem fins lucrativos, todos os treinos são gratuitos. Além disso, a partir de nosso núcleo de torcida, lutamos contra qualquer desigualdade e preconceito, trazendo o esporte ao alcance de todos.
