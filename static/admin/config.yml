@@ -1,14 +1,14 @@
 backend:
   name: git-gateway
 
-media_folder: "static/images"
-public_folder: "/images"
+media_folder: "static/imagens"
+public_folder: "/imagens"
 
 site_url: https://aaapo-v2.netlify.app
 
 display_url: https://aaapo-v2.netlify.app
 
-logo_url: https://aaapo-v2.netlify.app/images/logo.png
+logo_url: https://aaapo-v2.netlify.app/imagens/logo.png
 
 collections:
   - name: "pages"

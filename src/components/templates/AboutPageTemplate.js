@@ -18,7 +18,7 @@ const AboutPageTemplate = ({ seo, hero, history, achievements }) => (
     <section
       className="hero is-medium is-primary"
       style={{
-        backgroundImage: "url('/images/icons.svg')",
+        backgroundImage: "url('/imagens/icones.svg')",
         backgroundPosition: "center",
       }}>
       <div className="hero-body">

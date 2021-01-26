@@ -15,7 +15,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
             className="navbar-item"
             style={{ backgroundColor: "transparent" }}>
             <img
-              src="/images/logo.png"
+              src="/imagens/logo.png"
               alt="Bulma: Free, open source, and modern CSS framework based on Flexbox"
               width="85"
               height="85"></img>

@@ -21,7 +21,7 @@ const HomePageTemplate = ({ seo, hero, about, modalities, media, store }) => (
     <section
       className="hero is-primary"
       style={{
-        backgroundImage: "url('/images/icons.svg')",
+        backgroundImage: "url('/imagens/icones.svg')",
         backgroundPosition: "center",
       }}>
       <div className="hero-body">
