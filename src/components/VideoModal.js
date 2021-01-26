@@ -44,7 +44,7 @@ class VideoModal extends Component {
               cursor: "pointer",
             }}
             onClick={() => this.openModal()}
-            ariaLabel="Vídeo">
+            aria-label="Vídeo">
             <FontAwesomeIcon
               icon={faCircle}
               size="3x"

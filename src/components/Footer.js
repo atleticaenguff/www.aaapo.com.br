@@ -23,7 +23,7 @@ const Footer = () => {
                 href={footer.social.facebook.url}
                 rel="noreferrer"
                 target="_blank"
-                ariaLabel="Facebook">
+                aria-label="Facebook">
                 <FontAwesomeIcon
                   icon={faFacebook}
                   size="2x"
@@ -37,7 +37,7 @@ const Footer = () => {
                 href={footer.social.twitter.url}
                 rel="noreferrer"
                 target="_blank"
-                ariaLabel="Twitter">
+                aria-label="Twitter">
                 <FontAwesomeIcon
                   icon={faTwitter}
                   size="2x"
@@ -51,7 +51,7 @@ const Footer = () => {
                 href={footer.social.instagram.url}
                 rel="noreferrer"
                 target="_blank"
-                ariaLabel="Instagram">
+                aria-label="Instagram">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   size="2x"
@@ -65,7 +65,7 @@ const Footer = () => {
                 href={footer.social.youtube.url}
                 rel="noreferrer"
                 target="_blank"
-                ariaLabel="YouTube">
+                aria-label="YouTube">
                 <FontAwesomeIcon
                   icon={faYoutube}
                   size="2x"
@@ -79,7 +79,7 @@ const Footer = () => {
                 href={footer.social.linkedin.url}
                 rel="noreferrer"
                 target="_blank"
-                ariaLabel="LinkedIn">
+                aria-label="LinkedIn">
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   size="2x"
@@ -96,7 +96,7 @@ const Footer = () => {
                 href={footer.social.more.url}
                 rel="noreferrer"
                 target="_blank"
-                ariaLabel="Mais">
+                aria-label="Mais">
                 mais
               </a>
             </span>
