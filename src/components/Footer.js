@@ -22,7 +22,8 @@ const Footer = () => {
               <a
                 href={footer.social.facebook.url}
                 rel="noreferrer"
-                target="_blank">
+                target="_blank"
+                ariaLabel="Facebook">
                 <FontAwesomeIcon
                   icon={faFacebook}
                   size="2x"
@@ -35,7 +36,8 @@ const Footer = () => {
               <a
                 href={footer.social.twitter.url}
                 rel="noreferrer"
-                target="_blank">
+                target="_blank"
+                ariaLabel="Twitter">
                 <FontAwesomeIcon
                   icon={faTwitter}
                   size="2x"
@@ -48,7 +50,8 @@ const Footer = () => {
               <a
                 href={footer.social.instagram.url}
                 rel="noreferrer"
-                target="_blank">
+                target="_blank"
+                ariaLabel="Instagram">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   size="2x"
@@ -61,7 +64,8 @@ const Footer = () => {
               <a
                 href={footer.social.youtube.url}
                 rel="noreferrer"
-                target="_blank">
+                target="_blank"
+                ariaLabel="YouTube">
                 <FontAwesomeIcon
                   icon={faYoutube}
                   size="2x"
@@ -74,7 +78,8 @@ const Footer = () => {
               <a
                 href={footer.social.linkedin.url}
                 rel="noreferrer"
-                target="_blank">
+                target="_blank"
+                ariaLabel="LinkedIn">
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   size="2x"
@@ -90,7 +95,8 @@ const Footer = () => {
                 className="has-text-weight-semibold has-text-white"
                 href={footer.social.more.url}
                 rel="noreferrer"
-                target="_blank">
+                target="_blank"
+                ariaLabel="Mais">
                 mais
               </a>
             </span>

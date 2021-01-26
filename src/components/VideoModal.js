@@ -43,7 +43,8 @@ class VideoModal extends Component {
               transform: "translate(-50%, -50%)",
               cursor: "pointer",
             }}
-            onClick={() => this.openModal()}>
+            onClick={() => this.openModal()}
+            ariaLabel="Vídeo">
             <FontAwesomeIcon
               icon={faCircle}
               size="3x"
