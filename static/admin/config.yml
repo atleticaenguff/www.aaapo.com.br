@@ -25,8 +25,8 @@ collections:
               default: "home-page",
             }
           - {
-              label: SEO,
-              name: seo,
+              label: "SEO",
+              name: "seo",
               widget: object,
               fields:
                 [
@@ -39,8 +39,8 @@ collections:
                 ],
             }
           - {
-              label: Hero,
-              name: hero,
+              label: "Hero",
+              name: "hero",
               widget: object,
               fields:
                 [
@@ -48,7 +48,7 @@ collections:
                   { label: "Subtitle", name: "subtitle", widget: text },
                   {
                     label: "Button",
-                    name: button,
+                    name: "button",
                     widget: object,
                     fields:
                       [
@@ -58,7 +58,7 @@ collections:
                   },
                   {
                     label: "Video",
-                    name: video,
+                    name: "video",
                     widget: object,
                     fields:
                       [
@@ -73,8 +73,8 @@ collections:
                 ],
             }
           - {
-              label: About,
-              name: about,
+              label: "About",
+              name: "about",
               widget: object,
               fields:
                 [
@@ -83,7 +83,7 @@ collections:
                   { label: "Subtitle", name: "subtitle", widget: text },
                   {
                     label: "Button 1",
-                    name: button1,
+                    name: "button1",
                     widget: object,
                     fields:
                       [
@@ -93,7 +93,7 @@ collections:
                   },
                   {
                     label: "Button 2",
-                    name: button2,
+                    name: "button2",
                     widget: object,
                     fields:
                       [
@@ -105,8 +105,8 @@ collections:
                 ],
             }
           - {
-              label: Modalities,
-              name: modalities,
+              label: "Modalities",
+              name: "modalities",
               widget: object,
               fields:
                 [
@@ -114,8 +114,8 @@ collections:
                   { label: "Uppertitle", name: "uppertitle", widget: string },
                   { label: "Title", name: "title", widget: string },
                   {
-                    label: List,
-                    name: list,
+                    label: "List",
+                    name: "list",
                     widget: object,
                     fields:
                       [
@@ -127,7 +127,7 @@ collections:
                   },
                   {
                     label: "Button",
-                    name: button,
+                    name: "button",
                     widget: object,
                     fields:
                       [
@@ -138,8 +138,8 @@ collections:
                 ],
             }
           - {
-              label: Media,
-              name: media,
+              label: "Media",
+              name: "media",
               widget: object,
               fields:
                 [
@@ -148,7 +148,7 @@ collections:
                   { label: "Subtitle", name: "subtitle", widget: text },
                   {
                     label: "Button",
-                    name: button,
+                    name: "button",
                     widget: object,
                     fields:
                       [
@@ -157,8 +157,8 @@ collections:
                       ],
                   },
                   {
-                    label: Block1,
-                    name: block1,
+                    label: "Block1",
+                    name: "block1",
                     widget: object,
                     fields:
                       [
@@ -175,8 +175,8 @@ collections:
                       ],
                   },
                   {
-                    label: Block2,
-                    name: block2,
+                    label: "Block2",
+                    name: "block2",
                     widget: object,
                     fields:
                       [
@@ -193,8 +193,8 @@ collections:
                       ],
                   },
                   {
-                    label: Block3,
-                    name: block3,
+                    label: "Block3",
+                    name: "block3",
                     widget: object,
                     fields:
                       [
@@ -211,8 +211,8 @@ collections:
                       ],
                   },
                   {
-                    label: Block4,
-                    name: block4,
+                    label: "Block4",
+                    name: "block4",
                     widget: object,
                     fields:
                       [
@@ -231,8 +231,8 @@ collections:
                 ],
             }
           - {
-              label: Store,
-              name: store,
+              label: "Store",
+              name: "store",
               widget: object,
               fields:
                 [
@@ -241,7 +241,7 @@ collections:
                   { label: "Subtitle", name: "subtitle", widget: text },
                   {
                     label: "Button 1",
-                    name: button1,
+                    name: "button1",
                     widget: object,
                     fields:
                       [
@@ -251,7 +251,7 @@ collections:
                   },
                   {
                     label: "Button 2",
-                    name: button2,
+                    name: "button2",
                     widget: object,
                     fields:
                       [
@@ -272,8 +272,8 @@ collections:
               default: "about-page",
             }
           - {
-              label: SEO,
-              name: seo,
+              label: "SEO",
+              name: "seo",
               widget: object,
               fields:
                 [
@@ -286,8 +286,8 @@ collections:
                 ],
             }
           - {
-              label: Hero,
-              name: hero,
+              label: "Hero",
+              name: "hero",
               widget: object,
               fields:
                 [
@@ -296,16 +296,16 @@ collections:
                 ],
             }
           - {
-              label: History,
-              name: history,
+              label: "History",
+              name: "history",
               widget: object,
               fields:
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Image", name: "image", widget: image },
                   {
-                    label: Subtitle,
-                    name: subtitle,
+                    label: "Subtitle",
+                    name: "subtitle",
                     widget: object,
                     fields:
                       [
@@ -329,42 +329,42 @@ collections:
                 ],
             }
           - {
-              label: Achievements,
-              name: achievements,
+              label: "Achievements",
+              name: "achievements",
               widget: object,
               fields:
                 [
                   { label: "Title", name: "title", widget: string },
                   {
-                    label: Years,
-                    name: years,
+                    label: "Years",
+                    name: "years",
                     widget: list,
                     fields:
                       [
                         {
-                          label: Number,
-                          name: number,
+                          label: "Number",
+                          name: "number",
                           widget: string,
                           default: "",
                         },
                         {
-                          label: Competitions,
-                          name: competitions,
+                          label: "Competitions",
+                          name: "competitions",
                           widget: list,
                           default: [{ title: "" }],
                           fields:
                             [
-                              { label: Title, name: title, widget: string },
+                              { label: "Title", name: "title", widget: string },
                               {
-                                label: Awards,
-                                name: awards,
+                                label: "Awards",
+                                name: "awards",
                                 widget: list,
                                 default: [{ title: "" }],
                                 fields:
                                   [
                                     {
-                                      label: Title,
-                                      name: title,
+                                      label: "Title",
+                                      name: "title",
                                       widget: string,
                                     },
                                   ],
@@ -386,8 +386,8 @@ collections:
               default: "modalities-page",
             }
           - {
-              label: SEO,
-              name: seo,
+              label: "SEO",
+              name: "seo",
               widget: object,
               fields:
                 [
@@ -400,8 +400,8 @@ collections:
                 ],
             }
           - {
-              label: Hero,
-              name: hero,
+              label: "Hero",
+              name: "hero",
               widget: object,
               fields:
                 [
@@ -410,36 +410,40 @@ collections:
                 ],
             }
           - {
-              label: Modalities,
-              name: modalities,
+              label: "Modalities",
+              name: "modalities",
               widget: object,
               fields:
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Subtitle", name: "subtitle", widget: text },
                   {
-                    label: Collapses,
-                    name: collapses,
+                    label: "Collapses",
+                    name: "collapses",
                     widget: list,
                     fields:
                       [
-                        { label: Title, name: title, widget: string },
+                        { label: "Title", name: "title", widget: string },
                         {
-                          label: Days,
-                          name: days,
+                          label: "Days",
+                          name: "days",
                           widget: object,
                           fields:
                             [
-                              { label: "Days 1", name: days1, widget: string },
+                              {
+                                label: "Days 1",
+                                name: "days1",
+                                widget: string,
+                              },
                               {
                                 label: "Days 2",
-                                name: days2,
+                                name: "days2",
                                 widget: string,
                                 required: false,
                               },
                               {
                                 label: "Days 3",
-                                name: days3,
+                                name: "days3",
                                 widget: string,
                                 required: false,
                               },
@@ -447,39 +451,43 @@ collections:
                         },
                         {
                           label: "Addresses",
-                          name: addresses,
+                          name: "addresses",
                           widget: object,
                           fields:
                             [
                               {
                                 label: "Address 1",
-                                name: address1,
+                                name: "address1",
                                 widget: object,
                                 fields:
                                   [
-                                    { label: "URL", name: url, widget: string },
+                                    {
+                                      label: "URL",
+                                      name: "url",
+                                      widget: string,
+                                    },
                                     {
                                       label: "Address",
-                                      name: address,
+                                      name: "address",
                                       widget: string,
                                     },
                                   ],
                               },
                               {
                                 label: "Address 2",
-                                name: address2,
+                                name: "address2",
                                 widget: object,
                                 fields:
                                   [
                                     {
                                       label: "URL",
-                                      name: url,
+                                      name: "url",
                                       widget: string,
                                       required: false,
                                     },
                                     {
                                       label: "Address",
-                                      name: address,
+                                      name: "address",
                                       widget: string,
                                       required: false,
                                     },
@@ -487,19 +495,19 @@ collections:
                               },
                               {
                                 label: "Address 3",
-                                name: address3,
+                                name: "address3",
                                 widget: object,
                                 fields:
                                   [
                                     {
                                       label: "URL",
-                                      name: url,
+                                      name: "url",
                                       widget: string,
                                       required: false,
                                     },
                                     {
                                       label: "Address",
-                                      name: address,
+                                      name: "address",
                                       widget: string,
                                       required: false,
                                     },
@@ -509,43 +517,43 @@ collections:
                         },
                         {
                           label: "People",
-                          name: people,
+                          name: "people",
                           widget: object,
                           fields:
                             [
                               {
                                 label: "Person 1",
-                                name: person1,
+                                name: "person1",
                                 widget: object,
                                 fields:
                                   [
                                     {
                                       label: "Name",
-                                      name: name,
+                                      name: "name",
                                       widget: string,
                                     },
                                     {
                                       label: "Phone",
-                                      name: phone,
+                                      name: "phone",
                                       widget: string,
                                     },
                                   ],
                               },
                               {
                                 label: "Person 2",
-                                name: person2,
+                                name: "person2",
                                 widget: object,
                                 fields:
                                   [
                                     {
                                       label: "Name",
-                                      name: name,
+                                      name: "name",
                                       widget: string,
                                       required: false,
                                     },
                                     {
                                       label: "Phone",
-                                      name: phone,
+                                      name: "phone",
                                       widget: string,
                                       required: false,
                                     },
@@ -553,19 +561,19 @@ collections:
                               },
                               {
                                 label: "Person 3",
-                                name: person3,
+                                name: "person3",
                                 widget: object,
                                 fields:
                                   [
                                     {
                                       label: "Name",
-                                      name: name,
+                                      name: "name",
                                       widget: string,
                                       required: false,
                                     },
                                     {
                                       label: "Phone",
-                                      name: phone,
+                                      name: "phone",
                                       widget: string,
                                       required: false,
                                     },
@@ -588,8 +596,8 @@ collections:
               default: "media-page",
             }
           - {
-              label: SEO,
-              name: seo,
+              label: "SEO",
+              name: "seo",
               widget: object,
               fields:
                 [
@@ -602,8 +610,8 @@ collections:
                 ],
             }
           - {
-              label: Hero,
-              name: hero,
+              label: "Hero",
+              name: "hero",
               widget: object,
               fields:
                 [
@@ -613,7 +621,7 @@ collections:
             }
           - {
               label: "Features",
-              name: features,
+              name: "features",
               widget: object,
               fields:
                 [
@@ -621,7 +629,7 @@ collections:
                   { label: "Subtitle", name: "subtitle", widget: text },
                   {
                     label: "Feature 1",
-                    name: feature1,
+                    name: "feature1",
                     widget: object,
                     fields:
                       [
@@ -629,7 +637,7 @@ collections:
                         { label: "Subtitle", name: "subtitle", widget: text },
                         {
                           label: "Button",
-                          name: button,
+                          name: "button",
                           widget: object,
                           fields:
                             [
@@ -641,7 +649,7 @@ collections:
                   },
                   {
                     label: "Feature 2",
-                    name: feature2,
+                    name: "feature2",
                     widget: object,
                     fields:
                       [
@@ -649,7 +657,7 @@ collections:
                         { label: "Subtitle", name: "subtitle", widget: text },
                         {
                           label: "Button",
-                          name: button,
+                          name: "button",
                           widget: object,
                           fields:
                             [
@@ -661,7 +669,7 @@ collections:
                   },
                   {
                     label: "Feature 3",
-                    name: feature3,
+                    name: "feature3",
                     widget: object,
                     fields:
                       [
@@ -669,7 +677,7 @@ collections:
                         { label: "Subtitle", name: "subtitle", widget: text },
                         {
                           label: "Button",
-                          name: button,
+                          name: "button",
                           widget: object,
                           fields:
                             [
@@ -682,8 +690,8 @@ collections:
                 ],
             }
           - {
-              label: SoundCloud,
-              name: soundcloud,
+              label: "SoundCloud",
+              name: "soundcloud",
               widget: object,
               fields:
                 [
@@ -691,7 +699,7 @@ collections:
                   { label: "Subtitle", name: "subtitle", widget: string },
                   {
                     label: "Button",
-                    name: button,
+                    name: "button",
                     widget: object,
                     fields:
                       [
@@ -713,8 +721,8 @@ collections:
               default: "contact-page",
             }
           - {
-              label: SEO,
-              name: seo,
+              label: "SEO",
+              name: "seo",
               widget: object,
               fields:
                 [
@@ -727,8 +735,8 @@ collections:
                 ],
             }
           - {
-              label: Hero,
-              name: hero,
+              label: "Hero",
+              name: "hero",
               widget: object,
               fields:
                 [
@@ -738,7 +746,7 @@ collections:
             }
           - {
               label: "Contact 1",
-              name: contact1,
+              name: "contact1",
               widget: object,
               fields:
                 [
@@ -749,7 +757,7 @@ collections:
             }
           - {
               label: "Contact 2",
-              name: contact2,
+              name: "contact2",
               widget: object,
               fields:
                 [
@@ -758,7 +766,7 @@ collections:
                   { label: "Email", name: "email", widget: string },
                   {
                     label: "Button",
-                    name: button,
+                    name: "button",
                     widget: object,
                     fields:
                       [
@@ -770,7 +778,7 @@ collections:
             }
           - {
               label: "Local",
-              name: local,
+              name: "local",
               widget: object,
               fields:
                 [
@@ -782,7 +790,7 @@ collections:
             }
           - {
               label: "Map",
-              name: map,
+              name: "map",
               widget: object,
               fields:
                 [
@@ -801,8 +809,8 @@ collections:
               default: "faq-page",
             }
           - {
-              label: SEO,
-              name: seo,
+              label: "SEO",
+              name: "seo",
               widget: object,
               fields:
                 [
@@ -815,8 +823,8 @@ collections:
                 ],
             }
           - {
-              label: Hero,
-              name: hero,
+              label: "Hero",
+              name: "hero",
               widget: object,
               fields:
                 [
@@ -825,13 +833,13 @@ collections:
                 ],
             }
           - {
-              label: Faqs,
-              name: faqs,
+              label: "Faqs",
+              name: "faqs",
               widget: list,
               fields:
                 [
-                  { label: Question, name: question, widget: string },
-                  { label: Answer, name: answer, widget: string },
+                  { label: "Question", name: "question", widget: string },
+                  { label: "Answer", name: "answer", widget: string },
                 ],
             }
       - file: "src/pages/transparencia.md"
@@ -845,8 +853,8 @@ collections:
               default: "transparency-page",
             }
           - {
-              label: SEO,
-              name: seo,
+              label: "SEO",
+              name: "seo",
               widget: object,
               fields:
                 [
@@ -859,8 +867,8 @@ collections:
                 ],
             }
           - {
-              label: Hero,
-              name: hero,
+              label: "Hero",
+              name: "hero",
               widget: object,
               fields:
                 [
@@ -869,15 +877,15 @@ collections:
                 ],
             }
           - {
-              label: Reports,
-              name: reports,
+              label: "Reports",
+              name: "reports",
               widget: list,
               fields:
                 [
                   { label: "Title", name: "title", widget: string },
                   {
                     label: "Button",
-                    name: button,
+                    name: "button",
                     widget: object,
                     fields:
                       [
@@ -898,8 +906,8 @@ collections:
               default: "not-found-page",
             }
           - {
-              label: SEO,
-              name: seo,
+              label: "SEO",
+              name: "seo",
               widget: object,
               fields:
                 [
@@ -912,8 +920,8 @@ collections:
                 ],
             }
           - {
-              label: Hero,
-              name: hero,
+              label: "Hero",
+              name: "hero",
               widget: object,
               fields:
                 [
@@ -921,7 +929,7 @@ collections:
                   { label: "Subtitle", name: "subtitle", widget: text },
                   {
                     label: "Button",
-                    name: button,
+                    name: "button",
                     widget: object,
                     fields:
                       [
@@ -965,7 +973,7 @@ collections:
         fields:
           - {
               label: "Google Tag Manager",
-              name: googleTagManager,
+              name: "googleTagManager",
               widget: object,
               fields: [{ label: "ID", name: "id", widget: string }],
             }
@@ -975,7 +983,7 @@ collections:
         fields:
           - {
               label: "Hotjar",
-              name: hotjar,
+              name: "hotjar",
               widget: object,
               fields:
                 [
@@ -989,7 +997,7 @@ collections:
         fields:
           - {
               label: "Item 1",
-              name: item1,
+              name: "item1",
               widget: object,
               fields:
                 [
@@ -999,7 +1007,7 @@ collections:
             }
           - {
               label: "Item 2",
-              name: item2,
+              name: "item2",
               widget: object,
               fields:
                 [
@@ -1009,7 +1017,7 @@ collections:
             }
           - {
               label: "Item 3",
-              name: item3,
+              name: "item3",
               widget: object,
               fields:
                 [
@@ -1019,7 +1027,7 @@ collections:
             }
           - {
               label: "Item 4",
-              name: item4,
+              name: "item4",
               widget: object,
               fields:
                 [
@@ -1029,7 +1037,7 @@ collections:
             }
           - {
               label: "Item 5",
-              name: item5,
+              name: "item5",
               widget: object,
               fields:
                 [
@@ -1042,52 +1050,52 @@ collections:
         name: "footer"
         fields:
           - {
-              label: Social,
-              name: social,
+              label: "Social",
+              name: "social",
               widget: object,
               fields:
                 [
                   {
-                    label: Facebook,
-                    name: facebook,
+                    label: "Facebook",
+                    name: "facebook",
                     widget: object,
                     fields: [{ label: "URL", name: "url", widget: string }],
                   },
                   {
-                    label: Instagram,
-                    name: instagram,
+                    label: "Instagram",
+                    name: "instagram",
                     widget: object,
                     fields: [{ label: "URL", name: "url", widget: string }],
                   },
                   {
-                    label: Twitter,
-                    name: twitter,
+                    label: "Twitter",
+                    name: "twitter",
                     widget: object,
                     fields: [{ label: "URL", name: "url", widget: string }],
                   },
                   {
-                    label: YouTube,
-                    name: youtube,
+                    label: "YouTube",
+                    name: "youtube",
                     widget: object,
                     fields: [{ label: "URL", name: "url", widget: string }],
                   },
                   {
-                    label: LinkedIn,
-                    name: linkedin,
+                    label: "LinkedIn",
+                    name: "linkedin",
                     widget: object,
                     fields: [{ label: "URL", name: "url", widget: string }],
                   },
                   {
-                    label: More,
-                    name: more,
+                    label: "More",
+                    name: "more",
                     widget: object,
                     fields: [{ label: "URL", name: "url", widget: string }],
                   },
                 ],
             }
           - {
-              label: Copyright,
-              name: copyright,
+              label: "Copyright",
+              name: "copyright",
               widget: object,
               fields: [{ label: "Name", name: "name", widget: string }],
             }
@@ -1097,7 +1105,7 @@ collections:
         fields:
           - {
               label: "Google Sheets",
-              name: googleSheets,
+              name: "googleSheets",
               widget: object,
               fields:
                 [
