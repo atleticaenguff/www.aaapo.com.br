@@ -31,7 +31,7 @@ class VideoModal extends Component {
     return (
       <>
         <figure className="image" style={{ maxWidth: "500px" }}>
-          <PreviewCompatibleImage imageInfo={thumbnail} alt="" />
+          <PreviewCompatibleImage imageInfo={thumbnail} alt="video" />
           <span
             role="button"
             tabIndex={0}

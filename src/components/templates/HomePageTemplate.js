@@ -79,7 +79,7 @@ const HomePageTemplate = ({ seo, hero, about, modalities, media, store }) => (
           </div>
           <div className="column is-6 is-offset-1 is-hidden-mobile">
             <figure className="image">
-              <PreviewCompatibleImage imageInfo={about.image} alt="" />
+              <PreviewCompatibleImage imageInfo={about.image} alt="imagem" />
             </figure>
           </div>
         </div>
@@ -90,7 +90,10 @@ const HomePageTemplate = ({ seo, hero, about, modalities, media, store }) => (
         <div className="columns is-vcentered">
           <div className="column is-6">
             <figure className="image">
-              <PreviewCompatibleImage imageInfo={modalities.image} alt="" />
+              <PreviewCompatibleImage
+                imageInfo={modalities.image}
+                alt="imagem"
+              />
             </figure>
           </div>
           <div className="column is-5 is-offset-1">

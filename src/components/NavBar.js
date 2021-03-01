@@ -16,7 +16,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
             style={{ backgroundColor: "transparent" }}>
             <img
               src={navbar.logo.src}
-              alt="Logo"
+              alt="logo"
               width="85"
               height="auto"></img>
           </Link>

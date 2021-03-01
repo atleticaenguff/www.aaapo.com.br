@@ -44,7 +44,7 @@ const AboutPageTemplate = ({ seo, hero, history, achievements }) => (
         <div className="columns">
           <div className="column is-4">
             <figure className="image">
-              <PreviewCompatibleImage imageInfo={history.image} alt="" />
+              <PreviewCompatibleImage imageInfo={history.image} alt="imagem" />
             </figure>
           </div>
           <div className="column is-8">
