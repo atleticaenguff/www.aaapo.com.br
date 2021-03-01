@@ -49,9 +49,7 @@ export const HomePageQuery = graphql`
           video {
             thumbnail {
               childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
+                gatsbyImageData(width: 800, placeholder: BLURRED)
               }
             }
             id
@@ -71,18 +69,14 @@ export const HomePageQuery = graphql`
           }
           image {
             childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(width: 800, placeholder: BLURRED)
             }
           }
         }
         modalities {
           image {
             childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(width: 800, placeholder: BLURRED)
             }
           }
           uppertitle

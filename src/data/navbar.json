@@ -1,26 +1,33 @@
 {
-  "item1": {
-    "title": "Sobre",
-    "url": "/sobre"
+  "logo": {
+    "url": "/",
+    "src": "/imagens/logo.png"
   },
-  "item2": {
-    "title": "Modalidades",
-    "url": "/modalidades"
-  },
-  "item3": {
-    "title": "Mídia",
-    "url": "/midia"
-  },
-  "item4": {
-    "title": "Ingressos",
-    "url": "https://atleticaenguff.eventbrite.com"
-  },
-  "item5": {
-    "title": "Contato",
-    "url": "/contato"
-  },
-  "item6": {
-    "title": "Loja",
-    "url": "https://loja.aaapo.com.br"
+
+  "navigation": {
+    "item1": {
+      "title": "Sobre",
+      "url": "/sobre/"
+    },
+    "item2": {
+      "title": "Modalidades",
+      "url": "/modalidades/"
+    },
+    "item3": {
+      "title": "Mídia",
+      "url": "/midia/"
+    },
+    "item4": {
+      "title": "Ingressos",
+      "url": "https://atleticaenguff.eventbrite.com"
+    },
+    "item5": {
+      "title": "Contato",
+      "url": "/contato/"
+    },
+    "item6": {
+      "title": "Loja",
+      "url": "https://loja.aaapo.com.br"
+    }
   }
 }

@@ -38,17 +38,19 @@ const TransparencyPageTemplate = ({ seo, hero, reports }) => (
       <div className="container">
         <div className="columns is-multiline">
           {reports.map((report, id) => (
-            <div className="column is-6 mb-6" key={id}>
-              <h2 className="title is-2 is-size-3-mobile has-text-weight-bold has-text-dark">
-                {report.title}
-              </h2>
-              <a
-                className="button has-text-weight-semibold is-primary"
-                href={report.button.url}
-                rel="noreferrer"
-                target="_blank">
-                {report.button.title}
-              </a>
+            <div className="column is-4 mb-4" key={id}>
+              <div className="box">
+                <h2 className="title is-3 has-text-weight-bold has-text-dark">
+                  {report.title}
+                </h2>
+                <a
+                  className="button has-text-weight-semibold is-primary"
+                  href={report.button.url}
+                  rel="noreferrer"
+                  target="_blank">
+                  {report.button.title}
+                </a>
+              </div>
             </div>
           ))}
         </div>

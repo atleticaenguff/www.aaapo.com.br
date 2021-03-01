@@ -100,9 +100,9 @@ const HomePageTemplate = ({ seo, hero, about, modalities, media, store }) => (
             <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
               {modalities.title}
             </h2>
-            <ul className="margin">
-              <li className="is-flex is-align-items-center mb-2">
-                <span className="icon mr-2">
+            <div className="content">
+              <div className="icon-text is-align-items-center mb-2">
+                <span className="icon">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     size="lg"
@@ -112,9 +112,9 @@ const HomePageTemplate = ({ seo, hero, about, modalities, media, store }) => (
                 <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
                   {modalities.list.item1}
                 </p>
-              </li>
-              <li className="is-flex is-align-items-center mb-2">
-                <span className="icon mr-2">
+              </div>
+              <div className="icon-text is-align-items-center mb-2">
+                <span className="icon">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     size="lg"
@@ -124,9 +124,9 @@ const HomePageTemplate = ({ seo, hero, about, modalities, media, store }) => (
                 <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
                   {modalities.list.item2}
                 </p>
-              </li>
-              <li className="is-flex is-align-items-center mb-2">
-                <span className="icon mr-2">
+              </div>
+              <div className="icon-text is-align-items-center mb-2">
+                <span className="icon">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     size="lg"
@@ -136,9 +136,9 @@ const HomePageTemplate = ({ seo, hero, about, modalities, media, store }) => (
                 <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
                   {modalities.list.item3}
                 </p>
-              </li>
-              <li className="is-flex is-align-items-center mb-2">
-                <span className="icon mr-2">
+              </div>
+              <div className="icon-text is-align-items-center mb-2">
+                <span className="icon">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     size="lg"
@@ -148,10 +148,10 @@ const HomePageTemplate = ({ seo, hero, about, modalities, media, store }) => (
                 <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
                   {modalities.list.item4}
                 </p>
-              </li>
-            </ul>
+              </div>
+            </div>
             <Link
-              className="button has-text-weight-semibold is-primary mt-4"
+              className="button has-text-weight-semibold is-primary"
               to={modalities.button.url}>
               {modalities.button.title}
             </Link>

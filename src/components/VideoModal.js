@@ -35,16 +35,15 @@ class VideoModal extends Component {
           <span
             role="button"
             tabIndex={0}
-            className="icon is-large fa-layers fa-fw is-overlay"
+            className="icon is-large fa-layers fa-fw is-overlay is-clickable"
             style={{
               top: "50%",
               left: "50%",
               outline: "0",
               transform: "translate(-50%, -50%)",
-              cursor: "pointer",
             }}
             onClick={() => this.openModal()}
-            aria-label="Vídeo">
+            aria-label="video">
             <FontAwesomeIcon
               icon={faCircle}
               size="3x"
@@ -64,7 +63,6 @@ class VideoModal extends Component {
               transform="grow-15"
             />
           </span>
-
           {this.state.isActive ? (
             <div className="modal is-active">
               <div
@@ -91,7 +89,7 @@ class VideoModal extends Component {
               <button
                 className="modal-close is-large"
                 onClick={() => this.closeModal()}
-                aria-label="close"></button>
+                aria-label="fechar"></button>
             </div>
           ) : null}
         </figure>

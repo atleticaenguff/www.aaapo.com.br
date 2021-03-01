@@ -45,9 +45,7 @@ export const AboutPageQuery = graphql`
           title
           image {
             childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(width: 800, placeholder: BLURRED)
             }
           }
           subtitle {

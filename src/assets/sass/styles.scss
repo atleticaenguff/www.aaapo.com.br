@@ -1,9 +1,9 @@
-$primary: #cc212a;
-$light: #f8f8f8;
 $white: #ffffff;
 $white-ter: rgba($white, 0.2);
 $black: #222222;
+$light: #f8f8f8;
 $dark: #262626;
+$primary: #cc212a;
 $link-hover: #3273dc;
 $family-sans-serif: "Poppins", sans-serif;
 $navbar-z: 2147483641;
@@ -13,12 +13,14 @@ $hero-body-padding: 1.5rem 1.5rem 3rem 1.5rem;
 $hero-body-padding-medium: 6.5rem 1.5rem;
 $subtitle-size: 1.1rem;
 $subtitle-line-height: 1.75;
+$radius: 4px;
+$box-background-color: $light;
+$box-radius: $radius;
 $button-padding-vertical: calc(1.5em - 1px);
 $button-padding-horizontal: 1.25em;
 $modal-z: 2147483642;
 $modal-content-width: 769px;
 $modal-content-margin-mobile: 0;
-$notification-radius: 6px;
 $card-background-color: $primary;
 $card-header-color: $white;
 $card-content-background-color: $light;
@@ -29,6 +31,8 @@ $footer-color: $white;
 $footer-padding: 2rem 1.5rem 1.5rem;
 $hr-background-color: $white-ter;
 $hr-height: 1px;
+
+@import "~bulma";
 
 .navbar-burger span {
   left: calc(50% - 12px) !important;
@@ -44,8 +48,6 @@ $hr-height: 1px;
     width: fit-content;
     height: auto;
     margin-right: 1.25rem !important;
-    border-radius: 6px;
+    border-radius: 4px;
   }
 }
-
-@import "~bulma";

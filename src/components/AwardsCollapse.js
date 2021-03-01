@@ -22,16 +22,14 @@ class Collapse extends Component {
       <div className={collapseState ? "mb-2" : "mb-0"}>
         <header className="collapse-header is-flex is-align-items-center">
           <p
-            className="subtitle has-text-weight-bold has-text-dark is-marginless"
+            className="subtitle has-text-weight-bold has-text-dark is-marginless is-clickable"
             aria-disabled="false"
             aria-expanded={collapseState ? "true" : "false"}
-            style={{ cursor: "pointer" }}
             onClick={this.toggleCollapseState}>
             {title}
           </p>
           <span
-            className="icon"
-            style={{ cursor: "pointer" }}
+            className="icon is-clickable"
             onClick={this.toggleCollapseState}>
             <FontAwesomeIcon
               icon={collapseState ? faMinus : faPlus}

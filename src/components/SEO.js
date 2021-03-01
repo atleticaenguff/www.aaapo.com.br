@@ -1,14 +1,12 @@
 import React, { Component } from "react"
 import { globalHistory as history } from "@reach/router"
-import seo from "../data/seo.json"
 import Helmet from "react-helmet"
+import seo from "../data/seo.json"
 
 const { location } = history
 
 class SEO extends Component {
   render() {
-    const pathname = location.pathname === "/" ? "" : location.pathname
-
     const breadcrumbSchemaOrgJSONLD = {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -23,9 +21,9 @@ class SEO extends Component {
         <meta name="title" content={seo.title} />
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.url + seo.image} />
-        <link rel="canonical" href={seo.url + pathname} />
+        <link rel="canonical" href={seo.url + location.pathname} />
         {/* OpenGraph tags */}
-        <meta property="og:url" content={seo.url + pathname} />
+        <meta property="og:url" content={seo.url + location.pathname} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="pt_BR" />
         <meta property="og:title" content={seo.title} />

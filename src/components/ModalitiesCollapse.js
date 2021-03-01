@@ -20,14 +20,11 @@ class ModalitiesCollapse extends Component {
 
     return (
       <div className="column is-6">
-        <div className="card" style={{ borderRadius: "6px" }}>
+        <div className="card">
           <header
-            className="card-header"
+            className="card-header is-clickable"
             style={{
-              borderRadius: collapseState ? null : "6px",
-              borderTopLeftRadius: "6px",
-              borderTopRightRadius: "6px",
-              cursor: "pointer",
+              borderRadius: collapseState ? null : "4px",
             }}
             onClick={this.toggleCollapseState}>
             <p
@@ -57,12 +54,17 @@ class ModalitiesCollapse extends Component {
           <div
             className="card-body is-clipped"
             style={{
-              borderBottomLeftRadius: "6px",
-              borderBottomRightRadius: "6px",
               maxHeight: collapseState ? "100em" : "0em",
               transition: "all 200ms ease-in-out",
             }}>
-            <div className="card-content">{children}</div>
+            <div
+              className="card-content"
+              style={{
+                borderTopLeftRadius: "0",
+                borderTopRightRadius: "0",
+              }}>
+              {children}
+            </div>
           </div>
         </div>
       </div>

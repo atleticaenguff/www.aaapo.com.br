@@ -49,60 +49,54 @@ const MediaPageTemplate = ({ seo, hero, features, soundcloud }) => (
         </div>
         <div className="columns is-centered">
           <div className="column is-4">
-            <div className="card">
-              <div className="card-content">
-                <h4 className="title is-4 has-text-weight-bold is-spaced has-text-dark">
-                  {features.feature1.title}
-                </h4>
-                <p className="subtitle is-6 has-text-weight-normal has-text-black">
-                  {features.feature1.subtitle}
-                </p>
-                <a
-                  className="button has-text-weight-semibold is-primary"
-                  href={features.feature1.button.url}
-                  rel="noreferrer"
-                  target="_blank">
-                  {features.feature1.button.title}
-                </a>
-              </div>
+            <div className="box">
+              <h4 className="title is-4 has-text-weight-bold is-spaced has-text-dark">
+                {features.feature1.title}
+              </h4>
+              <p className="subtitle is-6 has-text-weight-normal has-text-black">
+                {features.feature1.subtitle}
+              </p>
+              <a
+                className="button has-text-weight-semibold is-primary"
+                href={features.feature1.button.url}
+                rel="noreferrer"
+                target="_blank">
+                {features.feature1.button.title}
+              </a>
             </div>
           </div>
           <div className="column is-4">
-            <div className="card">
-              <div className="card-content">
-                <h4 className="title is-4 has-text-weight-bold is-spaced has-text-dark">
-                  {features.feature2.title}
-                </h4>
-                <p className="subtitle is-6 has-text-weight-normal has-text-black">
-                  {features.feature2.subtitle}
-                </p>
-                <a
-                  className="button has-text-weight-semibold is-primary"
-                  href={features.feature2.button.url}
-                  rel="noreferrer"
-                  target="_blank">
-                  {features.feature2.button.title}
-                </a>
-              </div>
+            <div className="box">
+              <h4 className="title is-4 has-text-weight-bold is-spaced has-text-dark">
+                {features.feature2.title}
+              </h4>
+              <p className="subtitle is-6 has-text-weight-normal has-text-black">
+                {features.feature2.subtitle}
+              </p>
+              <a
+                className="button has-text-weight-semibold is-primary"
+                href={features.feature2.button.url}
+                rel="noreferrer"
+                target="_blank">
+                {features.feature2.button.title}
+              </a>
             </div>
           </div>
           <div className="column is-4">
-            <div className="card">
-              <div className="card-content">
-                <h4 className="title is-4 has-text-weight-bold is-spaced has-text-dark">
-                  {features.feature3.title}
-                </h4>
-                <p className="subtitle is-6 has-text-weight-normal has-text-black">
-                  {features.feature3.subtitle}
-                </p>
-                <a
-                  className="button has-text-weight-semibold is-primary"
-                  href={features.feature3.button.url}
-                  rel="noreferrer"
-                  target="_blank">
-                  {features.feature3.button.title}
-                </a>
-              </div>
+            <div className="box">
+              <h4 className="title is-4 has-text-weight-bold is-spaced has-text-dark">
+                {features.feature3.title}
+              </h4>
+              <p className="subtitle is-6 has-text-weight-normal has-text-black">
+                {features.feature3.subtitle}
+              </p>
+              <a
+                className="button has-text-weight-semibold is-primary"
+                href={features.feature3.button.url}
+                rel="noreferrer"
+                target="_blank">
+                {features.feature3.button.title}
+              </a>
             </div>
           </div>
         </div>

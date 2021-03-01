@@ -22,5 +22,16 @@
 
   "copyright": {
     "name": "Associação Atlética Acadêmica Pio Orlando"
+  },
+
+  "navigation": {
+    "item1": {
+      "title": "FAQ",
+      "url": "/faq/"
+    },
+    "item2": {
+      "title": "Transparência",
+      "url": "/transparencia/"
+    }
   }
 }

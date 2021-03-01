@@ -1,6 +1,6 @@
 import React from "react"
-import footer from "../data/footer.json"
 import { Link } from "gatsby"
+import footer from "../data/footer.json"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faFacebook,
@@ -23,7 +23,7 @@ const Footer = () => {
                 href={footer.social.facebook.url}
                 rel="noreferrer"
                 target="_blank"
-                aria-label="Facebook">
+                aria-label="facebook">
                 <FontAwesomeIcon
                   icon={faFacebook}
                   size="2x"
@@ -37,7 +37,7 @@ const Footer = () => {
                 href={footer.social.twitter.url}
                 rel="noreferrer"
                 target="_blank"
-                aria-label="Twitter">
+                aria-label="twitter">
                 <FontAwesomeIcon
                   icon={faTwitter}
                   size="2x"
@@ -51,7 +51,7 @@ const Footer = () => {
                 href={footer.social.instagram.url}
                 rel="noreferrer"
                 target="_blank"
-                aria-label="Instagram">
+                aria-label="instagram">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   size="2x"
@@ -65,7 +65,7 @@ const Footer = () => {
                 href={footer.social.youtube.url}
                 rel="noreferrer"
                 target="_blank"
-                aria-label="YouTube">
+                aria-label="youtube">
                 <FontAwesomeIcon
                   icon={faYoutube}
                   size="2x"
@@ -79,7 +79,7 @@ const Footer = () => {
                 href={footer.social.linkedin.url}
                 rel="noreferrer"
                 target="_blank"
-                aria-label="LinkedIn">
+                aria-label="linkedin">
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   size="2x"
@@ -96,7 +96,7 @@ const Footer = () => {
                 href={footer.social.more.url}
                 rel="noreferrer"
                 target="_blank"
-                aria-label="Mais">
+                aria-label="mais">
                 mais
               </a>
             </span>
@@ -113,12 +113,16 @@ const Footer = () => {
               <p className="has-text-regular">Todos direitos reservados</p>
             </div>
             <div className="column has-text-weight-semibold has-text-right has-text-centered-mobile">
-              <Link className="has-text-white mr-1" to="/faq">
-                FAQ
+              <Link
+                className="has-text-white mr-1"
+                to={footer.navigation.item1.url}>
+                {footer.navigation.item1.title}
               </Link>
               <span>&#8231;</span>
-              <Link className="has-text-white ml-1" to="/transparencia">
-                Transparência
+              <Link
+                className="has-text-white ml-1"
+                to={footer.navigation.item2.url}>
+                {footer.navigation.item2.title}
               </Link>
             </div>
           </div>
