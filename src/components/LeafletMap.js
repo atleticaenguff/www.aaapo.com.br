@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Map, TileLayer, Marker } from "react-leaflet"
+import { MapContainer, TileLayer, Marker } from "react-leaflet"
 
 class LeafletMap extends Component {
   render() {
@@ -11,7 +11,7 @@ class LeafletMap extends Component {
 
     if (typeof window !== "undefined") {
       return (
-        <Map
+        <MapContainer
           dragging={false}
           center={position}
           zoom={16}
@@ -22,7 +22,7 @@ class LeafletMap extends Component {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           <Marker position={position}></Marker>
-        </Map>
+        </MapContainer>
       )
     }
     return null

@@ -14,11 +14,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
             to={navbar.logo.url}
             className="navbar-item"
             style={{ backgroundColor: "transparent" }}>
-            <img
-              src={navbar.logo.src}
-              alt="logo"
-              width="85"
-              height="auto"></img>
+            <img src={navbar.logo.src} alt="logo" width="85" height="85"></img>
           </Link>
           <a
             role="button"
