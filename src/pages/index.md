@@ -7,7 +7,7 @@ hero:
   title: Esses loucos não param de cantar!
   subtitle: Somos a AAAPO - Atlética Engenharia UFF. Investindo no esporte universitário desde 2011.
   button:
-    url: /sobre
+    url: /sobre/
     title: Conheça mais
   video:
     thumbnail: /imagens/foto1.jpg
@@ -17,10 +17,10 @@ about:
   title: Quem somos?
   subtitle: Acreditamos no poder de transformação do esporte e na sua importância para uma vida saudável. Aqui, todos são bem-vindos!
   button1:
-    url: /sobre
+    url: /sobre/
     title: Saiba mais
   button2:
-    url: /sobre#conquistas
+    url: /sobre/#conquistas
     title: Ver conquistas
   image: /imagens/foto2.jpg
 modalities:
@@ -33,14 +33,14 @@ modalities:
     item3: Bem-estar e desenvolvimento
     item4: Integração social
   button:
-    url: /modalidades
+    url: /modalidades/
     title: Saiba mais
 media:
   uppertitle: Mídia
   title: Melhor conteúdo universitário
   subtitle: Vamos Dragões da UFF! Venha conferir tudo que preparamos para você.
   button:
-    url: /midia
+    url: /midia/
     title: Saiba mais
   block1:
     undertitle: Fotos
