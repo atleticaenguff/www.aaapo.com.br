@@ -18,7 +18,7 @@ achievements:
   years:
     - number: "2019"
       competitions:
-        - title: Carioca de Cheerleading
+        - title: Campeonato Carioca de Cheerleading
           awards:
             - title: 🥉 - Cheerleading - Nível 2 - Misto
         - title: CUP
@@ -61,7 +61,7 @@ achievements:
             - title: 🥉 - Basquete - F
             - title: 🥉 - Futsal - F
             - title: 🥉 - Futsal - M
-        - title: Nacional de Cheerleading
+        - title: Campeonato Nacional de Cheerleading
           awards:
             - title: 🥇 - Cheerleading - Nível 2.1 - Misto
         - title: Supercopa
@@ -84,7 +84,7 @@ achievements:
             - title: 🥈 - Handebol - F
     - number: "2018"
       competitions:
-        - title: Carioca de Cheerleading
+        - title: Campeonato Carioca de Cheerleading
           awards:
             - title: 🥈 - Cheerleading - Nível 3 - Misto
         - title: Intereng
