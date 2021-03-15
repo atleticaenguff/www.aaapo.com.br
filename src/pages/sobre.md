@@ -21,6 +21,9 @@ achievements:
         - title: Campeonato Carioca de Cheerleading
           awards:
             - title: 🥉 - Cheerleading - Nível 2 - Misto
+        - title: Campeonato Nacional de Cheerleading
+          awards:
+            - title: 🥇 - Cheerleading - Nível 2.1 - Misto
         - title: CUP
           awards:
             - title: 🥇 - GERAL
@@ -61,9 +64,6 @@ achievements:
             - title: 🥉 - Basquete - F
             - title: 🥉 - Futsal - F
             - title: 🥉 - Futsal - M
-        - title: Campeonato Nacional de Cheerleading
-          awards:
-            - title: 🥇 - Cheerleading - Nível 2.1 - Misto
         - title: Supercopa
           awards:
             - title: 🥈 - GERAL
