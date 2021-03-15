@@ -20,7 +20,7 @@ class Collapse extends Component {
 
     return (
       <div className={collapseState ? "mb-2" : "mb-0"}>
-        <header className="collapse-header is-flex is-align-items-center">
+        <header className="collapse-header is-flex is-align-items-baseline">
           <p
             className="subtitle has-text-weight-bold has-text-dark is-marginless is-clickable"
             aria-disabled="false"
