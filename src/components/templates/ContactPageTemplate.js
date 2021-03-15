@@ -53,9 +53,18 @@ const ContactPageTemplate = ({ seo, hero, contact1, contact2, local, map }) => (
               </a>
             </div>
             <div className="block">
-              <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
-                {contact2.title}
-              </h2>
+              <span className="is-flex">
+                <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
+                  {contact2.title}
+                </h2>
+                <a
+                  className="button is-small has-text-weight-semibold is-outlined is-dark mt-1 ml-3"
+                  href={contact2.button.url}
+                  rel="noreferrer"
+                  target="_blank">
+                  {contact2.button.title}
+                </a>
+              </span>
               <p className="subtitle is-size-6-mobile has-text-weight-normal has-text-black">
                 {contact2.subtitle}
               </p>
@@ -64,15 +73,6 @@ const ContactPageTemplate = ({ seo, hero, contact1, contact2, local, map }) => (
                 href={"mailto:" + contact2.email}>
                 {contact2.email}
               </a>
-              <p className="buttons mt-4">
-                <a
-                  className="button is-small has-text-weight-semibold is-outlined is-dark"
-                  href={contact2.button.url}
-                  rel="noreferrer"
-                  target="_blank">
-                  {contact2.button.title}
-                </a>
-              </p>
             </div>
             <div className="block">
               <h2 className="title is-2 is-size-3-mobile has-text-weight-bold is-spaced has-text-dark">
