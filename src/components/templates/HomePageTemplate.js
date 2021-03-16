@@ -28,7 +28,7 @@ const HomePageTemplate = ({ seo, hero, about, modalities, media, store }) => (
         <div className="container">
           <div className="columns is-vcentered">
             <div className="column">
-              <h1 className="title is-1 is-size-2-mobile has-text-weight-semibold is-spaced">
+              <h1 className="title is-1 is-size-2-mobile has-text-weight-bold is-spaced">
                 {hero.title}
               </h1>
               <p className="subtitle is-size-6-mobile has-text-weight-medium">
