@@ -19,7 +19,7 @@ class Collapse extends Component {
     const { collapseState } = this.state
 
     return (
-      <div className={collapseState ? "mb-2" : "mb-0"}>
+      <div className={collapseState ? "mb-2" : "mb-1"}>
         <header className="collapse-header is-flex is-align-items-baseline">
           <p
             className="subtitle has-text-weight-semibold has-text-dark is-marginless is-clickable"
