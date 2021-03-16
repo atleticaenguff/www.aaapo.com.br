@@ -304,6 +304,6 @@ achievements:
             - title: 🥈 - Futsal - M
             - title: 🥇 - Handebol - M
             - title: 🥉 - Tênis de mesa - F
-            - title: 🥇 - Handebol - M
-            - title: 🥈 - Handebol - M
+            - title: 🥇 - Tênis de mesa - M
+            - title: 🥈 - Voleibol - M
 ---
