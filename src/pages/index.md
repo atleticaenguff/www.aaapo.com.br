@@ -1,11 +1,13 @@
 ---
 templateKey: home-page
 seo:
-  meta_title: Atlética Engenharia UFF
-  meta_description: Site oficial da Associação Atlética Acadêmica Pio Orlando - Atlética Engenharia UFF.
+  meta_title: AAAPO - Atlética Engenharia UFF
+  meta_description: Site oficial da Associação Atlética Acadêmica Pio Orlando -
+    Atlética Engenharia UFF.
 hero:
   title: Esses loucos não param de cantar!
-  subtitle: Somos a AAAPO - Atlética Engenharia UFF. Investindo no esporte universitário desde 2011.
+  subtitle: Somos a AAAPO - Atlética Engenharia UFF. Investindo no esporte
+    universitário desde 2011.
   button:
     url: /sobre/
     title: Conheça mais
@@ -15,7 +17,8 @@ hero:
 about:
   uppertitle: Sobre
   title: Quem somos?
-  subtitle: Acreditamos no poder de transformação do esporte e na sua importância para uma vida saudável. Aqui, todos são bem-vindos!
+  subtitle: Acreditamos no poder de transformação do esporte e na sua importância
+    para uma vida saudável. Aqui, todos são bem-vindos!
   button1:
     url: /sobre/
     title: Saiba mais
