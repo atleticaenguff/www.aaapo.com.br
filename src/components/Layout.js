@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import "../assets/sass/styles.scss"
 import SEO from "./SEO"
 import AnnouncementBar from "./AnnouncementBar"
-import NavBar from "./NavBar"
+import Navbar from "./Navbar"
 import Footer from "./Footer"
 
 class Layout extends Component {
@@ -32,7 +32,7 @@ class Layout extends Component {
         </Helmet>
         <SEO></SEO>
         <AnnouncementBar></AnnouncementBar>
-        <NavBar
+        <Navbar
           isActive={this.state.isActive}
           toggleNavbar={() => this.toggleNavbar()}
         />

@@ -28,13 +28,25 @@ class ModalitiesCollapse extends Component {
             }}
             onClick={this.toggleCollapseState}>
             <p
-              className="card-header-title"
+              className="card-header-title is-justify-content-space-between"
               aria-disabled="false"
               aria-expanded={collapseState ? "true" : "false"}
               style={{
                 fontSize: "1.1rem",
               }}>
               {title}
+              <span
+                className={"tag is-success mb-0 mr-2 is-hidden"}
+                style={{
+                  width: "5px",
+                  height: "5px",
+                }}></span>
+              <span
+                className={"tag is-warning mb-0 mr-2"}
+                style={{
+                  width: "5px",
+                  height: "5px",
+                }}></span>
             </p>
             <a className="card-header-icon">
               <span

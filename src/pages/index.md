@@ -17,7 +17,8 @@ hero:
 about:
   uppertitle: Sobre
   title: Quem somos?
-  subtitle: Acreditamos no poder de transformação do esporte e na sua importância
+  subtitle:
+    Acreditamos no poder de transformação do esporte e na sua importância
     para uma vida saudável. Aqui, todos são bem-vindos!
   button1:
     url: /sobre/

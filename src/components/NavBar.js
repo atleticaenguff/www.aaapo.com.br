@@ -3,7 +3,7 @@ import React from "react"
 import { Link } from "gatsby"
 import navbar from "../data/navbar.json"
 
-const NavBar = ({ toggleNavbar, isActive }) => {
+const Navbar = ({ toggleNavbar, isActive }) => {
   return (
     <nav
       className="navbar is-primary is-spaced pt-2 pb-0"
@@ -79,4 +79,4 @@ const NavBar = ({ toggleNavbar, isActive }) => {
   )
 }
 
-export default NavBar
+export default Navbar

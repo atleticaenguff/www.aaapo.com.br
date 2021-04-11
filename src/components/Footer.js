@@ -16,114 +16,145 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="content">
-          <div className="has-text-centered">
-            <span className="icon is-large mr-2">
-              <a
-                href={footer.social.facebook.url}
-                rel="noreferrer"
-                target="_blank"
-                aria-label="facebook">
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  size="2x"
-                  className="has-text-white"
-                  transform="shrink-2"
-                />
-              </a>
-            </span>
-            <span className="icon is-large mx-2">
-              <a
-                href={footer.social.twitter.url}
-                rel="noreferrer"
-                target="_blank"
-                aria-label="twitter">
-                <FontAwesomeIcon
-                  icon={faTwitter}
-                  size="2x"
-                  className="has-text-white"
-                  transform="shrink-2"
-                />
-              </a>
-            </span>
-            <span className="icon is-large mx-2">
-              <a
-                href={footer.social.instagram.url}
-                rel="noreferrer"
-                target="_blank"
-                aria-label="instagram">
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  size="2x"
-                  className="has-text-white"
-                  transform="shrink-2"
-                />
-              </a>
-            </span>
-            <span className="icon is-large mx-2">
-              <a
-                href={footer.social.youtube.url}
-                rel="noreferrer"
-                target="_blank"
-                aria-label="youtube">
-                <FontAwesomeIcon
-                  icon={faYoutube}
-                  size="2x"
-                  className="has-text-white"
-                  transform="shrink-2"
-                />
-              </a>
-            </span>
-            <span className="icon is-large mx-2">
-              <a
-                href={footer.social.linkedin.url}
-                rel="noreferrer"
-                target="_blank"
-                aria-label="linkedin">
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  size="2x"
-                  className="has-text-white"
-                  transform="shrink-2"
-                />
-              </a>
-            </span>
-            <span
-              className="icon is-large ml-2"
-              style={{ verticalAlign: "top" }}>
-              <a
-                className="has-text-weight-semibold has-text-white"
-                href={footer.social.more.url}
-                rel="noreferrer"
-                target="_blank"
-                aria-label="mais">
-                mais
-              </a>
-            </span>
-          </div>
-          <hr></hr>
-          <div className="columns is-vcentered">
-            <div className="column has-text-centered-mobile">
-              <p className="has-text-weight-regular is-marginless">
-                © {localTimeYear + " "}
-                <span className="has-text-weight-semibold">
-                  {footer.copyright.name}
-                </span>
-              </p>
-              <p className="has-text-regular">Todos direitos reservados</p>
+        <div className="level">
+          <div className="level-left">
+            <div className="level-item">
+              <Link to={footer.logo.url}>
+                <img
+                  src={footer.logo.src}
+                  alt="logo"
+                  width="85"
+                  height="85"></img>
+              </Link>
             </div>
-            <div className="column has-text-weight-semibold has-text-right has-text-centered-mobile">
+          </div>
+          <div className="level-right">
+            <div className="level-item">
               <Link
-                className="has-text-white mr-1"
+                className="has-text-weight-semibold has-text-white"
                 to={footer.navigation.item1.url}>
                 {footer.navigation.item1.title}
               </Link>
-              <span>&#8231;</span>
+            </div>
+            <div className="level-item">
               <Link
-                className="has-text-white ml-1"
+                className="has-text-weight-semibold has-text-white"
                 to={footer.navigation.item2.url}>
                 {footer.navigation.item2.title}
               </Link>
+            </div>
+          </div>
+        </div>
+        <hr></hr>
+        <div className="level">
+          <div className="level-left">
+            <div className="level-item is-hidden-mobile is-block">
+              <p className="has-text-weight-regular has-text-white">
+                © {localTimeYear + " "}
+                <span className="has-text-weight-semibold">
+                  {footer.copyright.name + ". "}
+                </span>
+              </p>
+              <p className="has-text-weight-regular has-text-white">
+                Todos direitos reservados.
+              </p>
+            </div>
+          </div>
+          <div className="level-right">
+            <div className="level-item mr-0">
+              <span className="icon is-large">
+                <a
+                  href={footer.social.facebook.url}
+                  rel="noreferrer"
+                  target="_blank"
+                  aria-label="facebook">
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    size="2x"
+                    className="has-text-white"
+                    transform="shrink-4"
+                  />
+                </a>
+              </span>
+              <span className="icon is-large">
+                <a
+                  href={footer.social.twitter.url}
+                  rel="noreferrer"
+                  target="_blank"
+                  aria-label="twitter">
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    size="2x"
+                    className="has-text-white"
+                    transform="shrink-4"
+                  />
+                </a>
+              </span>
+              <span className="icon is-large">
+                <a
+                  href={footer.social.instagram.url}
+                  rel="noreferrer"
+                  target="_blank"
+                  aria-label="instagram">
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    size="2x"
+                    className="has-text-white"
+                    transform="shrink-4"
+                  />
+                </a>
+              </span>
+              <span className="icon is-large">
+                <a
+                  href={footer.social.youtube.url}
+                  rel="noreferrer"
+                  target="_blank"
+                  aria-label="youtube">
+                  <FontAwesomeIcon
+                    icon={faYoutube}
+                    size="2x"
+                    className="has-text-white"
+                    transform="shrink-4"
+                  />
+                </a>
+              </span>
+              <span className="icon is-large">
+                <a
+                  href={footer.social.linkedin.url}
+                  rel="noreferrer"
+                  target="_blank"
+                  aria-label="linkedin">
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    size="2x"
+                    className="has-text-white"
+                    transform="shrink-4"
+                  />
+                </a>
+              </span>
+              <span className="icon is-large">
+                <a
+                  className="has-text-weight-semibold has-text-white"
+                  href={footer.social.more.url}
+                  rel="noreferrer"
+                  target="_blank"
+                  aria-label="mais">
+                  mais
+                </a>
+              </span>
+            </div>
+            <div className="level-item is-hidden-tablet has-text-centered mb-0">
+              <p className="has-text-weight-regular has-text-white">
+                © {localTimeYear + " "}
+                <span className="has-text-weight-semibold">
+                  {footer.copyright.name + "."}
+                </span>
+              </p>
+            </div>
+            <div className="level-item is-hidden-tablet is-block has-text-centered">
+              <p className="has-text-weight-regular has-text-white">
+                Todos direitos reservados.
+              </p>
             </div>
           </div>
         </div>

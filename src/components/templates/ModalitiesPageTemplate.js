@@ -1,6 +1,6 @@
 import React from "react"
-import Helmet from "react-helmet"
 import PropTypes from "prop-types"
+import Helmet from "react-helmet"
 import ModalitiesCollapse from "../ModalitiesCollapse"
 
 const ModalitiesPageTemplate = ({ seo, hero, modalities }) => (
@@ -47,7 +47,7 @@ const ModalitiesPageTemplate = ({ seo, hero, modalities }) => (
             </p>
           </div>
         </div>
-        <div className="columns is-multiline">
+        <div className="columns is-multiline mb-5">
           {modalities.collapses.map((collapse, id) => (
             <ModalitiesCollapse title={collapse.title} key={id}>
               <div className="block mb-4">
@@ -163,6 +163,26 @@ const ModalitiesPageTemplate = ({ seo, hero, modalities }) => (
               </div>
             </ModalitiesCollapse>
           ))}
+        </div>
+        <div className="tags is-justify-content-center">
+          <span className="tag is-dark has-text-weight-semibold">
+            <span
+              className="tag is-success mb-0 mr-2"
+              style={{
+                width: "5px",
+                height: "5px",
+              }}></span>
+            Ativo
+          </span>
+          <span className="tag is-dark has-text-weight-semibold">
+            <span
+              className="tag is-warning mb-0 mr-2"
+              style={{
+                width: "5px",
+                height: "5px",
+              }}></span>
+            Inativo
+          </span>
         </div>
       </div>
     </section>

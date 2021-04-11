@@ -1,4 +1,24 @@
 {
+  "logo": {
+    "url": "/",
+    "src": "/imagens/logo.png"
+  },
+
+  "navigation": {
+    "item1": {
+      "title": "FAQ",
+      "url": "/faq/"
+    },
+    "item2": {
+      "title": "Transparência",
+      "url": "/transparencia/"
+    }
+  },
+
+  "copyright": {
+    "name": "Associação Atlética Acadêmica Pio Orlando"
+  },
+
   "social": {
     "facebook": {
       "url": "https://www.facebook.com/atleticaenguff"
@@ -17,21 +37,6 @@
     },
     "more": {
       "url": "https://linktr.ee/atleticaenguff"
-    }
-  },
-
-  "copyright": {
-    "name": "Associação Atlética Acadêmica Pio Orlando"
-  },
-
-  "navigation": {
-    "item1": {
-      "title": "FAQ",
-      "url": "/faq/"
-    },
-    "item2": {
-      "title": "Transparência",
-      "url": "/transparencia/"
     }
   }
 }
