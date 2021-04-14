@@ -14,7 +14,7 @@ modalities:
   collapses:
     - title: Atletismo
       days:
-        days1: Terça e Quinta
+        days1: Terça e Quinta - Misto
         days2: ""
         days3: ""
       addresses:
@@ -64,7 +64,7 @@ modalities:
           phone: ""
     - title: Bateria
       days:
-        days1: Terça e/ou Quinta
+        days1: Terça e/ou Quinta - Misto
         days2: ""
         days3: ""
       addresses:
@@ -89,7 +89,7 @@ modalities:
           phone: ""
     - title: Cabo de guerra
       days:
-        days1: Terça
+        days1: Terça - Misto
         days2: ""
         days3: ""
       addresses:
@@ -114,7 +114,7 @@ modalities:
           phone: ""
     - title: Cheerleading
       days:
-        days1: Quinta e/ou Sexta
+        days1: Quinta e/ou Sexta - Misto
         days2: ""
         days3: ""
       addresses:
@@ -139,7 +139,7 @@ modalities:
           phone: ""
     - title: Esports - CS:GO
       days:
-        days1: Quarta e Quinta
+        days1: Quarta e Quinta - Misto
         days2: ""
         days3: ""
       addresses:
@@ -239,7 +239,7 @@ modalities:
           phone: ""
     - title: Judô
       days:
-        days1: Terça e Quinta
+        days1: Terça e Quinta - Misto
         days2: ""
         days3: ""
       addresses:
@@ -264,7 +264,7 @@ modalities:
           phone: ""
     - title: Natação
       days:
-        days1: Sábado
+        days1: Sábado - Misto
         days2: ""
         days3: ""
       addresses:
@@ -289,7 +289,7 @@ modalities:
           phone: ""
     - title: Tênis de mesa
       days:
-        days1: Terça e Quinta
+        days1: Terça e Quinta - Misto
         days2: ""
         days3: ""
       addresses:

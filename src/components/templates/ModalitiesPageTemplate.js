@@ -172,7 +172,7 @@ const ModalitiesPageTemplate = ({ seo, hero, modalities }) => (
                 width: "5px",
                 height: "5px",
               }}></span>
-            Ativo
+            Ativa
           </span>
           <span className="tag is-dark has-text-weight-semibold">
             <span
@@ -181,7 +181,7 @@ const ModalitiesPageTemplate = ({ seo, hero, modalities }) => (
                 width: "5px",
                 height: "5px",
               }}></span>
-            Inativo
+            Temp. inativa
           </span>
         </div>
       </div>
