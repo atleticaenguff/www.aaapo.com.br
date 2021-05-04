@@ -1,6 +1,5 @@
 {
-  "hotjar": {
-    "id": "2187747",
-    "sv": "6"
+  "googleTagManager": {
+    "id": "YOUR_GOOGLE_TAGMANAGER_ID"
   }
 }

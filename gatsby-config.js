@@ -1,6 +1,5 @@
 const seo = require("./src/data/seo.json")
 const manifest = require("./src/data/manifest.json")
-const tagManagers = require("./src/data/tag-managers.json")
 const analytics = require("./src/data/analytics.json")
 
 module.exports = {
@@ -76,17 +75,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        id: tagManagers.googleTagManager.id,
+        id: analytics.googleTagManager.id,
         includeInDevelopment: false,
         defaultDataLayer: { platform: "gatsby" },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-hotjar`,
-      options: {
-        includeInDevelopment: false,
-        id: analytics.hotjar.id,
-        sv: analytics.hotjar.sv,
       },
     },
     {

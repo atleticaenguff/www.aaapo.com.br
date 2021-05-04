@@ -967,29 +967,15 @@ collections:
             }
           - { label: "Theme color", name: "theme_color", widget: string }
           - { label: "Icon", name: "icon", widget: image }
-      - file: "src/data/tag-managers.json"
-        label: "Tag managers"
-        name: "tagManagers"
+      - file: "src/data/analytics.json"
+        label: "Analytics"
+        name: "analytics"
         fields:
           - {
               label: "Google Tag Manager",
               name: "googleTagManager",
               widget: object,
               fields: [{ label: "ID", name: "id", widget: string }],
-            }
-      - file: "src/data/analytics.json"
-        label: "Analytics"
-        name: "analytics"
-        fields:
-          - {
-              label: "Hotjar",
-              name: "hotjar",
-              widget: object,
-              fields:
-                [
-                  { label: "ID", name: "id", widget: string },
-                  { label: "sv", name: "sv", widget: string },
-                ],
             }
       - file: "src/data/navbar.json"
         label: "Navbar"
