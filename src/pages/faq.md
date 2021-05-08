@@ -15,8 +15,6 @@ faqs:
     answer: Você pode conferir os horários, locais das práticas e contato dos responsáveis em nossa página Modalidades. As informações estarão sempre atualizadas.
   - question: Quais são os horários de plantão?
     answer: Sempre que houver plantão, anunciaremos os horários em nossas redes sociais.
-  - question: Quais produtos estão à venda?
-    answer: Como nosso estoque varia de tempos em tempos, o melhor a ser feito é entrar em contato conosco para que possamos te informar o que está disponível.
   - question: Como faço para me associar? Tem alguma taxa? Quais são os benefícios?
     answer: Sempre após grandes eventos (Intereng, Supercopa, etc), liberamos em nossas redes sociais um formulário de associação. O processo é totalmente gratuito, e com isso você pode vir a ter vantagens exclusivas em compras de pacotes, produtos, etc. Além disso, como associado você terá direito a voto em assembléias da associação.
   - question: Como faço para fazer parte da organização da Atlética?
