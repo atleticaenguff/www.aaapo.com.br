@@ -30,6 +30,8 @@ class Layout extends Component {
             rel="stylesheet"
           />
         </Helmet>
+        Torcedores, calma!
+        {/*
         <SEO></SEO>
         <AnnouncementBar></AnnouncementBar>
         <Navbar
@@ -38,6 +40,7 @@ class Layout extends Component {
         />
         <main>{this.props.children}</main>
         <Footer />
+        */}
       </>
     )
   }
