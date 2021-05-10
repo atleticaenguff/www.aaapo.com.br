@@ -54,7 +54,7 @@ module.exports = {
       options: {
         host: seo.url,
         sitemap: seo.url + `/sitemap.xml`,
-        policy: [{ userAgent: "*", disallow: ["/"] }],
+        policy: [{ userAgent: "*", allow: ["/"] }],
       },
     },
     {
