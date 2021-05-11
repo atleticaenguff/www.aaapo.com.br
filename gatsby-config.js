@@ -50,11 +50,11 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     {
-      resolve: "gatsby-plugin-robots-txt",
+      resolve: `gatsby-plugin-robots-txt`,
       options: {
         host: seo.url,
         sitemap: seo.url + `/sitemap.xml`,
-        policy: [{ userAgent: "*", allow: ["/"] }],
+        policy: [{ userAgent: `*`, allow: [`/`] }],
       },
     },
     {
