@@ -4,11 +4,11 @@ backend:
 media_folder: "static/imagens"
 public_folder: "/imagens"
 
-site_url: https://aaapo-v2.netlify.app/
+site_url: https://www.aaapo.com.br/
 
-display_url: https://aaapo-v2.netlify.app/
+display_url: https://www.aaapo.com.br/
 
-logo_url: https://aaapo-v2.netlify.app/imagens/logo.png
+logo_url: https://www.aaapo.com.br/imagens/logo.png
 
 collections:
   - name: "pages"
