@@ -48,12 +48,12 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    "gatsby-plugin-sitemap",
+    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: seo.url,
-        sitemap: `https://www.aaapo.com.br/sitemap.xml`,
+        sitemap: seo.url + `/sitemap.xml`,
         policy: [{ userAgent: "*", allow: ["/"] }],
       },
     },
