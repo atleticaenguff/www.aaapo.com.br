@@ -5,7 +5,7 @@ const analytics = require("./src/data/analytics.json")
 module.exports = {
   siteMetadata: {
     title: seo.title,
-    siteUrl: `https://www.aaapo.com.br`,
+    siteUrl: seo.url,
     description: seo.description,
   },
   plugins: [
@@ -52,9 +52,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://www.aaapo.com.br",
-        sitemap: "https://www.aaapo.com.br/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }],
+        host: seo.url,
+        sitemap: seo.url + `/sitemap.xml`,
+        policy: [{ userAgent: "*", disallow: ["/"] }],
       },
     },
     {
