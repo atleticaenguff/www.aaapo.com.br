@@ -72,7 +72,6 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-remove-serviceworker",
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
