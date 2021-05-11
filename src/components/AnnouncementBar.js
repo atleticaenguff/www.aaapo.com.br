@@ -30,14 +30,8 @@ class AnnouncementBar extends Component {
   }
 
   render() {
-    const {
-      loading,
-      isHidden,
-      content,
-      isHiddenLink,
-      linkText,
-      linkURL,
-    } = this.state
+    const { loading, isHidden, content, isHiddenLink, linkText, linkURL } =
+      this.state
 
     return (
       <div
