@@ -5,7 +5,7 @@ const analytics = require("./src/data/analytics.json")
 module.exports = {
   siteMetadata: {
     title: seo.title,
-    siteUrl: seo.url,
+    siteUrl: `https://www.aaapo.com.br`,
     description: seo.description,
   },
   plugins: [
@@ -23,9 +23,9 @@ module.exports = {
         name: "pages",
       },
     },
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -46,19 +46,19 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-sitemap`,
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-sitemap",
     {
-      resolve: `gatsby-plugin-robots-txt`,
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: seo.url,
-        sitemap: seo.url + `/sitemap.xml`,
-        policy: [{ userAgent: `*`, allow: [`/`] }],
+        host: "https://www.aaapo.com.br",
+        sitemap: "https://www.aaapo.com.br/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
         name: manifest.name,
         short_name: manifest.short_name,
@@ -68,13 +68,13 @@ module.exports = {
         display: "standalone",
         icon: `${__dirname}/static` + manifest.icon,
         icon_options: {
-          purpose: `any maskable`,
+          purpose: "any maskable",
         },
       },
     },
-    `gatsby-plugin-remove-serviceworker`,
+    "gatsby-plugin-remove-serviceworker",
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: analytics.googleTagManager.id,
         includeInDevelopment: false,
