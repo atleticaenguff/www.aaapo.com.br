@@ -74,9 +74,14 @@ class VideoModal extends Component {
                   className="video-wrapper"
                   style={{ paddingBottom: "56.25%" }}>
                   <iframe
-                    title="YouTube"
-                    allowFullScreen
-                    src={"https://www.youtube.com/embed/" + id + "?autoplay=1"}
+                    title="Vimeo"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                    src={
+                      "https://player.vimeo.com/video/" +
+                      id +
+                      "?autoplay=1&loop=1"
+                    }
                     style={{
                       position: "absolute",
                       top: "0",
