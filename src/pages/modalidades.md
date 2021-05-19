@@ -154,7 +154,7 @@ modalities:
           address: ""
       people:
         person1:
-          name: Lucas Condeixa
+          name: Lucas Condeixa - M
           phone: "21998122628"
         person2:
           name: ""
@@ -204,10 +204,10 @@ modalities:
           address: ""
       people:
         person1:
-          name: Caroline Lacerda
+          name: Caroline Lacerda - F
           phone: "21975258763"
         person2:
-          name: Vítor Gomes
+          name: Vítor Gomes - M
           phone: "21995059175"
         person3:
           name: ""
