@@ -12,31 +12,6 @@ modalities:
   subtitle: Escolha sua modalidade e, se necessário, entre em contato com o
     responsável. Você será informado de todos detalhes que precisar.
   collapses:
-    - title: Atletismo
-      days:
-        days1: Terça e Quinta - Misto
-        days2: ""
-        days3: ""
-      addresses:
-        address1:
-          url: https://goo.gl/maps/Jo5aDKqzryaf58X8A
-          address: R. Alexandre Moura, 8, Niterói - RJ (Pista Gragoatá)
-        address2:
-          url: ""
-          address: ""
-        address3:
-          url: ""
-          address: ""
-      people:
-        person1:
-          name: Lucas Ivo
-          phone: "21974658740"
-        person2:
-          name: ""
-          phone: ""
-        person3:
-          name: ""
-          phone: ""
     - title: Basquete
       days:
         days1: Quinta e Sábado - F
@@ -129,11 +104,11 @@ modalities:
           address: ""
       people:
         person1:
-          name: Ana Oliveira
-          phone: "21997485072"
-        person2:
           name: Lethycia Guse
           phone: "21972168859"
+        person2:
+          name: ""
+          phone: ""
         person3:
           name: ""
           phone: ""
@@ -232,8 +207,8 @@ modalities:
           name: Caroline Lacerda
           phone: "21975258763"
         person2:
-          name: ""
-          phone: ""
+          name: Vítor Gomes
+          phone: "21995059175"
         person3:
           name: ""
           phone: ""
@@ -315,7 +290,7 @@ modalities:
     - title: Voleibol
       days:
         days1: Segunda e Quarta - F
-        days2: Segunda e Quarta - M
+        days2: ""
         days3: ""
       addresses:
         address1:
@@ -332,8 +307,8 @@ modalities:
           name: Olívia Sanches - F
           phone: "22998612209"
         person2:
-          name: Lincoln Bueno - M
-          phone: "12992567806"
+          name: ""
+          phone: ""
         person3:
           name: ""
           phone: ""
