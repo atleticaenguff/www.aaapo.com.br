@@ -15,7 +15,7 @@ reports:
     button:
       url: https://drive.google.com/drive/folders/1wxjTH6BB4sJ0Wj0kNvveXI6-ANoVeamn?usp=sharing
       title: Acessar
-  - title: Organograma
+  - title: Organograma detalhado
     button:
       url: https://drive.google.com/drive/folders/1RN8g7ZPA_m1x4XfwRYSlPSL36fteq9VU?usp=sharing
       title: Acessar
