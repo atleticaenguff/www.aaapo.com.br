@@ -1,9 +1,4 @@
 {
-  "logo": {
-    "url": "/",
-    "src": "/imagens/logo.png"
-  },
-
   "navigation": {
     "item1": {
       "title": "FAQ",

@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Component } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons"
@@ -20,7 +19,7 @@ class Collapse extends Component {
 
     return (
       <div className={collapseState ? "mb-2" : "mb-1"}>
-        <header className="collapse-header is-flex is-align-items-baseline">
+        <header className="collapse-header is-flex is-align-items-center">
           <p
             className="subtitle has-text-weight-semibold has-text-dark is-marginless is-clickable"
             aria-disabled="false"

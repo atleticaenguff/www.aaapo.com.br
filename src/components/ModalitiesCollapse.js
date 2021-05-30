@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Component } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons"
@@ -15,7 +14,7 @@ class ModalitiesCollapse extends Component {
   }
 
   render() {
-    const { title, children } = this.props
+    const { title, status, children } = this.props
     const { collapseState } = this.state
 
     return (
@@ -34,12 +33,21 @@ class ModalitiesCollapse extends Component {
               style={{
                 fontSize: "1.1rem",
               }}>
-              <span
-                className="tag is-warning mr-2"
-                style={{
-                  width: "5px",
-                  height: "5px",
-                }}></span>
+              {status ? (
+                <span
+                  className="tag is-success mr-2"
+                  style={{
+                    width: "5px",
+                    height: "5px",
+                  }}></span>
+              ) : (
+                <span
+                  className="tag is-warning mr-2"
+                  style={{
+                    width: "5px",
+                    height: "5px",
+                  }}></span>
+              )}
               {title}
             </p>
             <a className="card-header-icon">

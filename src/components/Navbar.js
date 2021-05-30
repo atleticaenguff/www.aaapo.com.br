@@ -1,9 +1,9 @@
-/* eslint-disable */
 import React from "react"
 import { Link } from "gatsby"
 import navbar from "../data/navbar.json"
+import { StaticImage } from "gatsby-plugin-image"
 
-const Navbar = ({ toggleNavbar, isActive }) => {
+const Navbar = ({ isActive, toggleNavbar }) => {
   return (
     <nav
       className="navbar is-primary is-spaced pt-2 pb-0"
@@ -11,10 +11,18 @@ const Navbar = ({ toggleNavbar, isActive }) => {
       <div className="container">
         <div className="navbar-brand is-align-items-center">
           <Link
-            to={navbar.logo.url}
+            to="/"
             className="navbar-item"
             style={{ backgroundColor: "transparent" }}>
-            <img src={navbar.logo.src} alt="logo" width="85" height="85"></img>
+            <StaticImage
+              src="../images/logo.png"
+              alt="logo"
+              placeholder="blurred"
+              layout="fixed"
+              width={85}
+              height={85}
+              quality={100}
+            />
           </Link>
           <a
             role="button"
@@ -32,7 +40,7 @@ const Navbar = ({ toggleNavbar, isActive }) => {
         <div
           id="nav-menu"
           className={`navbar-menu ${isActive ? "is-active" : ""}`}>
-          <div className="navbar-end">
+          <div className="navbar-start">
             <Link
               className="navbar-item has-text-weight-semibold"
               to={navbar.navigation.item1.url}
@@ -51,20 +59,20 @@ const Navbar = ({ toggleNavbar, isActive }) => {
               style={{ backgroundColor: "transparent" }}>
               {navbar.navigation.item3.title}
             </Link>
-            <a
-              className="navbar-item has-text-weight-semibold"
-              href={navbar.navigation.item4.url}
-              rel="noreferrer"
-              target="_blank"
-              style={{ backgroundColor: "transparent" }}>
-              {navbar.navigation.item4.title}
-            </a>
             <Link
               className="navbar-item has-text-weight-semibold"
-              to={navbar.navigation.item5.url}
+              to={navbar.navigation.item4.url}
+              style={{ backgroundColor: "transparent" }}>
+              {navbar.navigation.item4.title}
+            </Link>
+          </div>
+          <div className="navbar-end">
+            <a
+              className="navbar-item has-text-weight-semibold"
+              href={navbar.navigation.item5.url}
               style={{ backgroundColor: "transparent" }}>
               {navbar.navigation.item5.title}
-            </Link>
+            </a>
             <div className="navbar-item">
               <a
                 className="button has-text-weight-semibold is-dark"

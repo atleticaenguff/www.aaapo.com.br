@@ -1,6 +1,5 @@
-/* eslint-disable */
 import React, { Component } from "react"
-import PreviewCompatibleImage from "./PreviewCompatibleImage"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircle, faPlay } from "@fortawesome/free-solid-svg-icons"
 
@@ -26,12 +25,15 @@ class VideoModal extends Component {
 
   render() {
     const thumbnail = this.props.thumbnail
-    const id = this.props.id
+    const url = this.props.url
 
     return (
       <>
         <figure className="image" style={{ maxWidth: "500px" }}>
-          <PreviewCompatibleImage imageInfo={thumbnail} alt="video" />
+          <GatsbyImage
+            image={thumbnail}
+            alt="video"
+            style={{ borderRadius: "4px", opacity: "0.9" }}></GatsbyImage>
           <span
             role="button"
             tabIndex={0}
@@ -77,11 +79,7 @@ class VideoModal extends Component {
                     title="Vimeo"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowfullscreen
-                    src={
-                      "https://player.vimeo.com/video/" +
-                      id +
-                      "?autoplay=1&loop=1"
-                    }
+                    src={url + "?autoplay=1&loop=1"}
                     style={{
                       position: "absolute",
                       top: "0",

@@ -1,9 +1,4 @@
 {
-  "logo": {
-    "url": "/",
-    "src": "/imagens/logo.png"
-  },
-
   "navigation": {
     "item1": {
       "title": "Sobre",
@@ -18,16 +13,16 @@
       "url": "/midia/"
     },
     "item4": {
-      "title": "Ingressos",
-      "url": "https://atleticaenguff.eventbrite.com"
-    },
-    "item5": {
       "title": "Contato",
       "url": "/contato/"
     },
+    "item5": {
+      "title": "Ingressos",
+      "url": "https://atleticaenguff.eventbrite.com"
+    },
     "item6": {
       "title": "Loja",
-      "url": "https://loja.aaapo.com.br"
+      "url": "https://loja.aaapo.com.br/"
     }
   }
 }

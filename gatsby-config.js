@@ -1,6 +1,9 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 const seo = require("./src/data/seo.json")
 const manifest = require("./src/data/manifest.json")
-const analytics = require("./src/data/analytics.json")
 
 module.exports = {
   siteMetadata: {
@@ -12,51 +15,21 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/static/imagens`,
-        name: "imagens",
+        name: "pages",
+        path: `${__dirname}/src/pages`,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/src/pages`,
-        name: "pages",
-      },
-    },
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          "gatsby-remark-relative-images",
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 800,
-            },
-          },
-          {
-            resolve: "gatsby-remark-copy-linked-files",
-            options: {
-              destinationDir: "static",
-            },
-          },
-        ],
+        name: "images",
+        path: `${__dirname}/src/images`,
       },
     },
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sass",
-    "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-robots-txt",
-      options: {
-        host: seo.url,
-        sitemap: seo.url + "sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }],
-      },
-    },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -66,31 +39,42 @@ module.exports = {
         background_color: manifest.background_color,
         theme_color: manifest.theme_color,
         display: "standalone",
-        icon: `${__dirname}/static` + manifest.icon,
+        icon: `${__dirname}/src` + manifest.icon,
         icon_options: {
           purpose: "any maskable",
         },
       },
     },
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: analytics.googleTagManager.id,
+        id: process.env.GOOGLE_TAG_MANAGER_ID,
         includeInDevelopment: false,
         defaultDataLayer: { platform: "gatsby" },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: seo.url + "/",
+        sitemap: seo.url + "/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        host: process.env.CONTENTFUL_HOST,
       },
     },
     {
       resolve: "gatsby-plugin-react-leaflet",
       options: {
         linkStyles: true,
-      },
-    },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-        enableIdentityWidget: true,
       },
     },
   ],

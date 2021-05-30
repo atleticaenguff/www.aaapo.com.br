@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import footer from "../data/footer.json"
+import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faFacebook,
@@ -19,12 +20,16 @@ const Footer = () => {
         <div className="level">
           <div className="level-left">
             <div className="level-item">
-              <Link to={footer.logo.url}>
-                <img
-                  src={footer.logo.src}
+              <Link to="/">
+                <StaticImage
+                  src="../images/logo.png"
                   alt="logo"
-                  width="85"
-                  height="85"></img>
+                  placeholder="blurred"
+                  layout="fixed"
+                  width={85}
+                  height={85}
+                  quality={100}
+                />
               </Link>
             </div>
           </div>

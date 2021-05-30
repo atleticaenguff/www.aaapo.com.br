@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Helmet from "react-helmet"
-import "../assets/sass/styles.scss"
-import SEO from "./SEO"
+import "./Layout.scss"
+import Seo from "./Seo"
 import AnnouncementBar from "./AnnouncementBar"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
@@ -18,6 +18,8 @@ class Layout extends Component {
   }
 
   render() {
+    const { metaTitleLayout, metaDescriptionLayout } = this.props
+
     return (
       <>
         <Helmet defer={false}>
@@ -30,7 +32,9 @@ class Layout extends Component {
             rel="stylesheet"
           />
         </Helmet>
-        <SEO></SEO>
+        <Seo
+          metaTitleSeo={metaTitleLayout}
+          metaDescriptionSeo={metaDescriptionLayout}></Seo>
         <AnnouncementBar></AnnouncementBar>
         <Navbar
           isActive={this.state.isActive}
