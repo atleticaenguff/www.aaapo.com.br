@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import Helmet from "react-helmet"
 import "./Layout.scss"
 import Seo from "./Seo"
-import AnnouncementBar from "./AnnouncementBar"
+{/*import AnnouncementBar from "./AnnouncementBar"*/}
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 
@@ -35,7 +35,7 @@ class Layout extends Component {
         <Seo
           metaTitleSeo={metaTitleLayout}
           metaDescriptionSeo={metaDescriptionLayout}></Seo>
-        <AnnouncementBar></AnnouncementBar>
+        {/*<AnnouncementBar></AnnouncementBar>*/}
         <Navbar
           isActive={this.state.isActive}
           toggleNavbar={() => this.toggleNavbar()}

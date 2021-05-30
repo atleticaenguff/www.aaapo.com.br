@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+{/*import React, { Component } from "react"
 
 class AnnouncementBar extends Component {
   constructor(props) {
@@ -69,3 +69,4 @@ class AnnouncementBar extends Component {
 }
 
 export default AnnouncementBar
+*/}
