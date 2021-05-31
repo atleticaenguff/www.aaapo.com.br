@@ -1,9 +1,6 @@
 import React, { Component } from "react"
-import { globalHistory as history } from "@reach/router"
 import Helmet from "react-helmet"
 import seo from "../data/seo.json"
-
-const { location } = history
 
 class Seo extends Component {
   render() {
@@ -12,7 +9,7 @@ class Seo extends Component {
     const breadcrumbSchemaOrgJSONLD = {
       "@context": "https://schema.org",
       "@type": "Organization",
-      url: seo.url + location.pathname,
+      url: seo.url,
       logo: seo.url + seo.image,
     }
 
@@ -23,9 +20,9 @@ class Seo extends Component {
         <meta name="title" content={metaTitleSeo} />
         <meta name="description" content={metaDescriptionSeo} />
         <meta name="image" content={seo.url + seo.image} />
-        <link rel="canonical" href={seo.url + location.pathname} />
+        <link rel="canonical" href={seo.url} />
         {/* OpenGraph tags */}
-        <meta property="og:url" content={seo.url + location.pathname} />
+        <meta property="og:url" content={seo.url} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="pt_BR" />
         <meta property="og:title" content={metaTitleSeo} />
