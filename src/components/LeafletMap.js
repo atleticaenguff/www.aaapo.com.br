@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+/*import React, { Component } from "react"
 import { MapContainer, TileLayer, Marker } from "react-leaflet"
 
 class LeafletMap extends Component {
@@ -30,3 +30,4 @@ class LeafletMap extends Component {
 }
 
 export default LeafletMap
+*/

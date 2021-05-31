@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+/*import React, { Component } from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircle, faPlay } from "@fortawesome/free-solid-svg-icons"
@@ -102,3 +102,4 @@ class VideoModal extends Component {
 }
 
 export default VideoModal
+*/

@@ -1,15 +1,9 @@
 import React from "react"
-import Seo from "../components/Seo"
 import { Link } from "gatsby"
 
 const NotFoundPage = () => {
-  const metaTitle = "Página não encontrada | Atlética Engenharia UFF"
-  const metaDescription =
-    "Verifique a URL inserida ou volte para a página inicial - Atlética Engenharia UFF."
-
   return (
     <>
-      <Seo metaTitleSeo={metaTitle} metaDescriptionSeo={metaDescription}></Seo>
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">
           <div className="container has-text-centered">

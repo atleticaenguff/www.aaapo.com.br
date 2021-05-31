@@ -3,17 +3,12 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
 import BackgroundIcons from "../images/icones.svg"
 import { GatsbyImage } from "gatsby-plugin-image"
-import VideoModal from "../components/VideoModal"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSquareFull } from "@fortawesome/free-solid-svg-icons"
 
 const IndexPage = ({ data }) => {
   return (
-    <Layout
-      metaTitleLayout={data.contentfulIndex.metaTitle}
-      metaDescriptionLayout={
-        data.contentfulIndex.metaDescription.metaDescription
-      }>
+    <Layout>
       <section
         className="hero is-primary"
         style={{
@@ -37,12 +32,12 @@ const IndexPage = ({ data }) => {
                 </Link>
               </div>
               <div className="column" style={{ textAlign: "-webkit-center" }}>
-                <VideoModal
+                {/*<VideoModal
                   thumbnail={
                     data.contentfulIndex.heroVideoThumbnail.gatsbyImageData
                   }
                   url={data.contentfulIndex.heroVideoUrl}
-                />
+                />*/}
               </div>
             </div>
           </div>

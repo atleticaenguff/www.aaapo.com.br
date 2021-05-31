@@ -1,4 +1,4 @@
-import React from "react"
+/*import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import BackgroundIcons from "../images/icones.svg"
@@ -192,3 +192,4 @@ export const query = graphql`
     }
   }
 `
+*/
