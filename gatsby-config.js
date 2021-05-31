@@ -58,7 +58,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: seo.url + "/",
+        host: seo.url,
         sitemap: seo.url + "/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
