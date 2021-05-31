@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import apis from "../data/apis.json"
 
 class AnnouncementBar extends Component {
   constructor(props) {
@@ -9,9 +10,9 @@ class AnnouncementBar extends Component {
   componentDidMount() {
     fetch(
       "https://sheets.googleapis.com/v4/spreadsheets/" +
-        process.env.GOOGLE_SHEETS_API_ID +
+        apis.googleSheets.spreadsheetId +
         "/values/Página1!A1:B5?key=" +
-        process.env.GOOGLE_SHEETS_API_KEY
+        apis.googleSheets.apiKey
     )
       .then((response) => {
         return response.json()
