@@ -34,37 +34,38 @@ class AnnouncementBar extends Component {
       this.state
 
     return (
-      <div
-        className={
-          loading === true || isHidden === "TRUE" ? "is-hidden" : null
-        }>
-        <div
-          className={"has-text-white p-4"}
-          style={{
-            backgroundColor: "#262626",
-          }}>
-          <div className="container">
-            {loading ? (
-              <>&nbsp;</>
-            ) : (
-              <div className="has-text-centered is-flex is-align-items-center is-justify-content-center">
-                <p className="has-text-weight-semibold">{content}</p>
-                <span
-                  className={isHiddenLink === "TRUE" ? "is-hidden" : "is-flex"}>
-                  &nbsp;
-                  <p className="has-text-weight-semibold">-</p>
-                  &nbsp;
-                  <p className="has-text-weight-bold">
-                    <a href={linkURL} rel="noreferrer" target="_blank">
-                      {linkText}
-                    </a>
-                  </p>
-                </span>
-              </div>
-            )}
+      <>
+        {loading === true || isHidden === "TRUE" ? null : (
+          <div
+            className={"has-text-white p-4"}
+            style={{
+              backgroundColor: "#262626",
+            }}>
+            <div className="container">
+              {loading ? (
+                <>&nbsp;</>
+              ) : (
+                <div className="has-text-centered is-flex is-align-items-center is-justify-content-center">
+                  <p className="has-text-weight-semibold">{content}</p>
+                  <span
+                    className={
+                      isHiddenLink === "TRUE" ? "is-hidden" : "is-flex"
+                    }>
+                    &nbsp;
+                    <p className="has-text-weight-semibold">-</p>
+                    &nbsp;
+                    <p className="has-text-weight-bold">
+                      <a href={linkURL} rel="noreferrer" target="_blank">
+                        {linkText}
+                      </a>
+                    </p>
+                  </span>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
-      </div>
+        )}
+      </>
     )
   }
 }
