@@ -1,4 +1,4 @@
-/*import React from "react"
+import React from "react"
 import { Link } from "gatsby"
 import navbar from "../data/navbar.json"
 import { StaticImage } from "gatsby-plugin-image"
@@ -88,4 +88,3 @@ const Navbar = ({ isActive, toggleNavbar }) => {
 }
 
 export default Navbar
-*/

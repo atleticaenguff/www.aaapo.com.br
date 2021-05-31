@@ -1,5 +1,5 @@
-/*import React, { Component } from "react"
-import { MapContainer, TileLayer, Marker } from "react-leaflet"
+import React, { Component } from "react"
+import { Map, TileLayer, Marker } from "react-leaflet"
 
 class LeafletMap extends Component {
   render() {
@@ -11,18 +11,18 @@ class LeafletMap extends Component {
 
     if (typeof window !== "undefined") {
       return (
-        <MapContainer
+        <Map
           dragging={false}
           center={position}
           zoom={16}
           scrollWheelZoom={false}
           style={style}>
           <TileLayer
-            attribution="&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
+            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           <Marker position={position}></Marker>
-        </MapContainer>
+        </Map>
       )
     }
     return null
@@ -30,4 +30,3 @@ class LeafletMap extends Component {
 }
 
 export default LeafletMap
-*/

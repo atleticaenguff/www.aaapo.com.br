@@ -1,6 +1,10 @@
 import React, { Component } from "react"
 import Helmet from "react-helmet"
 import "./Layout.scss"
+import Seo from "./Seo"
+import AnnouncementBar from "./AnnouncementBar"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
 
 class Layout extends Component {
   constructor(props) {
@@ -14,6 +18,8 @@ class Layout extends Component {
   }
 
   render() {
+    const { metaTitleLayout, metaDescriptionLayout } = this.props
+
     return (
       <>
         <Helmet defer={false}>
@@ -26,7 +32,16 @@ class Layout extends Component {
             rel="stylesheet"
           />
         </Helmet>
+        <Seo
+          metaTitleSeo={metaTitleLayout}
+          metaDescriptionSeo={metaDescriptionLayout}></Seo>
+        <AnnouncementBar></AnnouncementBar>
+        <Navbar
+          isActive={this.state.isActive}
+          toggleNavbar={() => this.toggleNavbar()}
+        />
         <main>{this.props.children}</main>
+        <Footer />
       </>
     )
   }

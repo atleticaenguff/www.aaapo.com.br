@@ -1,4 +1,4 @@
-/*import React from "react"
+import React from "react"
 import { Link } from "gatsby"
 import footer from "../data/footer.json"
 import { StaticImage } from "gatsby-plugin-image"
@@ -169,4 +169,3 @@ const Footer = () => {
 }
 
 export default Footer
-*/
