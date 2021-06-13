@@ -48,6 +48,13 @@ const Footer = () => {
                 {footer.navigation.item2.title}
               </Link>
             </div>
+            <div className="level-item">
+              <Link
+                className="has-text-weight-semibold has-text-white"
+                to={footer.navigation.item3.url}>
+                {footer.navigation.item3.title}
+              </Link>
+            </div>
           </div>
         </div>
         <hr></hr>

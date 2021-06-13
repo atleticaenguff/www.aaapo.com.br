@@ -41,9 +41,9 @@ const TransparenciaPage = ({ data }) => {
                 {node.recursos.map(({ key, value }) => (
                   <div className="column is-4 mb-4">
                     <div className="box">
-                      <h2 className="title is-3 has-text-weight-bold has-text-dark">
+                      <h3 className="title is-3 has-text-weight-bold has-text-dark">
                         {key}
-                      </h2>
+                      </h3>
                       <a
                         className="button has-text-weight-semibold is-primary"
                         href={value}
