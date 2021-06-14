@@ -17,6 +17,7 @@ const Navbar = ({ isActive, toggleNavbar }) => {
             <StaticImage
               src="../images/logo.png"
               alt="logo"
+              loading="eager"
               placeholder="blurred"
               layout="fixed"
               width={85}
