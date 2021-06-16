@@ -48,9 +48,7 @@ const KitMarcaPage = ({ data }) => {
                   className="button has-text-weight-semibold is-primary"
                   href={data.contentfulKitDeMarca.guiaMarca.buttonUrl}
                   rel="noreferrer"
-                  target="_blank"
-                  disabled
-                  style={{ pointerEvents: "none" }}>
+                  target="_blank">
                   <span>{data.contentfulKitDeMarca.guiaMarca.buttonTitle}</span>
                   <span className="icon is-small">
                     <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
@@ -70,9 +68,7 @@ const KitMarcaPage = ({ data }) => {
                   className="button has-text-weight-semibold is-primary"
                   href={data.contentfulKitDeMarca.logoSimbolos.buttonUrl}
                   rel="noreferrer"
-                  target="_blank"
-                  disabled
-                  style={{ pointerEvents: "none" }}>
+                  target="_blank">
                   <span>
                     {data.contentfulKitDeMarca.logoSimbolos.buttonTitle}
                   </span>
