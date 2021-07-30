@@ -76,17 +76,18 @@ class VideoModal extends Component {
                   className="video-wrapper"
                   style={{ paddingBottom: "56.25%" }}>
                   <iframe
-                    title="Vimeo"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowfullscreen
-                    src={url + "?autoplay=1&loop=1"}
                     style={{
                       position: "absolute",
                       top: "0",
                       left: "0",
                       width: "100%",
                       height: "100%",
-                    }}></iframe>
+                    }}
+                    src={url + "?autoplay=1&loop=1"}
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
                 </div>
               </div>
               <button
