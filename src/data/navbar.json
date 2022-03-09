@@ -23,6 +23,10 @@
     "item6": {
       "title": "Loja",
       "url": "https://loja.aaapo.com.br/"
+    },
+    "item7": {
+      "title": "Área dos Calouros",
+      "url": "/area-dos-calouros/"
     }
   }
 }

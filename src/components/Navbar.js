@@ -62,6 +62,12 @@ const Navbar = ({ isActive, toggleNavbar }) => {
             </Link>
             <Link
               className="navbar-item has-text-weight-semibold"
+              to={navbar.navigation.item7.url}
+              style={{ backgroundColor: "transparent" }}>
+              {navbar.navigation.item7.title}
+            </Link>
+            <Link
+              className="navbar-item has-text-weight-semibold"
               to={navbar.navigation.item4.url}
               style={{ backgroundColor: "transparent" }}>
               {navbar.navigation.item4.title}
