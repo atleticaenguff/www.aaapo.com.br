@@ -142,7 +142,7 @@ const ModalidadesPage = ({ data }) => {
                             <a
                               className="subtitle is-6 has-text-weight-normal has-text-link"
                               href={
-                                "https://api.whatsapp.com/send?phone=+55" +
+                                "https://api.whatsapp.com/send?phone=55" +
                                 responsavelPhone[1]
                               }
                               rel="noreferrer"
@@ -159,7 +159,7 @@ const ModalidadesPage = ({ data }) => {
                             <a
                               className="subtitle is-6 has-text-weight-normal has-text-link"
                               href={
-                                "https://api.whatsapp.com/send?phone=+55" +
+                                "https://api.whatsapp.com/send?phone=55" +
                                 responsavelPhone[2]
                               }
                               rel="noreferrer"
