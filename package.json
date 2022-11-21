@@ -31,7 +31,7 @@
     "gatsby-source-contentful": "^5.6.1",
     "gatsby-source-filesystem": "^3.7.1",
     "gatsby-transformer-sharp": "^3.7.1",
-    "leaflet": "^1.7.1",
+    "leaflet": "^1.9.3",
     "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
