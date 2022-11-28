@@ -23,7 +23,7 @@
     "gatsby-plugin-image": "^1.7.1",
     "gatsby-plugin-manifest": "^3.7.1",
     "gatsby-plugin-react-helmet": "^4.7.1",
-    "gatsby-plugin-react-leaflet": "^2.0.13",
+    "gatsby-plugin-react-leaflet": "^4.0.3",
     "gatsby-plugin-robots-txt": "^1.6.2",
     "gatsby-plugin-sass": "^4.7.1",
     "gatsby-plugin-sharp": "^3.7.1",
