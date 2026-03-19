@@ -4,7 +4,12 @@ import Layout from "../components/Layout"
 import BackgroundIcons from "../images/icones.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDownload } from "@fortawesome/free-solid-svg-icons"
-import LeafletMap from "../components/LeafletMap"
+
+
+
+import loadable from "@loadable/component"
+
+const LeafletMap = loadable(() => import("../components/LeafletMap"))
 
 const ContatoPage = ({ data }) => {
   return (
@@ -93,24 +98,25 @@ const ContatoPage = ({ data }) => {
               </div>
             </div>
             <div className="column is-hidden-mobile">
-              <LeafletMap
-                lat={data.contentfulContato.mapa.lat}
-                lng={data.contentfulContato.mapa.lon}
-                height={"100%"}
-                width={"auto"}
-              />
+                <LeafletMap
+                  lat={data.contentfulContato.mapa.lat}
+                  lng={data.contentfulContato.mapa.lon}
+                  height={"100%"}
+                  width={"auto"}
+                />
+
             </div>
           </div>
         </div>
       </section>
       <section>
         <div className="container is-fullhd is-hidden-tablet">
-          <LeafletMap
-            lat={data.contentfulContato.mapa.lat}
-            lng={data.contentfulContato.mapa.lon}
-            height={"350px"}
-            width={"auto"}
-          />
+            <LeafletMap
+              lat={data.contentfulContato.mapa.lat}
+              lng={data.contentfulContato.mapa.lon}
+              height={"350px"}
+              width={"auto"}
+            />
         </div>
       </section>
     </Layout>
