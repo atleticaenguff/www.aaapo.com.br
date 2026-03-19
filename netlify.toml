@@ -6,8 +6,6 @@
   NODE_VERSION = "20"
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
-  [plugins.inputs]
-    disabled = true
 [[headers]]
   for = "/*"
   [headers.values]
