@@ -2,10 +2,11 @@
   publish = "public"
   command = "gatsby build"
 
+[build.environment]
+  NODE_VERSION = "20"
+
 [[headers]]
-  # Define which paths this specific [[headers]] block will cover.
   for = "/*"
-  
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Expect-CT = "max-age=86400"
@@ -15,10 +16,8 @@
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-
-    # Multi-value headers are expressed with multi-line strings.
-	  cache-control = '''
-	  max-age=31536000,
-	  no-cache,
-	  no-store,
-	  must-revalidate'''
+    cache-control = '''
+max-age=31536000,
+no-cache,
+no-store,
+must-revalidate'''

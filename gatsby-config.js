@@ -1,10 +1,8 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
-
 const seo = require("./src/data/seo.json")
 const manifest = require("./src/data/manifest.json")
-
 module.exports = {
   siteMetadata: {
     title: seo.title,
@@ -69,12 +67,6 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         host: process.env.CONTENTFUL_HOST,
-      },
-    },
-    {
-      resolve: "gatsby-plugin-react-leaflet",
-      options: {
-        linkStyles: true,
       },
     },
   ],
