@@ -1,9 +1,11 @@
+const adapter = require("gatsby-adapter-netlify").default
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 const seo = require("./src/data/seo.json")
 const manifest = require("./src/data/manifest.json")
 module.exports = {
+    adapter: adapter(),
   siteMetadata: {
     title: seo.title,
     siteUrl: seo.url,
