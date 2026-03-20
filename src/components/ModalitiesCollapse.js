@@ -17,6 +17,9 @@ class ModalitiesCollapse extends Component {
     const { title, status, children } = this.props
     const { collapseState } = this.state
 
+    // Only render FontAwesome on the client side
+    const isBrowser = typeof window !== "undefined"
+
     return (
       <div className="column is-6">
         <div className="card">
@@ -57,11 +60,13 @@ class ModalitiesCollapse extends Component {
                   transform: collapseState ? "rotate(0deg)" : "rotate(180deg)",
                   transition: "transform 200ms ease-out",
                 }}>
-                <FontAwesomeIcon
-                  icon={faAngleUp}
-                  size="lg"
-                  className="has-text-white"
-                />
+                {isBrowser && (
+                  <FontAwesomeIcon
+                    icon={faAngleUp}
+                    size="lg"
+                    className="has-text-white"
+                  />
+                )}
               </span>
             </a>
           </header>
