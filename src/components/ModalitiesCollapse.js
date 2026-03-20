@@ -3,22 +3,8 @@ import React, { Component } from "react"
 class ModalitiesCollapse extends Component {
   constructor(props) {
     super(props)
-    this.state = { 
-      collapseState: false,
-      FontAwesomeIcon: null,
-      faAngleUp: null
-    }
+    this.state = { collapseState: false }
     this.toggleCollapseState = this.toggleCollapseState.bind(this)
-  }
-
-  componentDidMount() {
-    // Only load FontAwesome on the client side
-    import("@fortawesome/react-fontawesome").then(module => {
-      this.setState({ FontAwesomeIcon: module.FontAwesomeIcon })
-    })
-    import("@fortawesome/free-solid-svg-icons").then(module => {
-      this.setState({ faAngleUp: module.faAngleUp })
-    })
   }
 
   toggleCollapseState() {
@@ -27,7 +13,7 @@ class ModalitiesCollapse extends Component {
 
   render() {
     const { title, status, children } = this.props
-    const { collapseState, FontAwesomeIcon, faAngleUp } = this.state
+    const { collapseState } = this.state
 
     return (
       <div className="column is-6">
@@ -69,13 +55,18 @@ class ModalitiesCollapse extends Component {
                   transform: collapseState ? "rotate(0deg)" : "rotate(180deg)",
                   transition: "transform 200ms ease-out",
                 }}>
-                {FontAwesomeIcon && faAngleUp && (
-                  <FontAwesomeIcon
-                    icon={faAngleUp}
-                    size="lg"
-                    className="has-text-white"
-                  />
-                )}
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  style={{ color: "white" }}>
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
               </span>
             </a>
           </header>
