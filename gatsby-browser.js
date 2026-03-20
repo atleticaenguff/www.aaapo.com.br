@@ -1,7 +1,7 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+// Import FontAwesome CSS
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
-// You can delete this file if you're not using it
+// Tell FontAwesome to skip adding the CSS automatically 
+// since we imported it above
+config.autoAddCss = false
