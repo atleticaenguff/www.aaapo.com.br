@@ -1,12 +1,24 @@
 import React, { Component } from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAngleUp } from "@fortawesome/free-solid-svg-icons"
 
 class ModalitiesCollapse extends Component {
   constructor(props) {
     super(props)
-    this.state = { collapseState: false }
+    this.state = { 
+      collapseState: false,
+      FontAwesomeIcon: null,
+      faAngleUp: null
+    }
     this.toggleCollapseState = this.toggleCollapseState.bind(this)
+  }
+
+  componentDidMount() {
+    // Only load FontAwesome on the client side
+    import("@fortawesome/react-fontawesome").then(module => {
+      this.setState({ FontAwesomeIcon: module.FontAwesomeIcon })
+    })
+    import("@fortawesome/free-solid-svg-icons").then(module => {
+      this.setState({ faAngleUp: module.faAngleUp })
+    })
   }
 
   toggleCollapseState() {
@@ -15,10 +27,7 @@ class ModalitiesCollapse extends Component {
 
   render() {
     const { title, status, children } = this.props
-    const { collapseState } = this.state
-
-    // Only render FontAwesome on the client side
-    const isBrowser = typeof window !== "undefined"
+    const { collapseState, FontAwesomeIcon, faAngleUp } = this.state
 
     return (
       <div className="column is-6">
@@ -60,7 +69,7 @@ class ModalitiesCollapse extends Component {
                   transform: collapseState ? "rotate(0deg)" : "rotate(180deg)",
                   transition: "transform 200ms ease-out",
                 }}>
-                {isBrowser && (
+                {FontAwesomeIcon && faAngleUp && (
                   <FontAwesomeIcon
                     icon={faAngleUp}
                     size="lg"
