@@ -38,7 +38,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-leaflet": "^4.2.1",
-    "sass": "^1.71.1"
+    "sass": "^1.99.0"
   },
   "devDependencies": {
     "prettier": "^3.2.5"
